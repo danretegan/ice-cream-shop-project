@@ -11,7 +11,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: -3;
+  z-index: 2;
   overflow: hidden;
   top: 0;
   left: 0;
@@ -352,7 +352,17 @@ header {
   bottom: 0;
   left: 45%;
   height: 410px;
-  z-index: 2;
+  z-index: -1;
+  animation: 0.7s ease 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .elipse {
@@ -364,7 +374,7 @@ header {
   position: absolute;
   left: 45%;
   bottom: 75px;
-  z-index: 0;
+  z-index: -2;
   margin-left: -80px;
   transition: 1s;
 }
@@ -519,12 +529,18 @@ h1 {
 
   .hero-image {
     height: 336px;
+    z-index: 3;
   }
 
   .elipse {
     width: 325px;
     height: 325px;
     bottom: 50px;
+    z-index: 0;
+  }
+  .milk-description {
+    position: absolute;
+    left: 185px;
   }
 }
 
@@ -626,5 +642,9 @@ h1 {
     width: 534px;
     height: 534px;
     bottom: 60px;
+  }
+  .milk-description {
+    position: absolute;
+    left: 250px;
   }
 }
