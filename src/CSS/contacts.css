@@ -43,6 +43,7 @@ a:-webkit-any-link {
 .vector-icon {
     width: 216px;
     height: 1px;
+    display: block;
 }
 
 .vector-icon > svg {
