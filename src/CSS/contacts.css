@@ -1,19 +1,18 @@
 :root{
     --section-background-color: #FFF5F6;
     --general-font: 'DM Sans', sans-serif;
+    --general-font-grey: #907E82;
+    --general-pink: #FFA5BA;
+    --general-font-black: #000;
+    --coffe-color : #F0D1A5;
   /* Brand color : #D41443
     Ice cream color: #FFB8CA;
-    Coffe color : #F0D1A5
     food color : #C2E297
     General white: #FFF
-    adad22 — Today at 4:42 AM
-    General pink: #FFA5BA
-    general font black: #000 
-    General font grey: #907E82
+    adad22 — Today at 4:42 AM    
     adad22 — Today at 6:25 AM
     Adaugativa doar variabilele de care aveti nevoie pentru sectiunea voastra. Asa vom evita conflictele.
     adad22 — Today at 6:46 AM
-    
     --heading-font: 'Titan One', cursive; */
 }
   
@@ -29,37 +28,39 @@
   
 a:-webkit-any-link {
     text-decoration: none;
+    cursor: pointer;
 }
   
 .menu-section {
     width: 280px;
     height: 412px;
     border-radius: 24px;
-    background: #FFF;
+    background: var(--section-background-color);
     box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
     padding: 40px 32px;
 }
-  
-.phone-link,
-.email-link {
-    display: flex;
-    flex-direction: column;
-}
-  
-.email-link {
+
+.vector-icon {
     width: 216px;
-    height: 0px;
-    fill: #E1E1E1;
+    height: 2px;
     stroke-width: 1px;
+}
+
+.vector-icon > svg {
+    
     stroke: #E1E1E1;
 }
   
-.crawler-cofe > svg {
-    color: #fff;
-    background-color: #FFA5BA;
-    display: flex;
+.crawler-cafe > svg {
+    fill: #212121;
+    background: var(--coffe-color);
+}
+
+.crawler-cafe {
     width: 80px;
     height: 16px;
+    background-color: #FFF;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -73,7 +74,7 @@ a:-webkit-any-link {
 }
   
 .city-locations {
-    color: #000;
+    color: var(--general-font-black);
     font-family: var(--general-font);
     font-size: 12px;
     font-style: normal;
@@ -83,7 +84,7 @@ a:-webkit-any-link {
 }
   
 .details {
-    color: #907E82;
+    color: var(--general-font-grey);
     font-family: var(--general-font);
     font-size: 12px;
     font-style: normal;
@@ -93,7 +94,7 @@ a:-webkit-any-link {
 }
   
 .weekdays {
-    color: #000;
+    color: var(--general-font-black);
     font-family: var(--general-font);
     font-size: 12px;
     font-style: normal;
@@ -102,7 +103,7 @@ a:-webkit-any-link {
 }
   
 .work-program {
-    color: #FFA5BA;
+    color: var(--general-pink);
     font-family: var(--general-font);
     font-size: 12px;
     font-style: normal;
@@ -111,7 +112,9 @@ a:-webkit-any-link {
 }
   
 .color-fonts {
-    color: #907E82;
+    display: flex;
+    flex-direction: column;
+    color: var(--general-font-grey);
     font-family: var(--general-font);
     font-size: 12px;
     font-style: normal;
