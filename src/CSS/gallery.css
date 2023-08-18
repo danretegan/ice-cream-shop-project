@@ -1,0 +1,33 @@
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.53px;
+  background: linear-gradient(to bottom, #fff5f6 20%, #fff 20%);
+}
+
+.gallery-column-two {
+  padding-top: 10px;
+}
+
+.gallery-column-four {
+  padding-top: 15px;
+}
+
+.gallery-column-five {
+  padding-bottom: 10px;
+}
+
+.gallery-column-six {
+  padding-top: 5px;
+}
+
+.gallery-image {
+  border-radius: 8px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.gallery-image:hover {
+  transform: scale(1.2);
+}
