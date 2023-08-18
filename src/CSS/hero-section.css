@@ -78,6 +78,68 @@ header {
   transition: var(--transition)
 }
 
+.hero-buttons {
+  display: flex;
+  margin-top: 20px;
+  gap: 9px;
+}
+
+.hero-btn {
+  background: var(--general-white);
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  font: var(--general-font);
+  color: var(--Brand-color);
+  font-weight: 400;
+  text-align: center;
+  font-size: 0.6em;
+  height: 34px;
+  padding: 0 20px;
+}
+
+.hero-btn-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: #ECEBEB;
+  transform: translateY(-3px);
+  transition: var(--transition)
+}
+.hero-btn-red {
+  background: var(--Brand-color);
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  font: var(--general-font);
+  color: var(--general-white);
+  font-weight: 400;
+  text-align: center;
+  font-size: 0.6em;
+  height: 34px;
+  padding: 0 20px;
+}
+
+.hero-btn-red-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.hero-btn-red:hover,
+.hero-btn-red:focus {
+  background: #ECEBEB;
+  color: var(--Brand-color);
+  transform: translateY(-3px);
+  transition: var(--transition)
+}
+
 .arrow-icon {
   height: 8px;
   width: 4px;
@@ -155,7 +217,7 @@ header {
   bottom: 0;
   left: 45%;
   height: 410px;
-  z-index: -3;
+  z-index: -2;
 }
 
 .elipse {
@@ -163,7 +225,7 @@ header {
   border-radius: 50%;
   width: 345px;
   height: 345px;
-  background: var(--Ice-cream-color);
+  background: #FFA5BA;
   position: absolute;
   left: 45%;
   bottom: 75px;
