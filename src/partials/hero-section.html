@@ -1,72 +1,65 @@
-<html>
-  <body>
-    <header id="header">
-      <div class="header-container">
-        <div class="header-container-nav">
-          <!-- logo -->
-          <div>
-            <a href="index.html" class="logo">
-              <img src="/src/images/logo-icecream.svg" alt="logo" width="200"
-            /></a>
-          </div>
-          <a href="http:google.com">google.com</a>
-          <!-- burger menu -->
-          <button
-            class="menu-button js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="14"
-              viewBox="0 0 20 14"
-              fill="none"
-            >
-              <path d="M0 1H20" stroke="#D41443" />
-              <path d="M0 7H20" stroke="#D41443" />
-              <path d="M0 13H20" stroke="#D41443" />
-            </svg>
-          </button>
-        </div>
-        <picture class="hero-image">
-          <!-- Desktop -->
-          <source
-            media="(min-width:1280px)"
-            srcset="
-              ./images/ice-cream-header-d.png,
-              ./images/ice-cream-header-d2x.png
-            "
-          />
-          <!-- Tablet -->
-          <source
-            media="(min-width:768px)"
-            srcset="
-              ./images/ice-cream-header-t.png,
-              ./images/ice-cream-header-t2x.png
-            "
-          />
-          <!-- Mobile -->
-          <source
-            media="(min-width:480px)"
-            srcset="
-              ./images/ice-cream-header-m.png,
-              ./images/ice-cream-header-m2x.png
-            "
-          />
-          <img src="./images/ice-cream-header-d.png" alt="Icecream cone" />
-        </picture>
-        <div class="elipse"></div>
-        <div class="header-title">
-          <h1>
-            ice cream <br />
-            made with <br /><span class="passion">passion</span>
-          </h1>
-        </div>
+<header id="header">
+  <div class="header-container">
+    <div class="header-container-nav">
+      <!-- logo -->
+      <div>
+        <a href="index.html" class="logo">
+          <img src="/src/images/logo-icecream.svg" alt="logo" width="200"
+        /></a>
       </div>
-      <a href="http://google.com/ ">google.com</a>
-    </header>
-
-    <script src="./js/mobile-menu.js"></script>
-  </body>
-</html>
+      <!-- burger menu -->
+      <button
+        class="menu-button js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="14"
+          viewBox="0 0 20 14"
+          fill="none"
+        >
+          <path d="M0 1H20" stroke="#D41443" />
+          <path d="M0 7H20" stroke="#D41443" />
+          <path d="M0 13H20" stroke="#D41443" />
+        </svg>
+      </button>
+    </div>
+    <picture class="hero-image">
+      <!-- Desktop -->
+      <source
+        media="(min-width:1280px)"
+        srcset="
+          ./images/ice-cream-header-d.png,
+          ./images/ice-cream-header-d2x.png
+        "
+      />
+      <!-- Tablet -->
+      <source
+        media="(min-width:768px)"
+        srcset="
+          ./images/ice-cream-header-t.png,
+          ./images/ice-cream-header-t2x.png
+        "
+      />
+      <!-- Mobile -->
+      <source
+        media="(min-width:480px)"
+        srcset="
+          ./images/ice-cream-header-m.png,
+          ./images/ice-cream-header-m2x.png
+        "
+      />
+      <img src="./images/ice-cream-header-d.png" alt="Icecream cone" />
+    </picture>
+    <div class="elipse"></div>
+    <div class="header-title">
+      <h1>
+        ice cream <br />
+        made with <br /><span class="passion">passion</span>
+      </h1>
+    </div>
+  </div>
+  <script src="./js/mobile-menu.js"></script>
+</header>
