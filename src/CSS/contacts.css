@@ -4,7 +4,7 @@
     --general-font-grey: #907E82;
     --general-pink: #FFA5BA;
     --general-font-black: #000;
-    --coffe-color : #F0D1A5;
+    --coffe-color: #F0D1A5;
   /* Brand color : #D41443
     Ice cream color: #FFB8CA;
     food color : #C2E297
@@ -42,12 +42,10 @@ a:-webkit-any-link {
 
 .vector-icon {
     width: 216px;
-    height: 2px;
-    stroke-width: 1px;
+    height: 1px;
 }
 
 .vector-icon > svg {
-    
     stroke: #E1E1E1;
 }
   

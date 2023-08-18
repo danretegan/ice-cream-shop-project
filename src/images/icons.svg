@@ -9,8 +9,8 @@
 <symbol id="icon-Vector-1" viewBox="0 0 19 32">
 <path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l11.52 12.8-11.52 12.8"></path>
 </symbol>
-<symbol id="icon-Vector-4" viewBox="0 0 3456 32">
-<path fill="currentColor" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="16" d="M0 16h3456"></path>
+<symbol id="icon-line" viewBox="0 0 3456 32">
+<path fill="#e1e1e1" style="fill: var(--color1, #e1e1e1)" d="M0 8v16h3456v-16z"></path>
 </symbol>
 </defs>
 </svg>
