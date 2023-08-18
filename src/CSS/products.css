@@ -16,7 +16,7 @@ top: 562px;
 left: 89px;
 font-family: 'Titan One', cursive;
 font-size: 18px;
-font-weight: 400;
+font-weight: 900;
 line-height: 21px;
 letter-spacing: 0em;
 text-align: center;
@@ -28,7 +28,7 @@ top: 598px;
 left: 59px;
 font-family: 'Titan One', cursive;
 font-size: 34px;
-font-weight: 400;
+font-weight: 900;
 line-height: 39px;
 letter-spacing: 0.04em;
 text-align: center;
@@ -104,4 +104,98 @@ padding-left: 30px;
     height: 40px;
     top: 420px;
     left: 120px;
+}
+
+.rectangle-2{
+    position: relative;
+    width: 280px;
+    height: 489px;
+    top: 220px;
+    left: 20px;
+    border-radius: 24px;    
+    background: #F0D1A5
+}
+
+.coffee{
+    width: 280px;
+height: 280px;
+position: absolute;
+bottom: 350px;
+}
+
+.coffee-title{
+    width: 174px;
+    height: 23px;
+    top: 138px;
+    left: 50px;
+    position: absolute;
+    font-family: 'Titan One', cursive;
+font-size: 20px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0.04em;
+text-align: center;
+color: #FFFFFF;
+}
+
+.paragraph-coffee{
+    font-family: 'DM Sans', cursive;
+font-size: 14px;
+font-weight: 700;
+line-height: 21px;
+letter-spacing: 0.04em;
+text-align: center;
+color: #FFFFFF;
+width: 216px;
+height: 124px;
+top: 1035px;
+left: 52px;
+padding-left: 30px;
+    padding-top: 20px;
+}
+
+.rectangle-3{
+    position: relative;
+    width: 280px;
+    height: 489px;
+    top: 360px;
+    left: 20px;
+    border-radius: 24px;    
+    background: #C2E297
+}
+.milkshake{
+    width: 280px;
+height: 280px;
+position: absolute;
+bottom: 350px;
+}
+.milkshake-title{
+    width: 174px;
+    height: 23px;
+    top: 138px;
+    left: 50px;
+    position: absolute;
+    font-family: 'Titan One', cursive;
+font-size: 20px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0.04em;
+text-align: center;
+color: #FFFFFF;
+}
+
+.paragraph-milkshake{
+    font-family: 'DM Sans', cursive;
+font-size: 14px;
+font-weight: 700;
+line-height: 21px;
+letter-spacing: 0.04em;
+text-align: center;
+color: #FFFFFF;
+width: 216px;
+height: 124px;
+top: 1035px;
+left: 52px;
+padding-left: 30px;
+    padding-top: 20px;
 }
