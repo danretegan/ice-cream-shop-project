@@ -1,5 +1,6 @@
 :root{
     --section-background-color: #FFF5F6;
+    --general-font: 'DM Sans', sans-serif;
   /* Brand color : #D41443
     Ice cream color: #FFB8CA;
     Coffe color : #F0D1A5
@@ -12,81 +13,108 @@
     adad22 — Today at 6:25 AM
     Adaugativa doar variabilele de care aveti nevoie pentru sectiunea voastra. Asa vom evita conflictele.
     adad22 — Today at 6:46 AM
-    --general-font: 'DM Sans', sans-serif;
+    
     --heading-font: 'Titan One', cursive; */
-  }
+}
   
-  .contacts-section {
-    background:var(--section-background-color);
+.contacts-section {
+    background: var(--section-background-color);
     height: auto;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
+}
   
-  a:-webkit-any-link {
+a:-webkit-any-link {
     text-decoration: none;
-  }
+}
   
-  .cafe-section {
+.menu-section {
     width: 280px;
     height: 412px;
     border-radius: 24px;
     background: #FFF;
     box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
     padding: 40px 32px;
-  }
+}
   
-  .phone-link,
-  .email-link {
+.phone-link,
+.email-link {
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .email-link {
+.email-link {
     width: 216px;
     height: 0px;
     fill: #E1E1E1;
     stroke-width: 1px;
     stroke: #E1E1E1;
-  }
+}
   
-  .crawler-cofe {
-    color: #212121;
+.crawler-cofe > svg {
+    color: #fff;
+    background-color: #FFA5BA;
     display: flex;
     width: 80px;
     height: 16px;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
-    color: #FFF;
     text-align: center;
-    font-family: DM Sans;
+    font-family: var(--general-font);
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 186%; /* 22.32px */
     letter-spacing: 0.48px;
 }
-
+  
 .city-locations {
     color: #000;
-    font-family: DM Sans;
+    font-family: var(--general-font);
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 186%; /* 22.32px */
     letter-spacing: 0.48px;
 }
-
+  
 .details {
     color: #907E82;
-    font-family: DM Sans;
+    font-family: var(--general-font);
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 18px; /* 150% */
     letter-spacing: 0.48px;
+}
+  
+.weekdays {
+    color: #000;
+    font-family: var(--general-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 22.32px */
+}
+  
+.work-program {
+    color: #FFA5BA;
+    font-family: var(--general-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%; /* 22.32px */
+}
+  
+.color-fonts {
+    color: #907E82;
+    font-family: var(--general-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 150% */
 }
