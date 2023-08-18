@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .gallery-row {
   display: flex;
   justify-content: center;
