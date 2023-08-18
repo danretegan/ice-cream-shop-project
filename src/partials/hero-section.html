@@ -50,25 +50,48 @@
           <img src="/src/images/logo-icecream.svg" alt="logo" width="200"
         /></a>
       </div>
-      <!-- burger menu -->
-      <button
-        class="menu-button js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="14"
-          viewBox="0 0 20 14"
-          fill="none"
+      <div class="header-buttons">
+        <!-- burger menu -->
+        <button
+          class="menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
         >
-          <path d="M0 1H20" stroke="#D41443" />
-          <path d="M0 7H20" stroke="#D41443" />
-          <path d="M0 13H20" stroke="#D41443" />
-        </svg>
-      </button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="14"
+            viewBox="0 0 20 14"
+            fill="none"
+          >
+            <path d="M0 1H20" stroke="#D41443" />
+            <path d="M0 7H20" stroke="#D41443" />
+            <path d="M0 13H20" stroke="#D41443" />
+          </svg>
+        </button>
+        <button type="submit" class="submit-btn">
+          <span class="submit-btn-content"
+            >Buy now
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="7"
+              height="10"
+              viewBox="0 0 7 10"
+              fill="none"
+            >
+              <path
+                d="M1.03772 1L5.71697 5L1.03772 9"
+                stroke="#D41443"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
     </div>
+
     <picture class="hero-image">
       <!-- Desktop -->
       <source
@@ -98,13 +121,29 @@
     </picture>
     <div class="elipse"></div>
     <div class="header-title">
-      <h1>
-        ice cream <br />
-        made with <br /><span class="passion">passion</span>
-      </h1>
-      <div class="hero-buttons">
-        <button type="submit" class="hero-btn-red">Products</button>
-        <button type="submit" class="hero-btn">How it’s made?</button>
+      <div class="left-header-container">
+        <h1>
+          ice cream <br />
+          made with <br /><span class="passion">passion</span>
+        </h1>
+        <div class="hero-buttons">
+          <button type="submit" class="hero-btn-red">Products</button>
+          <button type="submit" class="hero-btn">How it’s made?</button>
+        </div>
+        <div class="milk-header">
+          <img
+            src="/src/images/milk-header.png"
+            class="milk-header-img"
+            alt="bio milk"
+          />
+          <div class="milk-description">
+            <p>
+              Indulge in a scoop of ice cream made with passion and treat your
+              taste buds to an unforgettable experiencex
+            </p>
+            <img src="/src/images/arrow-right.png" class="link-how-its-made" alt="arrow">
+          </div>
+        </div>
       </div>
     </div>
   </div>

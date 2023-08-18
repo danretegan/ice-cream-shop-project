@@ -64,6 +64,10 @@ header {
   padding: 0 max(43px);
 }
 
+.header-buttons .submit-btn {
+  display: none;
+}
+
 .submit-btn-content {
   display: flex;
   justify-content: center;
@@ -73,9 +77,9 @@ header {
 
 .submit-btn:hover,
 .submit-btn:focus {
-  background: #ECEBEB;
+  background: #ecebeb;
   transform: translateY(-3px);
-  transition: var(--transition)
+  transition: var(--transition);
 }
 
 .hero-buttons {
@@ -107,9 +111,9 @@ header {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background: #ECEBEB;
+  background: #ecebeb;
   transform: translateY(-3px);
-  transition: var(--transition)
+  transition: var(--transition);
 }
 .hero-btn-red {
   background: var(--Brand-color);
@@ -134,10 +138,10 @@ header {
 
 .hero-btn-red:hover,
 .hero-btn-red:focus {
-  background: #ECEBEB;
+  background: #ecebeb;
   color: var(--Brand-color);
   transform: translateY(-3px);
-  transition: var(--transition)
+  transition: var(--transition);
 }
 
 .arrow-icon {
@@ -150,7 +154,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .menu-drawer {
@@ -158,15 +161,13 @@ header {
   width: 100%;
 }
 
-
-
 .menu-drawer .link:hover,
 .menu-drawer .link:active {
   color: var(--Brand-color);
 }
 
 .menu-drawer li {
-  border-top: 1px solid #E18298;
+  border-top: 1px solid #e18298;
   padding: 13px 0 13px 20px;
   font-size: 1em;
   font-weight: 700px;
@@ -174,8 +175,8 @@ header {
   font-family: var(--general-font);
 }
 
-.menu-drawer li.last-link{
-  border-bottom: 1px solid #E18298;
+.menu-drawer li.last-link {
+  border-bottom: 1px solid #e18298;
 }
 .js-menu-container {
   display: flex;
@@ -225,7 +226,7 @@ header {
   border-radius: 50%;
   width: 345px;
   height: 345px;
-  background: #FFA5BA;
+  background: #ffa5ba;
   position: absolute;
   left: 45%;
   bottom: 75px;
@@ -258,4 +259,66 @@ h1 {
   font-weight: 400;
   line-height: 96.5%;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .header-buttons .submit-btn {
+    display: flex;
+    align-items: center;
+  }
+  .header-container-nav {
+    padding: 32px 32px 0 32px;
+  }
+  .js-menu-container {
+    width: 274px;
+  }
+  .header-title {
+    margin-left: 32px;
+    margin-top: 20px;
+  }
+  .milk-header {
+    display: flex;
+  }
+  .milk-header p {
+    color: var(--general-white);
+    width: 124px;
+    font-family: var(--general-font);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+  }
+  .milk-header-img {
+    width: 152px;
+    height: 154px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+
+  .passion {
+    font-size: 36px;
+  }
+
+  header {
+    height: 416px;
+  }
+
+  .hero-image {
+    height: 336px;
+  }
+
+  .elipse {
+    width: 325px;
+    height: 325px;
+    bottom: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
 }
