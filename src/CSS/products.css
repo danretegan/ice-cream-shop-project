@@ -1,0 +1,107 @@
+.body{
+    width: 320px;
+    height: 6711px;
+    top: -2577px;
+    left: -256px    
+}
+
+.products-div{
+display: block;
+justify-content: center;
+}
+
+.product-title{ 
+height: 21px;
+top: 562px;
+left: 89px;
+font-family: 'Titan One', cursive;
+font-size: 18px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: center;
+color: #FFA5BA;
+}
+.products-title{
+height: 36px;
+top: 598px;
+left: 59px;
+font-family: 'Titan One', cursive;
+font-size: 34px;
+font-weight: 400;
+line-height: 39px;
+letter-spacing: 0.04em;
+text-align: center;
+color: #D41443;
+}
+
+.products-shown{
+    display: block;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.rectangle
+{
+    position: relative;
+    width: 280px;
+    height: 489px;
+    top: 82px;
+    left: 20px;
+    border-radius: 24px;
+    background: #FFB8CA;
+}
+
+.strawberry{
+    width: 280px;
+height: 280px;
+position: absolute;
+bottom: 350px;
+}
+
+.strawberry-title{
+    width: 174px;
+    height: 23px;
+    top: 138px;
+    left: 50px;
+    position: absolute;
+    font-family: 'Titan One', cursive;
+font-size: 20px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0.04em;
+text-align: center;
+color: #FFFFFF;
+}
+
+.dots{
+    width: 26px;
+    height: 6px;
+    top: 997px;
+    left: 147px;
+    margin-top: 219px;
+    margin-left: 120px;
+}
+.paragraph-strawberry{
+    font-family: 'DM Sans', cursive;
+font-size: 14px;
+font-weight: 700;
+line-height: 21px;
+letter-spacing: 0.04em;
+text-align: center;
+color: #FFFFFF;
+width: 216px;
+height: 124px;
+top: 1035px;
+left: 52px;
+padding-left: 30px;
+    padding-top: 20px;
+}
+
+.arrow-right{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 420px;
+    left: 120px;
+}
