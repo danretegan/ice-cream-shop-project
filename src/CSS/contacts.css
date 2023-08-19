@@ -70,7 +70,6 @@ a:-webkit-any-link {
   height: 16px;
   flex-direction: column;
   justify-content: center;
-  flex-shrink: 0;
 }
 
 .crawler-cafe {
@@ -148,27 +147,25 @@ a:-webkit-any-link {
   margin-top: 50px;
 } 
 
-.crawler-foodtruck {
-  margin-bottom: 20px;
+.image-block-foodtruck {
   display: flex;
   width: 130px;
   height: 16px;
   flex-direction: column;
   justify-content: center;
-  flex-shrink: 0;
-  color: #FFF;
+}
+
+.crawler-foodtruck {
+  /* margin-bottom: 20px; */
+  color: #212121;
+  background-color: red;
   text-align: center;
-  font-family: DM Sans;
-  font-size: 12px;
+  font-family: var(--general-font);
+  font-size: 10px;
   font-style: normal;
   font-weight: 500;
   line-height: 186%; /* 22.32px */
   letter-spacing: 0.48px;
-}
-
-.foodtruck-icon {
-  fill: #fff;
-  background: var(--food-color);
   border-radius: 4px;
 }
 
