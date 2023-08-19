@@ -156,12 +156,12 @@ a:-webkit-any-link {
 }
 
 .crawler-foodtruck {
-  /* margin-bottom: 20px; */
-  color: #212121;
-  background-color: red;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: var(--food-color);
   text-align: center;
   font-family: var(--general-font);
-  font-size: 10px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 186%; /* 22.32px */
