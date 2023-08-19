@@ -5,7 +5,7 @@
   "homepage": "https://adad22ro.github.io/css-proiect-1",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/*.html --public-url /css-proiect-1/"
+    "build": "parcel build src/index.html --public-url /css-proiect-1/"
   },
   "repository": {
     "type": "git",
