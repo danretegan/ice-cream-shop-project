@@ -64,14 +64,18 @@ a:-webkit-any-link {
   stroke: #E1E1E1;
 }
 
-.crawler-cafe {
-  margin-bottom: 20px;
+.image-block {
+  display: flex;
   width: 80px;
   height: 16px;
-  background-color: #FFF;
-  display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+.crawler-cafe {
+  margin-bottom: 20px;
+  background-color: var(--coffe-color);
   text-align: center;
   font-family: var(--general-font);
   font-size: 12px;
@@ -80,12 +84,14 @@ a:-webkit-any-link {
   line-height: 86%;
   letter-spacing: 0.48px;
   line-height: 22.32px;
+  border-radius: 4px;
+  color: #fff;
 }
 
 .cafe-icon {
   fill: #fff;
   background: var(--coffe-color);
-  border-radius: 4px;
+  
 }
 
 .city-locations {
