@@ -2,6 +2,13 @@
     width: 320px;
 }
 
+:root{
+    --heading-font: 'Titan One', cursive;
+}
+a {
+    text-decoration: none;
+  }
+
 .products-div{
 display: block;
 justify-content: center;
@@ -11,7 +18,7 @@ justify-content: center;
 height: 21px;
 top: 562px;
 left: 89px;
-font-family: 'Titan One', cursive;
+font-family: var(--heading-font);
 font-size: 18px;
 font-weight: 900;
 line-height: 21px;
@@ -23,7 +30,7 @@ color: #FFA5BA;
 height: 36px;
 top: 598px;
 left: 59px;
-font-family: 'Titan One', cursive;
+font-family: var(--heading-font);
 font-size: 34px;
 font-weight: 900;
 line-height: 39px;
@@ -62,7 +69,7 @@ bottom: 350px;
     top: 138px;
     left: 50px;
     position: absolute;
-    font-family: 'Titan One', cursive;
+    font-family: var(--heading-font);
 font-size: 20px;
 font-weight: 400;
 line-height: 23px;
@@ -126,7 +133,7 @@ bottom: 350px;
     top: 138px;
     left: 50px;
     position: absolute;
-    font-family: 'Titan One', cursive;
+    font-family: var(--heading-font);
 font-size: 20px;
 font-weight: 400;
 line-height: 23px;
@@ -172,7 +179,7 @@ bottom: 350px;
     top: 138px;
     left: 50px;
     position: absolute;
-    font-family: 'Titan One', cursive;
+    font-family: var(--heading-font);
 font-size: 20px;
 font-weight: 400;
 line-height: 23px;
