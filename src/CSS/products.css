@@ -1,6 +1,5 @@
 .body{
     width: 320px;
-    height: 6711px; 
 }
 
 .products-div{
@@ -203,7 +202,6 @@ padding-left: 30px;
 
     .body{
         width: 768px;
-        height: 3937px;
         
     }
         
@@ -399,11 +397,10 @@ padding-left: 30px;
     }
  }
 
- /*Tablet*/
- @media screen and (min-width: 768px) {
+ /*Desktop*/
+ @media screen and (min-width: 1280px) {
     .body{
         width: 1200px;
-        height: 3937px;
         
     }
         
@@ -411,12 +408,13 @@ padding-left: 30px;
         height: 30px;
         top: 562px;
         left: 89px;
-        font-family: 'Titan One', cursive;
-        font-size: 18px;
-        font-weight: 900;
-        line-height: 21px;
-        letter-spacing: 0em;
-        text-align: center;
+        font-family: Titan One, cursive;
+font-size: 30px;
+font-weight: 400;
+line-height: 34px;
+letter-spacing: 0.04em;
+text-align: center;
+
         color: #FFA5BA;
         }
         .products-title{
@@ -437,7 +435,7 @@ text-align: center;
     .products-shown{
         display: flex;
         justify-content: center;
-        padding-top: 60px;
+        padding-top: 125px;
     }
     .rectangle
     {
@@ -459,50 +457,51 @@ text-align: center;
     }
     
     .strawberry-title{
-        width: 174px;
-        height: 23px;
-        top: 138px;
-        left: 27px;
+        width: 368px;
+        height: 34px;
+        top: 219px;
+        left: 10px;
         position: absolute;
         font-family: 'Titan One', cursive;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #FFFFFF;
     }
     
     .dots{
-        width: 26px;
-        height: 6px;
-        top: 997px;
-        left: 147px;
-        margin-top: 219px;
-        margin-left: 100px;
+            width: 26px;
+            height: 6px;
+            top: 997px;
+            left: 147px;
+            margin-top: 290px;
+            margin-left: 175px;
     }
     .paragraph-strawberry{
-        font-family: 'DM Sans', cursive;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0.04em;
-    text-align: center;
+        font-family: DM Sans;
+font-size: 16px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0.04em;
+text-align: center;
+
     color: #FFFFFF;
-    width: 188px;
-    height: 150px;
+    width: 304px;
+height: 134px;
     top: 1035px;
     left: 52px;
-    padding-left: 20px;
+    padding-left: 30px;
         padding-top: 20px;
     }
     
     .arrow-right{
         position: absolute;
-        width: 40px;
-        height: 40px;
-        top: 420px;
-        left: 95px;
+    width: 40px;
+    height: 40px;
+    top: 468px;
+    left: 166px;
     }
     
     .rectangle-2{
@@ -523,33 +522,34 @@ text-align: center;
     }
     
     .coffee-title{
-        width: 174px;
-        height: 23px;
-        top: 138px;
-        left: 27px;
-        position: absolute;
-        font-family: 'Titan One', cursive;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: #FFFFFF;
+            width: 368px;
+            height: 34px;
+            top: 219px;
+            left: 10px;
+            position: absolute;
+            font-family: 'Titan One', cursive;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0.04em;
+            text-align: center;
+            color: #FFFFFF;
     }
     
     .paragraph-coffee{
-        font-family: 'DM Sans', cursive;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0.04em;
-    text-align: center;
+        font-family: DM Sans;
+font-size: 16px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0.04em;
+text-align: center;
+
     color: #FFFFFF;
-    width: 188px;
-    height: 150px;
+    width: 304px;
+height: 134px;
     top: 1035px;
     left: 52px;
-    padding-left: 20px;
+    padding-left: 30px;
         padding-top: 20px;
     }
     
@@ -569,35 +569,47 @@ text-align: center;
     bottom: 350px;
     }
     .milkshake-title{
-        width: 174px;
-        height: 23px;
-        top: 138px;
-        left: 27px;
+        width: 368px;
+        height: 34px;
+        top: 219px;
+        left: 10px;
         position: absolute;
         font-family: 'Titan One', cursive;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #FFFFFF;
     }
     
     .paragraph-milkshake{
-        font-family: 'DM Sans', cursive;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: 0.04em;
-    text-align: center;
+        font-family: DM Sans;
+font-size: 16px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0.04em;
+text-align: center;
+
     color: #FFFFFF;
-    width: 188px;
-    height: 150px;
+    width: 304px;
+height: 134px;
     top: 1035px;
     left: 52px;
-    padding-left: 20px;
+    padding-left: 30px;
         padding-top: 20px;
-    }
+    }}
 
 
- }
+    
+ @media screen and (min-width: 1440px) {
+
+ .body {
+    width: 1440px;
+    }}
+
+    @media screen and (min-width: 2560px) {
+
+        .body {
+           width: 2560px;
+          }}
