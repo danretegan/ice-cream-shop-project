@@ -22,6 +22,38 @@ img {
   justify-content: center;
   align-content: center;
 }
+.colored-background {
+  background-color: rgba(250, 250, 250, 1);
+  width: 968px;
+  height: 138px;
+  flex-shrink: 0;
+  position: relative;
+}
+.light-grey-line__one,
+.light-grey-line__two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quote {
+  color: #717171;
+  position: relative;
+  top: -30px;
+  left: 50px;
+}
+.red-house {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.three-red-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 16px;
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -64,10 +96,15 @@ img {
   text-align: center;
   font-family: DM Sans;
   font-size: 16px;
-  font-style: normal;
+  font-style: bold;
   font-weight: 500;
   line-height: 186%; /* 29.76px */
   letter-spacing: 0.64px;
+  position: relative;
+  top: 45px;
+  padding-right: 108px;
+  padding-left: 100px;
+  color: #000;
 }
 .customer-reviews__location {
   color: #000;
@@ -102,7 +139,7 @@ img {
 
 .active,
 .dot:hover {
-  background-color: #717171;
+  background-color: #f81212;
 }
 
 /* Fading animation */
