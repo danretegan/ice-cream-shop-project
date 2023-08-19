@@ -9,15 +9,32 @@ img {
 }
 
 .gallery-row {
+  padding: 0 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.53px;
+  gap: 3px;
   background: linear-gradient(to bottom, #fff5f6 20%, #fff 20%);
 }
 
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 3px;
+}
+
+.gallery-image {
+  width: auto;
+  flex-grow: 1;
+}
+
 .gallery-column-two {
-  padding-top: 10px;
+  padding-top: 5px;
+}
+
+.gallery-image-five {
+  width: 66%;
 }
 
 .gallery-column-four {
