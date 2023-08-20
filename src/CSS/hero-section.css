@@ -11,7 +11,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: -1;
   overflow: hidden;
   top: 0;
   left: 0;
@@ -120,24 +120,20 @@
   }
 }
 
-a {
+header a {
   text-decoration: none;
   color: inherit;
   transition: var(--transition);
 }
 
-a:visited {
+header a:visited {
   color: inherit;
 }
 
-ul {
+header ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-body {
-  margin: 0;
 }
 
 header {
@@ -199,6 +195,10 @@ header {
   padding: 0 max(43px);
 }
 
+.menu-pc {
+  display: none;
+}
+
 .header-buttons .submit-btn {
   display: none;
 }
@@ -215,6 +215,10 @@ header {
   background: #ecebeb;
   transform: translateY(-3px);
   transition: var(--transition);
+}
+.submit-btn:active {
+  scale: 95%;
+  background: var(--general-white);
 }
 
 .hero-buttons {
@@ -250,6 +254,12 @@ header {
   transform: translateY(-3px);
   transition: var(--transition);
 }
+
+.hero-btn:active {
+  scale: 95%;
+  background: var(--general-white);
+}
+
 .hero-btn-red {
   background: var(--Brand-color);
   border-radius: 22px;
@@ -276,6 +286,11 @@ header {
   background: #be0e3a;
   transform: translateY(-3px);
   transition: var(--transition);
+}
+
+.hero-btn-red:active {
+  scale: 95%;
+  background: var(--Brand-color);
 }
 
 .arrow-icon {
@@ -312,6 +327,7 @@ header {
 .menu-drawer li.last-link {
   border-bottom: 1px solid #e18298;
 }
+
 .js-menu-container {
   display: flex;
   flex-direction: column;
@@ -377,6 +393,16 @@ header {
   z-index: -2;
   margin-left: -80px;
   transition: 1s;
+  animation: 0.7s ease 0s 1 elipseScale;
+}
+
+@keyframes elipseScale {
+  0% {
+    scale: 0%;
+  }
+  100% {
+    scale: 100%;
+  }
 }
 
 .elipse:hover {
@@ -396,13 +422,27 @@ header {
   display: none;
 }
 
-h1 {
+.link-how-its-made {
+  width: 26px;
+  transition: var(--transition);
+}
+
+.link-how-its-made:hover,
+.link-how-its-made:focus {
+  scale: 140%;
+  rotate: 90deg;
+  cursor: pointer;
+}
+
+.link-how-its-made:active {
+  scale: 120%;
+}
+
+.left-header-container h1 {
   color: #fff;
   font-family: var(--heading-font);
   font-size: 26px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   letter-spacing: 1.04px;
   text-transform: uppercase;
   margin: 0;
@@ -412,7 +452,6 @@ h1 {
   color: var(--Brand-color);
   font-family: var(--heading-font);
   font-size: 48px;
-  font-style: normal;
   font-weight: 400;
   line-height: 96.5%;
   text-transform: uppercase;
@@ -450,7 +489,7 @@ h1 {
   .header-title {
     margin-left: 32px;
     margin-right: 32px;
-    margin-top: 30px;
+    margin-top: 25px;
     display: flex;
     justify-content: space-between;
   }
@@ -467,7 +506,6 @@ h1 {
     width: 124px;
     font-family: var(--general-font);
     font-size: 10px;
-    font-style: normal;
     font-weight: 400;
     line-height: 12px;
   }
@@ -475,9 +513,7 @@ h1 {
     width: 152px;
     height: 154px;
   }
-  .link-how-its-made {
-    width: 26px;
-  }
+
   .numbers-header {
     display: flex;
     flex-direction: column;
@@ -497,9 +533,7 @@ h1 {
     font-family: var(--heading-font);
     color: var(--Brand-color);
     font-size: 34px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: 1.84px;
     padding-right: 10px;
   }
@@ -507,9 +541,7 @@ h1 {
     color: var(--general-white);
     font-family: var(--general-font);
     font-size: 10px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     padding-right: 10px;
   }
   .girl-icecream {
@@ -518,6 +550,26 @@ h1 {
     position: absolute;
     bottom: 0;
     right: 60px;
+    transition: var(--transition);
+  }
+
+  .girl-icecream:hover,
+  .girl-icecream:focus {
+    scale: 120%;
+    rotate: -10deg;
+    animation: girl 0.5s infinite ease;
+  }
+
+  @keyframes girl {
+    0% {
+      rotate: 0deg;
+    }
+    50% {
+      rotate: -5deg;
+    }
+    100% {
+      rotate: 0deg;
+    }
   }
   h1 {
     font-size: 22px;
@@ -603,7 +655,6 @@ h1 {
     width: 200px;
     font-family: var(--general-font);
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 20px;
   }
@@ -627,7 +678,6 @@ h1 {
     width: 304px;
     height: 241px;
     position: absolute;
-    bottom: 0;
     right: 40px;
   }
   .right-header-container {
@@ -641,10 +691,28 @@ h1 {
   .elipse {
     width: 534px;
     height: 534px;
-    bottom: 60px;
+    bottom: 40px;
   }
   .milk-description {
     position: absolute;
     left: 250px;
+  }
+
+  .menu-pc {
+    display: flex;
+    gap: 35px;
+  }
+
+  .menu-pc .link:hover,
+  .menu-pc .link:active {
+    color: var(--Brand-color);
+  }
+
+  .menu-pc li {
+    padding: 13px 0 13px 20px;
+    font-size: 1em;
+    font-weight: 700px;
+    color: var(--general-white);
+    font-family: var(--general-font);
   }
 }
