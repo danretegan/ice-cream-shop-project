@@ -1,8 +1,9 @@
 @import './_common.css';
-/* @import './hero-section.css'; */
-/* @import './products.css'; */
+@import './hero-section.css';
+@import './products.css';
 @import './about-and-advantages.css';
-/* @import './gallery.css'; */
-/* @import './customer-reviews.css'; */
-/* @import './contacts.css'; */
-/* @import './footer.css'; */
+@import './gallery.css';
+@import './customer-reviews.css';
+@import './contacts.css';
+@import './footer.css';
+html { scroll-behavior: smooth; }
