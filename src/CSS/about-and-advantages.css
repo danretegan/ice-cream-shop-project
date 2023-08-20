@@ -172,6 +172,28 @@
   .how-is-made-cards {
     display: flex;
     width: 100%;
+    padding: 32px;
+    gap: 20px;
+  }
+
+  .milk-card::before {
+    content: url(../images/milk-icon-t.png);
+    /* height: 50px;
+    width: 50px; */
+  }
+
+  .apple-card::before {
+    content: url(../images/apple-icon-t.png);
+  }
+
+  .icecream-card::before {
+    content: url(../images/icecream-icon-t.png);
+  }
+
+  .card-heading {
+    font-size: 48px;
+    margin-top: 36px;
+    margin-bottom: 13px;
   }
 
   .card-paragraph {
@@ -180,12 +202,18 @@
   }
 
   .card-paragraph-1 {
-    width: 165px;
+    width: 90%;
     height: 113px;
+    margin-bottom: 0;
   }
 
   .card-paragraph-2 {
-    width: 162px;
+    width: 100%;
+    height: 94px;
+  }
+
+  .card-paragraph-3 {
+    width: 100%;
     height: 94px;
   }
 }
