@@ -216,10 +216,10 @@ header {
   transform: translateY(-3px);
   transition: var(--transition);
 }
-.submit-btn:active{
+.submit-btn:active {
   scale: 95%;
   background: var(--general-white);
-  }
+}
 
 .hero-buttons {
   display: flex;
@@ -255,12 +255,10 @@ header {
   transition: var(--transition);
 }
 
-.hero-btn:active{
-scale: 95%;
-background: var(--general-white);
+.hero-btn:active {
+  scale: 95%;
+  background: var(--general-white);
 }
-
-
 
 .hero-btn-red {
   background: var(--Brand-color);
@@ -290,10 +288,10 @@ background: var(--general-white);
   transition: var(--transition);
 }
 
-.hero-btn-red:active{
+.hero-btn-red:active {
   scale: 95%;
   background: var(--Brand-color);
-  }
+}
 
 .arrow-icon {
   height: 8px;
@@ -444,9 +442,7 @@ background: var(--general-white);
   color: #fff;
   font-family: var(--heading-font);
   font-size: 26px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   letter-spacing: 1.04px;
   text-transform: uppercase;
   margin: 0;
@@ -456,7 +452,6 @@ background: var(--general-white);
   color: var(--Brand-color);
   font-family: var(--heading-font);
   font-size: 48px;
-  font-style: normal;
   font-weight: 400;
   line-height: 96.5%;
   text-transform: uppercase;
@@ -511,7 +506,6 @@ background: var(--general-white);
     width: 124px;
     font-family: var(--general-font);
     font-size: 10px;
-    font-style: normal;
     font-weight: 400;
     line-height: 12px;
   }
@@ -539,9 +533,7 @@ background: var(--general-white);
     font-family: var(--heading-font);
     color: var(--Brand-color);
     font-size: 34px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: 1.84px;
     padding-right: 10px;
   }
@@ -549,9 +541,7 @@ background: var(--general-white);
     color: var(--general-white);
     font-family: var(--general-font);
     font-size: 10px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     padding-right: 10px;
   }
   .girl-icecream {
@@ -665,7 +655,6 @@ background: var(--general-white);
     width: 200px;
     font-family: var(--general-font);
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 20px;
   }
