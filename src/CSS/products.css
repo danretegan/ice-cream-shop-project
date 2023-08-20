@@ -20,11 +20,12 @@ top: 562px;
 left: 89px;
 font-family: var(--heading-font);
 font-size: 18px;
-font-weight: 900;
+font-weight: 400;
 line-height: 21px;
 letter-spacing: 0em;
 text-align: center;
 color: #FFA5BA;
+text-transform: uppercase;
 }
 .products-title{
 height: 36px;
@@ -87,7 +88,7 @@ color: #FFFFFF;
     margin-left: 120px;
 }
 .paragraph-strawberry{
-    font-family: 'DM Sans', cursive;
+    font-family: 'DM Sans', sans-serif;
 font-size: 14px;
 font-weight: 700;
 line-height: 21px;
@@ -106,8 +107,8 @@ padding-left: 30px;
     position: absolute;
     width: 40px;
     height: 40px;
-    top: 420px;
-    left: 120px;
+    top: 408px;
+    left: 117px;
 }
 
 .rectangle-2{
@@ -143,7 +144,7 @@ color: #FFFFFF;
 }
 
 .paragraph-coffee{
-    font-family: 'DM Sans', cursive;
+    font-family: 'DM Sans', sans-serif;
 font-size: 14px;
 font-weight: 700;
 line-height: 21px;
@@ -189,7 +190,7 @@ color: #FFFFFF;
 }
 
 .paragraph-milkshake{
-    font-family: 'DM Sans', cursive;
+    font-family: 'DM Sans', sans-serif;
 font-size: 14px;
 font-weight: 700;
 line-height: 21px;
@@ -213,27 +214,28 @@ padding-left: 30px;
     }
         
         .product-title{ 
-        height: 30px;
         top: 562px;
         left: 89px;
-        font-family: 'Titan One', cursive;
-        font-size: 18px;
-        font-weight: 900;
-        line-height: 21px;
+        font-family: var(--heading-font);
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 30px;
         letter-spacing: 0em;
         text-align: center;
         color: #FFA5BA;
+        text-transform: uppercase;
         }
         .products-title{
         height: 55px;
         top: 598px;
         left: 59px;
-        font-family: 'Titan One', cursive;
-        font-size: 34px;
-        font-weight: 900;
-        line-height: 39px;
+        font-family: var(--heading-font);
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 55px;
         letter-spacing: 0.04em;
         text-align: center;
+
         color: #D41443;
         }
 
@@ -241,7 +243,8 @@ padding-left: 30px;
     .products-shown{
         display: flex;
         justify-content: center;
-        padding-top: 60px;
+        padding-top: 37px;
+        margin-right: 40px;
     }
     .rectangle
     {
@@ -286,7 +289,7 @@ padding-left: 30px;
         margin-left: 100px;
     }
     .paragraph-strawberry{
-        font-family: 'DM Sans', cursive;
+        font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -305,8 +308,8 @@ padding-left: 30px;
         position: absolute;
         width: 40px;
         height: 40px;
-        top: 420px;
-        left: 95px;
+        top: 403px;
+        left: 90px;
     }
     
     .rectangle-2{
@@ -314,7 +317,6 @@ padding-left: 30px;
         width: 224px;
         height: 473px;
         top: 82px;
-        left: 10px;
         border-radius: 24px;    
         background: #F0D1A5
     }
@@ -342,7 +344,7 @@ padding-left: 30px;
     }
     
     .paragraph-coffee{
-        font-family: 'DM Sans', cursive;
+        font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -362,7 +364,7 @@ padding-left: 30px;
         width: 224px;
         height: 473px;
         top: 82px;
-        left: 20px;
+        left: 40px;
         border-radius: 24px;    
         background: #C2E297
     }
@@ -388,7 +390,7 @@ padding-left: 30px;
     }
     
     .paragraph-milkshake{
-        font-family: 'DM Sans', cursive;
+        font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
@@ -450,7 +452,7 @@ text-align: center;
         width: 368px;
         height: 535px;
         top: 82px;
-        left: 0px;
+        left: -20px;
         border-radius: 24px;
         background: #FFB8CA;
         
@@ -460,19 +462,19 @@ text-align: center;
         width: 368px;
     height: 394px;
     position: absolute;
-    bottom: 350px;
+    bottom: 388px;
     }
     
     .strawberry-title{
         width: 368px;
         height: 34px;
-        top: 219px;
-        left: 10px;
+        top: 150px;
+        left: 0px;
         position: absolute;
-        font-family: 'Titan One', cursive;
-        font-size: 20px;
+        font-family: var(--heading-font);
+        font-size: 30px;
         font-weight: 400;
-        line-height: 23px;
+        line-height: 34px;
         letter-spacing: 0.04em;
         text-align: center;
         color: #FFFFFF;
@@ -483,11 +485,11 @@ text-align: center;
             height: 6px;
             top: 997px;
             left: 147px;
-            margin-top: 290px;
+            margin-top: 250px;
             margin-left: 175px;
     }
     .paragraph-strawberry{
-        font-family: DM Sans;
+        font-family: 'DM Sans', sans-serif;
 font-size: 16px;
 font-weight: 700;
 line-height: 28px;
@@ -500,14 +502,14 @@ height: 134px;
     top: 1035px;
     left: 52px;
     padding-left: 30px;
-        padding-top: 20px;
+    padding-top: 10px;
     }
     
     .arrow-right{
         position: absolute;
     width: 40px;
     height: 40px;
-    top: 468px;
+    top: 440px;
     left: 166px;
     }
     
@@ -525,26 +527,26 @@ height: 134px;
         width: 368px;
     height: 394px;
     position: absolute;
-    bottom: 350px;
+    bottom: 388px;
     }
     
     .coffee-title{
             width: 368px;
             height: 34px;
-            top: 219px;
-            left: 10px;
+            top: 150px;
+            left: 0px;
             position: absolute;
-            font-family: 'Titan One', cursive;
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 23px;
-            letter-spacing: 0.04em;
-            text-align: center;
+            font-family: var(--heading-font);
+            font-size: 30px;
+        font-weight: 400;
+        line-height: 34px;
+        letter-spacing: 0.04em;
+        text-align: center;
             color: #FFFFFF;
     }
     
     .paragraph-coffee{
-        font-family: DM Sans;
+        font-family: 'DM Sans', sans-serif;
 font-size: 16px;
 font-weight: 700;
 line-height: 28px;
@@ -557,7 +559,7 @@ height: 134px;
     top: 1035px;
     left: 52px;
     padding-left: 30px;
-        padding-top: 20px;
+    padding-top: 10px;
     }
     
     .rectangle-3{
@@ -565,7 +567,6 @@ height: 134px;
         width: 368px;
         height: 535px;
         top: 82px;
-        left: 20px;
         border-radius: 24px;    
         background: #C2E297
     }
@@ -573,25 +574,25 @@ height: 134px;
         width: 368px;
     height: 394px;
     position: absolute;
-    bottom: 350px;
+    bottom: 388px;
     }
     .milkshake-title{
         width: 368px;
         height: 34px;
-        top: 219px;
-        left: 10px;
+        top: 150px;
+        left: 0px;
         position: absolute;
-        font-family: 'Titan One', cursive;
-        font-size: 20px;
+        font-family: var(--heading-font);
+        font-size: 30px;
         font-weight: 400;
-        line-height: 23px;
+        line-height: 34px;
         letter-spacing: 0.04em;
         text-align: center;
         color: #FFFFFF;
     }
     
     .paragraph-milkshake{
-        font-family: DM Sans;
+        font-family: 'DM Sans', sans-serif;
 font-size: 16px;
 font-weight: 700;
 line-height: 28px;
@@ -604,7 +605,7 @@ height: 134px;
     top: 1035px;
     left: 52px;
     padding-left: 30px;
-        padding-top: 20px;
+    padding-top: 10px;
     }}
 
 
