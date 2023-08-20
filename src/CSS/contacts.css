@@ -1,4 +1,4 @@
-:root{
+:root {
   --section-background-color: #FFF5F6;
   --general-font: 'DM Sans', sans-serif;
   --general-font-grey: #907E82;
@@ -11,7 +11,8 @@
   --Brand-color: #d41443;
   --general-white: #fff;
   --food-color: #C2E297;
-/* Brand color : #D41443
+
+  /* 
   Ice cream color: #FFB8CA;
   General white: #FFF
   Adaugativa doar variabilele de care aveti nevoie pentru sectiunea voastra. Asa vom evita conflictele.
@@ -84,7 +85,8 @@ hr .sprite-section {
   font-weight: 500;
   line-height: 86%;
   letter-spacing: 0.48px;
-  line-height: 186%; /* 22.32px */
+  line-height: 186%;
+  /* 22.32px */
   border-radius: 4px;
   color: #fff;
 }
@@ -101,7 +103,8 @@ hr .sprite-section {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 186%; /* 22.32px */
+  line-height: 186%;
+  /* 22.32px */
   letter-spacing: 0.48px;
 }
 
@@ -111,7 +114,8 @@ hr .sprite-section {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 18px; /* 150% */
+  line-height: 18px;
+  /* 150% */
   letter-spacing: 0.48px;
   width: 208px;
   height: 36px;
@@ -123,7 +127,8 @@ hr .sprite-section {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 186%; /* 22.32px */
+  line-height: 186%;
+  /* 22.32px */
 }
 
 .work-program {
@@ -132,7 +137,8 @@ hr .sprite-section {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 186%; /* 22.32px */
+  line-height: 186%;
+  /* 22.32px */
 }
 
 .color-fonts {
@@ -143,18 +149,21 @@ hr .sprite-section {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 18px; /* 150% */
+  line-height: 18px;
+  /* 150% */
 }
 
 .contacts {
   margin-top: 50px;
   line-height: 18px;
   transition: var(--transition);
-} 
+}
 
-.contacts:hover {
+.color-fonts:hover,
+.color-fonts:focus {
+  color: var(--Brand-color);
   cursor: pointer;
-  color: var(--general-font-black);
+  transition: var(--transition);
 }
 
 .image-block-foodtruck {
@@ -174,7 +183,8 @@ hr .sprite-section {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 186%; /* 22.32px */
+  line-height: 186%;
+  /* 22.32px */
   letter-spacing: 0.48px;
   border-radius: 4px;
 }
@@ -194,7 +204,7 @@ hr .sprite-section {
   color: #FFF;
 }
 
-.button-locations > svg {
+.button-locations>svg {
   color: #FFF;
   width: 3.61px;
   height: 8px;
@@ -210,7 +220,7 @@ hr .sprite-section {
   color: #D41342;
 }
 
-.button-Franchise > svg {
+.button-Franchise>svg {
   stroke-width: 2px;
   stroke: #D41443;
   width: 3.6px;
@@ -236,7 +246,7 @@ hr .sprite-section {
   justify-content: center;
   align-items: center;
   gap: 8px;
-} 
+}
 
 .submit-btn-top:hover,
 .submit-btn-top:focus {
@@ -257,7 +267,7 @@ hr .sprite-section {
   font-size: 16px;
   height: 44px;
   padding: 0 max(43px);
-  
+
 }
 
 .submit-btn-content {
@@ -272,7 +282,7 @@ hr .sprite-section {
   background: #ecebeb;
   transform: translateY(-3px);
   transition: var(--transition);
-}  
+}
 
 
 /* Tablet Section */
@@ -280,52 +290,52 @@ hr .sprite-section {
 
 @media screen and (min-width: 768px) {
 
-.contacts-section {
-  display: block;
-  flex-direction: column;
-  height: auto;
-  padding: 0px 16px;
-  margin: 0;
-}
+  .contacts-section {
+    display: block;
+    flex-direction: column;
+    height: auto;
+    padding: 0px 16px;
+    margin: 0;
+  }
 
-.cards-section {
-  flex-direction: row;
-  gap: 32px;
-  width: 100%;
-  padding: 0;
-}
+  .cards-section {
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
+    padding: 0;
+  }
 
-.details {
-  width: 95%;
-  height: 65px;
-}
+  .details {
+    width: 95%;
+    height: 65px;
+  }
 
-hr .sprite-section {
-  border: 1px solid #E1E1E1;
-  stroke-width: 1px;
-  width: 216px;
-  height: 0px;
-  flex-shrink: 0;
-}
+  hr .sprite-section {
+    border: 1px solid #E1E1E1;
+    stroke-width: 1px;
+    width: 216px;
+    height: 0px;
+    flex-shrink: 0;
+  }
 
-.menu-section {
-  display: block;
-  width: 90%;
-  height: 412px;
-}
+  .menu-section {
+    display: block;
+    width: 90%;
+    height: 412px;
+  }
 
-.button-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 14.5px;
-  margin-top: 60px;
-}
+  .button-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14.5px;
+    margin-top: 60px;
+  }
 
-.contacts {
-  line-height: 25.62px;
-}
+  .contacts {
+    line-height: 25.62px;
+  }
 }
 
 
@@ -333,51 +343,51 @@ hr .sprite-section {
 
 @media screen and (min-width: 1280px) {
 
-.menu-section {
-  display: block;
-  width: 368px;
-  height: 538px;
-  flex-shrink: 0;
-}
+  .menu-section {
+    display: block;
+    width: 368px;
+    height: 538px;
+    flex-shrink: 0;
+  }
 
-.image-block {
-  width: 73px;
-  height: 28px;
-  flex-shrink: 0;
-}
+  .image-block {
+    width: 73px;
+    height: 28px;
+    flex-shrink: 0;
+  }
 
-.city-locations {
-  width: 74px;
-  height: 30px;
-}
+  .city-locations {
+    width: 74px;
+    height: 30px;
+  }
 
-.details {
-  width: 276px;
-  height: 50px;
-  flex-shrink: 0;
-}
+  .details {
+    width: 276px;
+    height: 50px;
+    flex-shrink: 0;
+  }
 
-.sprite-section {
-  width: 288px;
-  height: 0px;
-  flex-shrink: 0;
-}
+  .sprite-section {
+    width: 288px;
+    height: 0px;
+    flex-shrink: 0;
+  }
 
-.weekdays {
-  width: 134px;
-  height: 30px;
-}
+  .weekdays {
+    width: 134px;
+    height: 30px;
+  }
 
-.work-program {
-  width: 163px;
-  height: 30px;
-}
+  .work-program {
+    width: 163px;
+    height: 30px;
+  }
 
-.weekends {
-  width: 152px;
-}
+  .weekends {
+    width: 152px;
+  }
 
-.contacts {
-  line-height: 29.28px;
-}
+  .contacts {
+    line-height: 29.28px;
+  }
 }
