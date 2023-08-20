@@ -175,17 +175,22 @@
   }
 
   .how-is-made-paragraphs-section .p-1 {
-    width: 100%;
+    width: 334px;
+    font-size: 14px;
+    letter-spacing: 0.56px;
   }
 
   .how-is-made-paragraphs-section .p-2 {
-    width: 100%;
+    width: 334px;
+    font-size: 14px;
+    letter-spacing: 0.56px;
   }
 
   .how-is-made-cards {
     display: flex;
     width: 100%;
-    /* gap: 29px; */
+    gap: 19px;
+    padding-left: 32px;
   }
 
   .milk-card::before {
@@ -208,23 +213,20 @@
   }
 
   .card-paragraph {
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 0.28px;
   }
 
   .card-paragraph-1 {
-    width: 90%;
-    height: 113px;
+    width: 165px;
     margin-bottom: 0;
   }
 
   .card-paragraph-2 {
-    width: 100%;
-    height: 94px;
+    width: 162px;
   }
 
   .card-paragraph-3 {
-    width: 100%;
-    height: 94px;
+    width: 195px;
   }
 }
