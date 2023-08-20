@@ -1,36 +1,46 @@
-:root{
+:root {
   --section-background-color: #FFF5F6;
   --general-font: 'DM Sans', sans-serif;
   --general-font-grey: #907E82;
   --general-pink: #FFA5BA;
   --general-font-black: #000;
   --coffe-color: #F0D1A5;
-
   --heading-font: 'Titan One', cursive;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --Ice-cream-color: #ffb8ca;
   --Brand-color: #d41443;
   --general-white: #fff;
   --food-color: #C2E297;
-/* Brand color : #D41443
+
+  /* 
   Ice cream color: #FFB8CA;
-  
   General white: #FFF
-  adad22 — Today at 4:42 AM    
-  adad22 — Today at 6:25 AM
   Adaugativa doar variabilele de care aveti nevoie pentru sectiunea voastra. Asa vom evita conflictele.
-  adad22 — Today at 6:46 AM
   --heading-font: 'Titan One', cursive; */
+}
+
+* {
+  box-sizing: 'Border-box';
+}
+
+a {
+  cursor: pointer;
 }
 
 .contacts-section {
   background: var(--section-background-color);
-  height: auto;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  height: auto;
+}
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 a:-webkit-any-link {
@@ -39,29 +49,22 @@ a:-webkit-any-link {
 }
 
 .menu-section {
+  display: block;
   width: 280px;
   height: 412px;
   border-radius: 24px;
   background: var(--section-background-color);
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
   padding: 40px 32px;
-  
+  margin-bottom: 20px;
 }
 
-.sprite-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 24px;
-}
-
-.vector-icon {
+hr .sprite-section {
+  border: 1px solid #E1E1E1;
+  stroke-width: 1px;
   width: 216px;
-  height: 1px;
-}
-
-.vector-icon > svg {
-  stroke: #E1E1E1;
+  height: 0px;
+  flex-shrink: 0;
 }
 
 .image-block {
@@ -70,7 +73,6 @@ a:-webkit-any-link {
   height: 16px;
   flex-direction: column;
   justify-content: center;
-  flex-shrink: 0;
 }
 
 .crawler-cafe {
@@ -83,7 +85,8 @@ a:-webkit-any-link {
   font-weight: 500;
   line-height: 86%;
   letter-spacing: 0.48px;
-  line-height: 22.32px;
+  line-height: 186%;
+  /* 22.32px */
   border-radius: 4px;
   color: #fff;
 }
@@ -91,7 +94,6 @@ a:-webkit-any-link {
 .cafe-icon {
   fill: #fff;
   background: var(--coffe-color);
-  
 }
 
 .city-locations {
@@ -101,7 +103,8 @@ a:-webkit-any-link {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 186%; /* 22.32px */
+  line-height: 186%;
+  /* 22.32px */
   letter-spacing: 0.48px;
 }
 
@@ -111,8 +114,11 @@ a:-webkit-any-link {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 18px; /* 150% */
+  line-height: 18px;
+  /* 150% */
   letter-spacing: 0.48px;
+  width: 208px;
+  height: 36px;
 }
 
 .weekdays {
@@ -121,7 +127,8 @@ a:-webkit-any-link {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 186%; /* 22.32px */
+  line-height: 186%;
+  /* 22.32px */
 }
 
 .work-program {
@@ -130,7 +137,8 @@ a:-webkit-any-link {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 186%; /* 22.32px */
+  line-height: 186%;
+  /* 22.32px */
 }
 
 .color-fonts {
@@ -141,35 +149,50 @@ a:-webkit-any-link {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 18px; /* 150% */
+  line-height: 18px;
+  /* 150% */
 }
 
 .contacts {
   margin-top: 50px;
-} 
+  line-height: 18px;
+  transition: var(--transition);
+}
 
-.crawler-foodtruck {
-  margin-bottom: 20px;
+.color-fonts:hover,
+.color-fonts:focus {
+  color: var(--Brand-color);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.image-block-foodtruck {
   display: flex;
   width: 130px;
   height: 16px;
   flex-direction: column;
   justify-content: center;
-  flex-shrink: 0;
-  color: #FFF;
+}
+
+.crawler-foodtruck {
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: var(--food-color);
   text-align: center;
-  font-family: DM Sans;
+  font-family: var(--general-font);
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 186%; /* 22.32px */
+  line-height: 186%;
+  /* 22.32px */
   letter-spacing: 0.48px;
+  border-radius: 4px;
 }
 
-.foodtruck-icon {
-  fill: #fff;
-  background: var(--food-color);
-  border-radius: 4px;
+.button-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .button-locations {
@@ -181,17 +204,12 @@ a:-webkit-any-link {
   color: #FFF;
 }
 
-.button-locations > svg {
+.button-locations>svg {
   color: #FFF;
   width: 3.61px;
   height: 8px;
   flex-shrink: 0;
   stroke-width: 2px;
-  /* stroke: #FFF; */
-}
-
-.vector-one {
-  color: #FFF;
 }
 
 .button-Franchise {
@@ -202,7 +220,7 @@ a:-webkit-any-link {
   color: #D41342;
 }
 
-.button-Franchise > svg {
+.button-Franchise>svg {
   stroke-width: 2px;
   stroke: #D41443;
   width: 3.6px;
@@ -228,7 +246,7 @@ a:-webkit-any-link {
   justify-content: center;
   align-items: center;
   gap: 8px;
-} 
+}
 
 .submit-btn-top:hover,
 .submit-btn-top:focus {
@@ -249,6 +267,7 @@ a:-webkit-any-link {
   font-size: 16px;
   height: 44px;
   padding: 0 max(43px);
+
 }
 
 .submit-btn-content {
@@ -263,38 +282,112 @@ a:-webkit-any-link {
   background: #ecebeb;
   transform: translateY(-3px);
   transition: var(--transition);
-}  
+}
+
 
 /* Tablet Section */
 
+
 @media screen and (min-width: 768px) {
 
-.contacts-section {
-  display: flex;
-  flex-direction: column;
+  .contacts-section {
+    display: block;
+    flex-direction: column;
+    height: auto;
+    padding: 0px 16px;
+    margin: 0;
+  }
+
+  .cards-section {
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .details {
+    width: 95%;
+    height: 65px;
+  }
+
+  hr .sprite-section {
+    border: 1px solid #E1E1E1;
+    stroke-width: 1px;
+    width: 216px;
+    height: 0px;
+    flex-shrink: 0;
+  }
+
+  .menu-section {
+    display: block;
+    width: 90%;
+    height: 412px;
+  }
+
+  .button-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14.5px;
+    margin-top: 60px;
+  }
+
+  .contacts {
+    line-height: 25.62px;
+  }
 }
 
-.cards-section {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-  margin: 0px;
-}
 
-.menu-section {
-  display: block;
-  height: auto;
-  width: 100%;
-}
-
-.button-section {
-  display: flex;
-  flex-direction: row;
-  gap: 14.5px;
-}
-}
-
+/* desktop section */
 
 @media screen and (min-width: 1280px) {
 
+  .menu-section {
+    display: block;
+    width: 368px;
+    height: 538px;
+    flex-shrink: 0;
+  }
+
+  .image-block {
+    width: 73px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+
+  .city-locations {
+    width: 74px;
+    height: 30px;
+  }
+
+  .details {
+    width: 276px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+
+  .sprite-section {
+    width: 288px;
+    height: 0px;
+    flex-shrink: 0;
+  }
+
+  .weekdays {
+    width: 134px;
+    height: 30px;
+  }
+
+  .work-program {
+    width: 163px;
+    height: 30px;
+  }
+
+  .weekends {
+    width: 152px;
+  }
+
+  .contacts {
+    line-height: 29.28px;
+  }
 }
