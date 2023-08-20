@@ -1,0 +1,300 @@
+:root{
+  --section-background-color: #FFF5F6;
+  --general-font: 'DM Sans', sans-serif;
+  --general-font-grey: #907E82;
+  --general-pink: #FFA5BA;
+  --general-font-black: #000;
+  --coffe-color: #F0D1A5;
+
+  --heading-font: 'Titan One', cursive;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --Ice-cream-color: #ffb8ca;
+  --Brand-color: #d41443;
+  --general-white: #fff;
+  --food-color: #C2E297;
+/* Brand color : #D41443
+  Ice cream color: #FFB8CA;
+  
+  General white: #FFF
+  adad22 — Today at 4:42 AM    
+  adad22 — Today at 6:25 AM
+  Adaugativa doar variabilele de care aveti nevoie pentru sectiunea voastra. Asa vom evita conflictele.
+  adad22 — Today at 6:46 AM
+  --heading-font: 'Titan One', cursive; */
+}
+
+.contacts-section {
+  background: var(--section-background-color);
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-section {
+  width: 280px;
+  height: 412px;
+  border-radius: 24px;
+  background: var(--section-background-color);
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+  padding: 40px 32px;
+  
+}
+
+.sprite-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.vector-icon {
+  width: 216px;
+  height: 1px;
+}
+
+.vector-icon > svg {
+  stroke: #E1E1E1;
+}
+
+.image-block {
+  display: flex;
+  width: 80px;
+  height: 16px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.crawler-cafe {
+  margin-bottom: 20px;
+  background-color: var(--coffe-color);
+  text-align: center;
+  font-family: var(--general-font);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 86%;
+  letter-spacing: 0.48px;
+  line-height: 22.32px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.cafe-icon {
+  fill: #fff;
+  background: var(--coffe-color);
+  
+}
+
+.city-locations {
+  margin-bottom: 8px;
+  color: var(--general-font-black);
+  font-family: var(--general-font);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%; /* 22.32px */
+  letter-spacing: 0.48px;
+}
+
+.details {
+  color: var(--general-font-grey);
+  font-family: var(--general-font);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 150% */
+  letter-spacing: 0.48px;
+}
+
+.weekdays {
+  color: var(--general-font-black);
+  font-family: var(--general-font);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%; /* 22.32px */
+}
+
+.work-program {
+  color: var(--general-pink);
+  font-family: var(--general-font);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%; /* 22.32px */
+}
+
+.color-fonts {
+  display: flex;
+  flex-direction: column;
+  color: var(--general-font-grey);
+  font-family: var(--general-font);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 150% */
+}
+
+.contacts {
+  margin-top: 50px;
+} 
+
+.crawler-foodtruck {
+  margin-bottom: 20px;
+  display: flex;
+  width: 130px;
+  height: 16px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #FFF;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%; /* 22.32px */
+  letter-spacing: 0.48px;
+}
+
+.foodtruck-icon {
+  fill: #fff;
+  background: var(--food-color);
+  border-radius: 4px;
+}
+
+.button-locations {
+  width: 161.45px;
+  height: 44px;
+  cursor: pointer;
+  border-radius: 22px;
+  background: #D41342;
+  color: #FFF;
+}
+
+.button-locations > svg {
+  color: #FFF;
+  width: 3.61px;
+  height: 8px;
+  flex-shrink: 0;
+  stroke-width: 2px;
+  /* stroke: #FFF; */
+}
+
+.vector-one {
+  color: #FFF;
+}
+
+.button-Franchise {
+  width: 161px;
+  height: 44px;
+  border-radius: 22px;
+  background: #FFF;
+  color: #D41342;
+}
+
+.button-Franchise > svg {
+  stroke-width: 2px;
+  stroke: #D41443;
+  width: 3.6px;
+  height: 8px;
+}
+
+.submit-btn-top {
+  background: #D41342;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  font: var(--general-font);
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+  height: 44px;
+  padding: 0 max(43px);
+}
+
+.submit-btn-content-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+} 
+
+.submit-btn-top:hover,
+.submit-btn-top:focus {
+  background: #D41342;
+  transform: translateY(-3px);
+  transition: var(--transition);
+}
+
+.submit-btn {
+  background: #fff;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  font: var(--general-font);
+  color: var(--Brand-color);
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+  height: 44px;
+  padding: 0 max(43px);
+}
+
+.submit-btn-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background: #ecebeb;
+  transform: translateY(-3px);
+  transition: var(--transition);
+}  
+
+/* Tablet Section */
+
+@media screen and (min-width: 768px) {
+
+.contacts-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-section {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin: 0px;
+}
+
+.menu-section {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: row;
+  gap: 14.5px;
+}
+}
+
+
+@media screen and (min-width: 1280px) {
+
+}
