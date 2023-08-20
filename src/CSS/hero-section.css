@@ -136,10 +136,6 @@ ul {
   padding: 0;
 }
 
-body {
-  margin: 0;
-}
-
 header {
   height: 502px;
   width: 100%;
@@ -627,7 +623,6 @@ h1 {
     width: 304px;
     height: 241px;
     position: absolute;
-    bottom: 0;
     right: 40px;
   }
   .right-header-container {
