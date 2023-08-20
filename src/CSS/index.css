@@ -6,3 +6,4 @@
 /* @import './customer-reviews.css'; */
 @import './contacts.css';
 @import './footer.css';
+html { scroll-behavior: smooth; }
