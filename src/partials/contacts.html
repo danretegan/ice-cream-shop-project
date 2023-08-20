@@ -82,7 +82,11 @@
     </div>
 
     <div class="button-section">
-        <button type="submit" class="submit-btn-top">
+        <button 
+            type="submit" 
+            class="submit-btn-top" 
+            data-modal-open
+            >
             <span class="submit-btn-content-top">
                 Our Locations
                 <svg xmlns="http://www.w3.org/2000/svg" width="7" height="10" viewBox="0 0 7 10" fill="none">
@@ -100,5 +104,17 @@
             </span>
         </button>
     </div>
-
 </section>
+
+
+<!-- Modal Section  -->
+
+<div class="modal-content-map is-open" data-modal>
+    <div class="modal-content-map">
+        <button class="close-btn-map" data-modal-close>&times;</button>
+        continutul modalului
+    </div>
+</div>
+
+<script src="/node_modules/source-map/dist/source-map.js">
+</script>

@@ -54,11 +54,16 @@ a:-webkit-any-link {
   display: block;
   width: 280px;
   height: 412px;
+
+  padding: 40px 32px;
+  margin-bottom: 20px;
+}
+
+.menu-section:hover {
+  cursor: pointer;
   border-radius: 24px;
   background: var(--section-background-color);
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
-  padding: 40px 32px;
-  margin-bottom: 20px;
 }
 
 hr .sprite-section {
