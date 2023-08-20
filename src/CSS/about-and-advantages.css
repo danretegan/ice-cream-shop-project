@@ -17,7 +17,7 @@
 
 .about-and-advantages {
   background-color: var(--section-background-color);
-  height: 1568px;
+  height: 1564px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -160,6 +160,10 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) {
+  .about-and-advantages {
+    height: 1092px;
+  }
+
   .content {
     width: 768px;
     padding-left: 0;
@@ -228,5 +232,73 @@
 
   .card-paragraph-3 {
     width: 195px;
+  }
+}
+
+/* Dekstop */
+
+@media screen and (min-width: 1280px) {
+  .about-and-advantages {
+    height: 1229px;
+  }
+
+  .content {
+    width: 1200px;
+  }
+
+  .first-section-head {
+    letter-spacing: 1.2px;
+    font-size: 30px;
+  }
+
+  .second-section-head {
+    letter-spacing: 3.48px;
+    font-size: 58px;
+  }
+
+  .how-is-made-section {
+    background-image: url(../images/milk-bg-d.png);
+    gap: 99px;
+  }
+
+  .how-is-made-paragraphs-section .p-1 {
+    letter-spacing: 0.64px;
+    font-size: 16px;
+    width: 400px;
+    line-height: 176%;
+  }
+
+  .how-is-made-paragraphs-section .p-2 {
+    letter-spacing: 0.56px;
+    line-height: 194%;
+    width: 401px;
+  }
+
+  .how-is-made-cards {
+    gap: 115px;
+    padding-left: 16px;
+  }
+
+  .card-heading {
+    font-size: 58px;
+    letter-spacing: 2.32px;
+  }
+
+  .card-paragraph {
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    line-height: 176%;
+  }
+
+  .card-paragraph-1 {
+    width: 288px;
+  }
+
+  .card-paragraph-2 {
+    width: 318px;
+  }
+
+  .card-paragraph-3 {
+    width: 288px;
   }
 }
