@@ -21,12 +21,19 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-.how-is-made-section {
-  width: 280px;
+  width: 100%;
 }
 
-.how-is-made-section h3 {
+.content {
+  width: 320px;
+  padding-left: 20px;
+}
+
+.section-head {
+  width: 100%;
+}
+
+.first-section-head {
   font-family: var(--heading-font);
   color: var(--general-pink);
   text-align: center;
@@ -37,7 +44,7 @@
   margin-bottom: 15px;
 }
 
-.how-is-made-section h2 {
+.second-section-head {
   color: var(--brand-color);
   text-align: center;
   font-family: var(--heading-font);
@@ -46,6 +53,10 @@
   letter-spacing: 1.36px;
   text-transform: uppercase;
   margin-bottom: 32px;
+}
+
+.how-is-made-section {
+  width: 100%;
 }
 
 .how-is-made-paragraphs {
@@ -102,7 +113,7 @@
 }
 
 .how-is-made-cards {
-  width: 280px;
+  width: 100%;
 }
 
 .milk-card::before {
@@ -129,6 +140,7 @@
   color: var(--brand-color);
   font-family: var(--heading-font);
   font-size: 36px;
+  font-weight: 400;
   letter-spacing: 1.44px;
   text-transform: uppercase;
   margin-top: 16px;
@@ -148,11 +160,12 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .how-is-made-section {
-    width: 702px;
+  .content {
+    width: 768px;
+    padding-left: 0;
   }
 
-  .how-is-made-paragraphs-pos {
+  .how-is-made-section {
     display: flex;
     gap: 30px;
   }
@@ -172,14 +185,11 @@
   .how-is-made-cards {
     display: flex;
     width: 100%;
-    padding: 32px;
-    gap: 20px;
+    /* gap: 29px; */
   }
 
   .milk-card::before {
     content: url(../images/milk-icon-t.png);
-    /* height: 50px;
-    width: 50px; */
   }
 
   .apple-card::before {
@@ -194,6 +204,7 @@
     font-size: 48px;
     margin-top: 36px;
     margin-bottom: 13px;
+    letter-spacing: 1.92px;
   }
 
   .card-paragraph {
