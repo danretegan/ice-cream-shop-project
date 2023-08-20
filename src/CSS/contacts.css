@@ -23,6 +23,9 @@
   --heading-font: 'Titan One', cursive; */
 }
 
+* {
+  box-sizing: border-box;}
+
 .contacts-section {
   background: var(--section-background-color);
   height: auto;
@@ -262,20 +265,29 @@ a:-webkit-any-link {
   transition: var(--transition);
 }  
 
+
 /* Tablet Section */
+
 
 @media screen and (min-width: 768px) {
 
 .contacts-section {
   display: flex;
   flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding: 16px;
 }
 
 .cards-section {
   display: flex;
   flex-direction: row;
   gap: 32px;
-  margin: 0px;
+  width: 100%;
+  height: auto;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  overflow: auto;
 }
 
 .menu-section {
@@ -287,7 +299,10 @@ a:-webkit-any-link {
 .button-section {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 14.5px;
+  margin-top: 60px;
 }
 }
 
