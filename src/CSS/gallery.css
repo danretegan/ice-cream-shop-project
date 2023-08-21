@@ -15,6 +15,7 @@
 }
 
 .gallery-image {
+  height: auto;
   width: auto;
   flex-grow: 1;
 }
