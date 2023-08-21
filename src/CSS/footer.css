@@ -30,10 +30,10 @@ hr {
 .first-title {
   color: var(--general-pink);
   font-family: var(--heading-font);
-  width: 51%;
+  width: 40%;
   height: 42px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 21px;
 }
 .second-title {
   color: var(--brand-color);
@@ -41,9 +41,11 @@ hr {
   font-family: var(--heading-font);
   font-weight: 400;
   font-size: 35px;
-  display: flex;
   width: 54%;
   height: 76px;
+}
+.footer-title-letter-space {
+  padding-right: 10px;
 }
 .footer-icons {
   display: flex;
@@ -58,7 +60,7 @@ hr {
   height: 32px;
   fill: var(--general-pink);
   transition-property: fill;
-  transition-duration: 250ms;
+  transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-facebook:hover,
@@ -87,7 +89,7 @@ hr {
   font-weight: 700;
   line-height: 186%;
 }
-.rights-reserved {
+.copyright {
   color: var(--general-font-grey);
   text-align: center;
   font-family: var(--general-font);
@@ -126,16 +128,49 @@ hr {
   }
   .footer-phone-number {
     font-size: 14px;
-    padding-right: 20px;
+    padding-right: 35px;
   }
-  .rights-reserved {
+  .copyright {
     flex-direction: row;
     padding-left: 231px;
     gap: 7px;
   }
+
+  .footer-title,
+  .footer-title-ice-cream,
+  .footer-title-made,
+  .footer-title-letter,
+  .contact-footer-phone {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .second-title .footer-title-letter:hover {
+    transform: scale(1.2);
+  }
+
+  .footer-phone-number:hover .contact-footer-phone {
+    transform: scale(1.2) translateX(12px);
+  }
+  .contact-footer-phone {
+    display: inline-block;
+  }
+  .footer-title-word {
+    display: flex;
+  }
 }
 /* Desktop */
 @media screen and (min-width: 1158px) {
+  .footer-title-made,
+  .footer-title-ice-cream {
+    display: inline-block;
+  }
+  .footer-title:hover .footer-title-made {
+    transform: translate(-170px, 27px);
+    color: var(--brand-color);
+  }
+  .footer-title:hover .footer-title-ice-cream {
+    transform: translateX(55px);
+  }
   .footer-section {
     justify-content: center;
     justify-content: space-between;
@@ -152,11 +187,12 @@ hr {
     width: 100%;
     font-size: 58px;
     letter-spacing: 3.48px;
+    display: flex;
   }
   .footer-contact {
     padding-bottom: 14px;
   }
-  .rights-reserved {
-    padding-left: 491px;
+  .copyright-text {
+    padding-left: 291px;
   }
 }
