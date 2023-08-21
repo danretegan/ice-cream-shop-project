@@ -1,21 +1,17 @@
 * {
   box-sizing: border-box;
 }
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
-  margin-top: 60px;
-}
+
 .mySlides {
   display: none;
 }
 
-img {
+/* img {
   vertical-align: middle;
   position: relative;
 
   top: -12px;
-}
+} */
 .review-images {
   display: flex;
   flex-direction: row;
