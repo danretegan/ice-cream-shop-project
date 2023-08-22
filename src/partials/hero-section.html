@@ -13,7 +13,7 @@
       </svg>
     </button>
     <div class="menu-drawer-navigation">
-      <button type="submit" class="submit-btn">
+      <button data-modal-open-mobile type="button" class="submit-btn">
         <span class="submit-btn-content"
           >Buy now
           <svg
@@ -93,7 +93,7 @@
             <path d="M0 13H20" stroke="#D41443" />
           </svg>
         </button>
-        <button type="submit" class="submit-btn">
+        <button data-modal-open type="button" class="submit-btn">
           <span class="submit-btn-content"
             >Buy now
             <svg
@@ -192,5 +192,81 @@
       </div>
     </div>
   </div>
+  <!-- modal  -->
+  <div class="modal is-hidden" data-modal>
+    <div class="modal-content">
+      <button class="close-btn" data-modal-close>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+        >
+          <path
+            d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z"
+            fill="currentcolor"
+          />
+        </svg>
+      </button>
+      <form class="form">
+        <span class="form-title"
+          >Leave your information and we'll call you back</span
+        >
+        <label class="form-group">
+          <span>Name</span>
+          <input type="text" id="Name" />
+          <svg class="input-icon">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
+        </label>
+        <label class="form-group">
+          <span>Telephone</span>
+          <input type="tel" id="Telephone" />
+          <svg class="input-icon">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </label>
+        <label class="form-group">
+          <span>E-mail</span>
+          <input type="email" id="email" />
+          <svg class="input-icon">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+        </label>
+        <label class="form-group">
+          <span>Comments</span>
+          <textarea
+            id="comments"
+            cols="30"
+            rows="5"
+            placeholder="Enter the text"
+          ></textarea>
+        </label>
+        <label class="form-group terms-conditions-checkbox">
+          <input type="checkbox" name="checkbox" />
+          <div class="checkboxes">
+            <svg class="checkbox">
+              <use href="./images/icons.svg#icon-checkbox"></use>
+            </svg>
+            <svg class="checkbox-checked">
+              <use href="./images/icons.svg#icon-checkbox-checked"></use>
+            </svg>
+          </div>
+          <span class="terms-info"
+            >I agree with the letter and accept the
+            <a href="" class="terms-and-conditions"
+              >Terms and Conditions</a
+            ></span
+          >
+        </label>
+        <div class="form-group-btn">
+          <button type="submit" class="submit-btn">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <script src="./js/mobile-menu.js"></script>
+  <script src="/src/js/modal-buy-now.js"></script>
 </header>
