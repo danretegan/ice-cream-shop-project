@@ -300,6 +300,8 @@ hr .sprite-section {
 /* Modal Section */
 
 
+/* Our Locations Modal */
+
 .modal {
   position: fixed;
   top: 0;
@@ -435,6 +437,10 @@ label {
   border: 1px solid #F25C66;
   border-radius: 12px;
 }
+
+/* Franchise modal */
+
+
 
 /* Tablet Section */
 
