@@ -1,0 +1,198 @@
+:root {
+  --section-background-color: #fff5f6;
+  --general-pink: #ffa5ba;
+  --brand-color: #d41443;
+  --heading-font: 'Titan One', cursive;
+  --general-font: 'DM Sans', sans-serif;
+  --general-font-black: #000;
+  --general-font-grey: #907e82;
+}
+a {
+  text-decoration: none;
+}
+hr {
+  border-top: var(--general-font-grey);
+  width: 97%;
+}
+.footer-content {
+  background-color: var(--section-background-color);
+  width: 100%;
+}
+.footer-title {
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-top: 20px;
+}
+.first-title {
+  color: var(--general-pink);
+  font-family: var(--heading-font);
+  width: 40%;
+  height: 42px;
+  font-weight: 400;
+  font-size: 21px;
+}
+.second-title {
+  color: var(--brand-color);
+  letter-spacing: 1.36px;
+  font-family: var(--heading-font);
+  font-weight: 400;
+  font-size: 35px;
+  width: 54%;
+  height: 76px;
+}
+.footer-title-letter-space {
+  padding-right: 10px;
+}
+.footer-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 28px;
+  padding: 37px;
+}
+.footer-icon-facebook,
+.footer-icon-github,
+.footer-icon-telegram {
+  width: 32px;
+  height: 32px;
+  fill: var(--general-pink);
+  transition-property: fill;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-icon-facebook:hover,
+.footer-icon-github:hover,
+.footer-icon-telegram:hover {
+  fill: var(--brand-color);
+}
+.footer-contact {
+  padding-right: 27px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 32px;
+}
+.text-phone {
+  color: var(--general-font-black);
+  text-align: right;
+  font-family: var(--general-font);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 186%;
+}
+.footer-phone-number {
+  color: var(--brand-color);
+  font-family: var(--general-font);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 186%;
+}
+.copyright {
+  color: var(--general-font-grey);
+  text-align: center;
+  font-family: var(--general-font);
+  font-size: 14px;
+  line-height: 152%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  font-weight: 700;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+  }
+  .footer-title {
+    padding-right: 57px;
+    padding-bottom: 49px;
+  }
+  .first-title {
+    font-size: 26px;
+    letter-spacing: 1.04px;
+    width: 82%;
+  }
+  .second-title {
+    font-size: 48px;
+    letter-spacing: 2.88px;
+    width: 52%;
+  }
+  .footer-contact {
+    padding: 0px;
+    padding-bottom: 50px;
+  }
+  .footer-phone-number {
+    font-size: 14px;
+    padding-right: 35px;
+  }
+  .copyright {
+    flex-direction: row;
+    padding-left: 231px;
+    gap: 7px;
+  }
+
+  .footer-title,
+  .footer-title-ice-cream,
+  .footer-title-made,
+  .footer-title-letter,
+  .contact-footer-phone {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .second-title .footer-title-letter:hover {
+    transform: scale(1.2);
+  }
+
+  .footer-phone-number:hover .contact-footer-phone {
+    transform: scale(1.2) translateX(12px);
+  }
+  .contact-footer-phone {
+    display: inline-block;
+  }
+  .footer-title-word {
+    display: flex;
+  }
+}
+/* Desktop */
+@media screen and (min-width: 1158px) {
+  .footer-title-made,
+  .footer-title-ice-cream {
+    display: inline-block;
+  }
+  .footer-title:hover .footer-title-made {
+    transform: translate(-170px, 27px);
+    color: var(--brand-color);
+  }
+  .footer-title:hover .footer-title-ice-cream {
+    transform: translateX(55px);
+  }
+  .footer-section {
+    justify-content: center;
+    justify-content: space-between;
+  }
+  .footer-title {
+    gap: 16px;
+  }
+  .first-title {
+    width: 100%;
+    font-size: 30px;
+    letter-spacing: 1.2px;
+  }
+  .second-title {
+    width: 100%;
+    font-size: 58px;
+    letter-spacing: 3.48px;
+    display: flex;
+  }
+  .footer-contact {
+    padding-bottom: 14px;
+  }
+  .copyright-text {
+    padding-left: 291px;
+  }
+}
