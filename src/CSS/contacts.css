@@ -11,12 +11,11 @@
   --Brand-color: #d41443;
   --general-white: #fff;
   --food-color: #C2E297;
+  --heading-font: 'Titan One', cursive;
 
   /* 
-  Ice cream color: #FFB8CA;
-  General white: #FFF
   Adaugativa doar variabilele de care aveti nevoie pentru sectiunea voastra. Asa vom evita conflictele.
-  --heading-font: 'Titan One', cursive; */
+   */
 }
 
 * {
@@ -27,36 +26,38 @@ a {
   cursor: pointer;
 }
 
+a:-webkit-any-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .contacts-section {
-  background: var(--section-background-color);
+  background-color: var(--section-background-color);
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
   height: auto;
+  background: linear-gradient(to bottom, #fff 20%, #fff5f6 20%);
 }
 
 .cards-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 32px;
-}
-
-a:-webkit-any-link {
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .menu-section {
   display: block;
   width: 280px;
   height: 412px;
-
   padding: 40px 32px;
   margin-bottom: 20px;
+  background-color: var(--general-white);
+  margin: 0 auto;
+  border-radius: 24px;
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
 }
 
 .menu-section:hover {
@@ -72,6 +73,12 @@ hr .sprite-section {
   width: 216px;
   height: 0px;
   flex-shrink: 0;
+
+}
+
+.sprite-section {
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .image-block {
@@ -138,6 +145,10 @@ hr .sprite-section {
   /* 22.32px */
 }
 
+.weekends {
+  width: 120.854px;
+}
+
 .work-program {
   color: var(--general-pink);
   font-family: var(--general-font);
@@ -158,12 +169,6 @@ hr .sprite-section {
   font-weight: 500;
   line-height: 18px;
   /* 150% */
-}
-
-.contacts {
-  margin-top: 50px;
-  line-height: 18px;
-  transition: var(--transition);
 }
 
 .color-fonts:hover,
@@ -292,6 +297,145 @@ hr .sprite-section {
 }
 
 
+/* Modal Section */
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 6px;
+}
+
+.modal-content-map {
+  padding: 16px;
+  background-color: var(--section-background-color);
+  width: 60%;
+  margin: 0 auto;
+  height: 250px;
+  position: relative;
+  border: 1px solid #F25C66;
+  border-radius: 12px;
+}
+
+.is-hidden {
+  visibility: hidden;
+}
+
+.close-btn-map {
+  position: absolute;
+  border-radius: 5px;
+  background-color: #000;
+  color: #C2E297;
+  border: 1px solid #F25C66;
+  cursor: pointer;
+  outline: none;
+  right: 10px;
+  top: 10px;
+  animation: infinite;
+}
+
+.close-btn-map:hover,
+.close-btn-map:focus {
+  color: #000;
+  background-color: #fff;
+}
+
+.close-container {
+  position: relative;
+  margin: auto;
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.leftright {
+  height: 3px;
+  width: 12px;
+  position: absolute;
+  margin-top: 2px;
+  background-color: #F4A259;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all .3s ease-in;
+}
+
+.rightleft {
+  height: 3px;
+  width: 12px;
+  position: absolute;
+  margin-top: 2px;
+  background-color: #F4A259;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all .3s ease-in;
+}
+
+label {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: .6em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all .3s ease-in;
+  opacity: 0;
+}
+
+.close {
+  margin: 15px 0px 15px 0px;
+  position: absolute;
+}
+
+.close-container:hover .leftright {
+  transform: rotate(-45deg);
+  background-color: #F25C66;
+}
+
+.close-container:hover .rightleft {
+  transform: rotate(45deg);
+  background-color: #F25C66;
+}
+
+.close-container:hover label {
+  opacity: 1;
+}
+
+.color-map-title {
+  color: #FFA5BA;
+  font-family: var(--heading-font);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.content-section-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content-franchise {
+  padding: 16px;
+  background-color: var(--section-background-color);
+  width: 60%;
+  margin: 0 auto;
+  height: 250px;
+  position: relative;
+  border: 1px solid #F25C66;
+  border-radius: 12px;
+}
+
 /* Tablet Section */
 
 
@@ -303,6 +447,23 @@ hr .sprite-section {
     height: auto;
     padding: 0px 16px;
     margin: 0;
+    font-size: 14px;
+    line-height: 183%;
+    /* 25.62px */
+  }
+
+  .crawler-cafe {
+    font-size: 16px;
+    line-height: 186%;
+    /* 29.76px */
+    letter-spacing: 0.64px;
+  }
+
+  .crawler-foodtruck {
+    font-size: 16px;
+    line-height: 186%;
+    /* 29.76px */
+    letter-spacing: 0.64px;
   }
 
   .cards-section {
@@ -312,9 +473,21 @@ hr .sprite-section {
     padding: 0;
   }
 
+  .city-locations {
+    font-size: 14px;
+    line-height: 186%;
+    /* 26.04px */
+    letter-spacing: 0.56px;
+  }
+
   .details {
     width: 95%;
     height: 65px;
+    color: #907E82;
+    font-size: 14px;
+    line-height: 166%;
+    /* 23.24px */
+    letter-spacing: 0.56px;
   }
 
   hr .sprite-section {
@@ -323,12 +496,43 @@ hr .sprite-section {
     width: 216px;
     height: 0px;
     flex-shrink: 0;
+
+  }
+
+  .weekdays {
+    width: 134px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 186%;
+    /* 26.04px */
+  }
+
+  .weekends {
+    width: 139.718px;
+  }
+
+
+  .work-program {
+    font-size: 14px;
+    line-height: 186%;
+    /* 26.04px */
+  }
+
+  .color-fonts {
+    font-size: 14px;
+    line-height: 183%;
+    /* 25.62px */
+  }
+
+  .sprite-section {
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 
   .menu-section {
     display: block;
     width: 90%;
-    height: 412px;
+    height: 528px;
   }
 
   .button-section {
@@ -339,16 +543,18 @@ hr .sprite-section {
     gap: 14.5px;
     margin-top: 60px;
   }
-
-  .contacts {
-    line-height: 25.62px;
-  }
 }
 
 
 /* desktop section */
 
 @media screen and (min-width: 1280px) {
+
+  .color-fonts {
+    font-size: 16px;
+    line-height: 183%;
+    /* 29.28px */
+  }
 
   .menu-section {
     display: block;
@@ -363,38 +569,65 @@ hr .sprite-section {
     flex-shrink: 0;
   }
 
+  .crawler-cafe {
+    font-size: 16px;
+    line-height: 186%;
+    /* 29.76px */
+    letter-spacing: 0.64px;
+  }
+
+  .crawler-foodtruck {
+    font-size: 16px;
+    line-height: 186%;
+    /* 29.76px */
+    letter-spacing: 0.64px;
+  }
+
   .city-locations {
     width: 74px;
     height: 30px;
+    font-size: 16px;
+    line-height: 186%;
+    /* 29.76px */
+    letter-spacing: 0.64px;
   }
 
   .details {
     width: 276px;
     height: 50px;
     flex-shrink: 0;
+    font-size: 16px;
+    line-height: 183%;
+    /* 29.28px */
+    letter-spacing: 0.64px;
   }
 
   .sprite-section {
     width: 288px;
     height: 0px;
     flex-shrink: 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 
   .weekdays {
-    width: 134px;
-    height: 30px;
+    font-size: 16px;
+    line-height: 186%;
+    /* 29.76px */
+    letter-spacing: 0.64px;
+    width: 156.379px;
   }
 
   .work-program {
     width: 163px;
     height: 30px;
+    font-size: 16px;
+    line-height: 186%;
+    /* 29.76px */
+
   }
 
   .weekends {
     width: 152px;
-  }
-
-  .contacts {
-    line-height: 29.28px;
   }
 }
