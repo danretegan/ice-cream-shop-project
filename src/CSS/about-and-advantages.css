@@ -17,7 +17,6 @@
 
 .about-and-advantages {
   background-color: var(--section-background-color);
-  height: 1564px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -27,6 +26,8 @@
 .content {
   width: 320px;
   padding-left: 20px;
+  margin-top: 60px;
+  margin-bottom: 66px;
 }
 
 .section-head {
@@ -40,7 +41,6 @@
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-top: 60px;
   margin-bottom: 15px;
 }
 
@@ -116,24 +116,75 @@
   width: 100%;
 }
 
+.cards-list {
+  list-style: none;
+}
+
+.animation-card {
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animation-card::before {
+  animation: rotateWithOrigin 3s linear 1s infinite;
+}
+
+@keyframes rotateWithOrigin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 .milk-card::before {
-  content: url(../images/milk-icon-m.png);
+  content: ' ';
+  position: absolute;
+  height: 50px;
+  width: 33px;
+  top: -66px;
+  left: 0px;
+  background-image: url(../images/milk-icon-m.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.milk-card {
+  margin-top: 106px;
 }
 
 .apple-card::before {
-  content: url(../images/apple-icon-m.png);
+  content: ' ';
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: -66px;
+  left: 0px;
+  background-image: url(../images/apple-icon-m.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .icecream-card::before {
-  content: url(../images/icecream-icon-m.png);
+  content: ' ';
+  position: absolute;
+  height: 50px;
+  width: 44px;
+  top: -66px;
+  left: 0px;
+  background-image: url(../images/icecream-icon-m.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card-paragraph-1 {
-  margin-bottom: 32px;
+  margin-bottom: 98px;
 }
 
 .card-paragraph-2 {
-  margin-bottom: 32px;
+  margin-bottom: 98px;
 }
 
 .card-heading {
@@ -160,13 +211,10 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-  .about-and-advantages {
-    height: 1092px;
-  }
-
   .content {
     width: 768px;
     padding-left: 0;
+    margin-bottom: 224px;
   }
 
   .how-is-made-section {
@@ -238,10 +286,6 @@
 /* Dekstop */
 
 @media screen and (min-width: 1280px) {
-  .about-and-advantages {
-    height: 1229px;
-  }
-
   .content {
     width: 1200px;
   }
