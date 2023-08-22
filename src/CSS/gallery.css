@@ -1,10 +1,14 @@
-.gallery-row {
-  align-items: center;
+.gallery {
   background: linear-gradient(to bottom, #fff5f6 20%, #fff 20%);
+  width: 100%;
+}
+
+.gallery-container {
+  align-items: center;
   display: flex;
   gap: 3px;
   justify-content: center;
-  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .gallery-column {
@@ -56,4 +60,11 @@
 .gallery-column-six {
   flex-grow: 1;
   padding-top: 5px;
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery-container {
+    width: 1280px;
+    padding: 0 93px;
+  }
 }
