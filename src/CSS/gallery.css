@@ -57,3 +57,9 @@
   flex-grow: 1;
   padding-top: 5px;
 }
+
+@media screen and (min-width: 1280px) {
+  .gallery {
+    padding: 0 93px;
+  }
+}
