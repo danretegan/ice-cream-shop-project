@@ -7,7 +7,12 @@ ul{
 }
 
 :root{
-    --heading-font: 'Titan One', cursive;
+        --general-font: 'DM Sans', sans-serif;
+        --heading-font: 'Titan One', cursive;
+        --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        --Ice-cream-color: #ffb8ca;
+        --Brand-color: #d41443;
+        --general-white: #fff;
 }
 a {
     text-decoration: none;
@@ -45,6 +50,7 @@ font-weight: 400;
 line-height: normal;
 letter-spacing: 1.36px;
 text-transform: uppercase;
+padding-top: 15px;
 }
 
 .products-shown{
@@ -55,13 +61,14 @@ text-transform: uppercase;
 
 .rectangle-product
 {
-    position: relative;
     width: 280px;
     height: 489px;
-    top: 82px;
-    left: 20px;
-    border-radius: 24px;
     background: #FFB8CA;
+    border-radius: 24px;
+    margin-bottom: 60px;
+    position: relative;
+    left: 20px;
+    margin-top: 140px;
 }
 
 .strawberry-product{
@@ -90,7 +97,7 @@ color: #FFFFFF;
     position: relative;
     margin: 0px auto;
     width: 270px;
-    height: 6px;
+    height: 225px;
     transition: .35s cubic-bezier(.4,0,.2,1) 0ms;
     transition-property: z-index;
     padding-top: 219px;
@@ -98,19 +105,20 @@ color: #FFFFFF;
     color: white;
 }
 
-.paragraph-strawberry-product{
+.paragraph-strawberry-product {
     width: 216px;
-height: 124px;
-flex-shrink: 0;
-color: #FFF;
-text-align: center;
-font-family: DM Sans;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: 152%; /* 21.28px */
-letter-spacing: 0.56px;
-padding-left: 27px;
+    height: 124px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: .56px;
+    flex-shrink: 0;
+    margin-left: 32px;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 152%;
+    padding-top: 32px;
 }
 
 .arrow-right-product{
@@ -138,13 +146,14 @@ padding-left: 27px;
 
 
 .rectangle-2-product{
-    position: relative;
     width: 280px;
     height: 489px;
-    top: 220px;
+    background: #F0D1A5;
+    border-radius: 24px;
+    margin-bottom: 60px;
+    position: relative;
     left: 20px;
-    border-radius: 24px;    
-    background: #F0D1A5
+    margin-top: 140px;
 }
 
 .coffee-product{
@@ -167,32 +176,36 @@ line-height: 23px;
 letter-spacing: 0.04em;
 text-align: center;
 color: #FFFFFF;
+padding-top: 32px;
 }
 
 .paragraph-coffee-product{
     width: 216px;
-height: 124px;
-flex-shrink: 0;
-color: #FFF;
-text-align: center;
-font-family: DM Sans;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: 152%; /* 21.28px */
-letter-spacing: 0.56px;
-padding-left: 27px;
+    height: 124px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: .56px;
+    flex-shrink: 0;
+    margin-left: 32px;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 152%;
+    padding-top: 32px;
 }
 
 .rectangle-3-product{
-    position: relative;
     width: 280px;
     height: 489px;
-    top: 360px;
+    background: #c2e297;
+    border-radius: 24px;
+    margin-bottom: 60px;
+    position: relative;
     left: 20px;
-    border-radius: 24px;    
-    background: #C2E297
+    margin-top: 140px;
 }
+
 .milkshake-product{
     width: 280px;
 height: 280px;
@@ -212,21 +225,23 @@ line-height: 23px;
 letter-spacing: 0.04em;
 text-align: center;
 color: #FFFFFF;
+padding-top: 32px;
 }
 
 .paragraph-milkshake-product{
     width: 216px;
     height: 124px;
-    flex-shrink: 0;
-    color: #FFF;
+    color: #fff;
     text-align: center;
+    letter-spacing: .56px;
+    flex-shrink: 0;
+    margin-left: 32px;
     font-family: DM Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 152%; /* 21.28px */
-    letter-spacing: 0.56px;
-    padding-left: 27px;
+    line-height: 152%;
+    padding-top: 32px;
 }
 
  /*Tablet*/
