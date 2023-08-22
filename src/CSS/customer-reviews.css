@@ -1,148 +1,106 @@
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
-  margin-top: 60px;
-}
 .mySlides {
   display: none;
 }
-
-img {
-  vertical-align: middle;
-  position: relative;
-
-  top: -12px;
+.img-person {
+  width: 85px;
+  height: 85px;
+  flex-shrink: 0;
 }
-.review-images {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-}
-.colored-background {
-  background-color: rgba(250, 250, 250, 1);
-  width: 968px;
-  height: 138px;
+.horizontal-line1 {
+  width: 821px;
+  height: 0px;
   flex-shrink: 0;
   position: relative;
+  top: -20px;
 }
-.light-grey-line__one,
-.light-grey-line__two {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.quote {
-  color: #717171;
+.horizontal-line2 {
+  width: 821px;
+  height: 0px;
+  flex-shrink: 0;
   position: relative;
-  top: -30px;
-  left: 50px;
+  top: -50px;
 }
-.red-house {
+.comment,
+.name {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.icon-quote {
+  position: relative;
+  top: -25px;
+  left: 0px;
 }
 .three-red-dots {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 16px;
+  top: -20px;
+  left: 85px;
 }
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+.comment {
+  width: 968px;
+  height: 138px;
+  flex-shrink: 0;
+  background-color: rgba(250, 250, 250, 1);
 }
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
+.comment-review {
+  width: 750px;
+  height: 52px;
+  flex-shrink: 0;
   color: #000;
   text-align: center;
   font-family: DM Sans;
   font-size: 16px;
-  font-style: bold;
+  font-style: normal;
   font-weight: 500;
-  line-height: 186%; /* 29.76px */
+  line-height: 186%;
   letter-spacing: 0.64px;
-  position: relative;
-  top: 45px;
-  padding-right: 108px;
-  padding-left: 100px;
-  color: #000;
 }
-.customer-reviews__location {
+.name-location {
+  width: 172px;
+  height: 31px;
+  flex-shrink: 0;
   color: #000;
   text-align: center;
   font-family: DM Sans;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 186%; /* 37.2px */
+  line-height: 186%;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
   color: #f2f2f2;
-  font-size: 12px;
+  font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
-/* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 20ms ease;
 }
 
-.active,
-.dot:hover {
-  background-color: #f81212;
+.active {
+  background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -158,36 +116,6 @@ img {
 }
 
 @media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
-  }
-  img {
-    vertical-align: middle;
-    position: relative;
-
-    top: -12px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
-  }
-  img {
-    vertical-align: middle;
-    position: relative;
-
-    top: -12px;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .prev,
-  .next,
   .text {
     font-size: 11px;
   }
