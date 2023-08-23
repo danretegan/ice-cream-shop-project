@@ -303,7 +303,6 @@
   letter-spacing: 0.42px;
 }
 
-
 @keyframes flying {
   0% {
     bottom: -100px;
@@ -517,7 +516,7 @@ header {
   border-top: 1px solid #e18298;
   padding: 13px 0 13px 20px;
   font-size: 1em;
-  font-weight: 700px;
+  font-weight: 700;
   color: var(--general-white);
   font-family: var(--general-font);
 }
@@ -909,7 +908,7 @@ header {
   .menu-pc li {
     padding: 13px 0 13px 20px;
     font-size: 1em;
-    font-weight: 700px;
+    font-weight: 700;
     color: var(--general-white);
     font-family: var(--general-font);
   }
