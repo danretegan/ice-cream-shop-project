@@ -1,9 +1,25 @@
+:root {
+  --brand-color: #d41443;
+  --general-pink: #ffa5ba;
+  --section-background-color: #fff5f6;
+  --general-font-black: #000;
+  --general-font-grey: #907e82;
+  --general-white: #fff;
+  --general-font: 'DM Sans', sans-serif;
+  --heading-font: 'Titan One', cursive;
+}
+
 .gallery {
-  background: linear-gradient(to bottom, #fff5f6 20%, #fff 20%);
+  background: linear-gradient(
+    to bottom,
+    var(--section-background-color) 20%,
+    var(--general-white) 20%
+  );
+  padding-bottom: 80px;
   width: 100%;
 }
 
-.gallery-container {
+.gallery-row {
   align-items: center;
   display: flex;
   gap: 3px;
@@ -62,9 +78,19 @@
   padding-top: 5px;
 }
 
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-bottom: 118px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
+  .gallery {
+    padding-bottom: 137px;
+  }
   .gallery-container {
-    width: 1280px;
+    max-width: 1280px;
     padding: 0 93px;
+    margin: 0 auto;
   }
 }
