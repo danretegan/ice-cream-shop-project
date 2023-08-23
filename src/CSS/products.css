@@ -66,10 +66,11 @@ a {
     height: 489px;
     background: #FFB8CA;
     border-radius: 24px;
+    margin-top: 148px;
     margin-bottom: 60px;
     position: relative;
-    left: 20px;
-    margin-top: 140px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .strawberry-product{
@@ -153,10 +154,11 @@ color: #FFFFFF;
     height: 489px;
     background: #F0D1A5;
     border-radius: 24px;
+    margin-top: 148px;
     margin-bottom: 60px;
     position: relative;
-    left: 20px;
-    margin-top: 140px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .coffee-product{
@@ -205,10 +207,11 @@ padding-top: 32px;
     height: 489px;
     background: #c2e297;
     border-radius: 24px;
+    margin-top: 148px;
     margin-bottom: 60px;
     position: relative;
-    left: 20px;
-    margin-top: 140px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .milkshake-product{
@@ -290,10 +293,8 @@ padding-top: 32px;
         color: #D41443;
         }
 
-
     .products-shown{
             justify-content: center;
-            margin-right: 40px;
             padding-top: 0px;
             display: flex;}
     .rectangle-product
@@ -304,7 +305,10 @@ padding-top: 32px;
         left: 0px;
         border-radius: 24px;
         background: #FFB8CA;
-        
+        margin-left: 32px;
+        margin-right: 16px;
+        margin-top: 158px;
+        margin-bottom: 60px;
     }
     
     .strawberry-product{
@@ -365,7 +369,11 @@ padding-top: 32px;
         width: 224px;
         height: 473px;
         border-radius: 24px;    
-        background: #F0D1A5
+        background: #F0D1A5;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 158px;
+        margin-bottom: 60px;
     }
     
     .coffee-product{
@@ -410,10 +418,13 @@ padding-top: 32px;
         position: relative;
         width: 224px;
         height: 473px;
-        left: 40px;
         border-radius: 24px;    
-        background: #C2E297
-    }
+        background: #C2E297;
+        margin-left: 16px;
+        margin-right: 32px;
+        margin-top: 158px;
+        margin-bottom: 60px;}
+
     .milkshake-product{
         width: 224px;
         height: 224px;
@@ -493,17 +504,17 @@ padding-top: 32px;
     .products-shown{
         display: flex;
         justify-content: center;
-        padding-top: 125px;
     }
     .rectangle-product
     {
         position: relative;
         width: 368px;
         height: 535px;
-        left: -20px;
         border-radius: 24px;
         background: #FFB8CA;
-        
+        margin-left: 16px;
+        margin-right: 32px;
+        margin-top: 281px;
     }
     
     .strawberry-product{
@@ -564,10 +575,11 @@ letter-spacing: 0.64px;
         width: 368px;
         height: 535px;
         flex-shrink: 0;
-        left: 10px;
         border-radius: 24px;    
-        background: #F0D1A5
-    }
+        background: #F0D1A5;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-top: 281px;}
     
     .coffee-product{
         width: 368px;
@@ -610,8 +622,10 @@ letter-spacing: 0.64px;
         width: 368px;
         height: 535px;
         border-radius: 24px;    
-        background: #C2E297
-    }
+        background: #C2E297;
+        margin-left: 32px;
+        margin-right: 16px;
+        margin-top: 281px;}
     .milkshake-product{
         width: 368px;
     height: 394px;
