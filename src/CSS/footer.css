@@ -89,16 +89,19 @@ hr {
   font-weight: 700;
   line-height: 186%;
 }
-.copyright {
-  color: var(--general-font-grey);
-  text-align: center;
-  font-family: var(--general-font);
-  font-size: 14px;
-  line-height: 152%;
+.copyright-box {
   display: flex;
-  flex-direction: column;
-  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+.copyright-box-text {
+  color: var(--general-font-grey);
   font-weight: 700;
+  text-align: center;
+  max-width: 140px;
+  font-size: 14px;
+  line-height: 1.52;
 }
 
 /* Tablet */
@@ -130,11 +133,6 @@ hr {
     font-size: 14px;
     padding-right: 35px;
   }
-  .copyright {
-    flex-direction: row;
-    padding-left: 231px;
-    gap: 7px;
-  }
 
   .footer-title,
   .footer-title-ice-cream,
@@ -146,6 +144,7 @@ hr {
 
   .second-title .footer-title-letter:hover {
     transform: scale(1.2);
+    cursor: default;
   }
 
   .footer-phone-number:hover .contact-footer-phone {
@@ -157,6 +156,24 @@ hr {
   .footer-title-word {
     display: flex;
   }
+  .copyright {
+    margin-left: 217px;
+  }
+  .copyright-box-text {
+    max-width: 365px;
+    letter-spacing: 0.02em;
+    padding-left: 50px;
+    line-height: 1.86;
+  }
+  .copyright-box-text:hover {
+    transform: scale(1.3);
+    cursor: default;
+  }
+
+  .copyright-box-text {
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+      color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 /* Desktop */
 @media screen and (min-width: 1158px) {
@@ -167,9 +184,11 @@ hr {
   .footer-title:hover .footer-title-made {
     transform: translate(-170px, 27px);
     color: var(--brand-color);
+    cursor: default;
   }
   .footer-title:hover .footer-title-ice-cream {
     transform: translateX(55px);
+    cursor: default;
   }
   .footer-section {
     justify-content: center;
@@ -192,7 +211,8 @@ hr {
   .footer-contact {
     padding-bottom: 14px;
   }
-  .copyright-text {
-    padding-left: 291px;
+
+  .copyright {
+    margin-left: 517px;
   }
 }
