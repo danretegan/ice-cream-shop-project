@@ -205,6 +205,8 @@ hr .sprite-section {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-bottom: 40px;
+  margin-top: 32px;
 }
 
 .button-location {
@@ -322,9 +324,11 @@ modal-body */
   background-color: transparent;
   border-radius: 6px;
   padding: 20px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.modal-content-map {
+.modal-content-map,
+.modal-content-first {
   padding: 16px;
   background-color: var(--section-background-color);
   width: 50%;
@@ -341,7 +345,8 @@ modal-body */
   visibility: hidden;
 }
 
-.close-btn-map {
+.close-btn-map,
+.close-button {
   position: absolute;
   border-radius: 5px;
   background-color: #000;
@@ -354,7 +359,8 @@ modal-body */
   margin: auto;
 }
 
-.close-container {
+.close-container,
+.close-content {
   z-index: 10;
   width: 35px;
   height: 35px;
@@ -651,8 +657,8 @@ modal-body */
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
-  background: #2196F3;
+  border-radius: 22px;
+  background: #d41443;
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;  
   color: #fff;
   transition: var(--transition);
@@ -662,7 +668,6 @@ modal-body */
 .button-blue:focus {
 cursor: pointer;
 }
-
 
 /* Tablet Section */
 
@@ -770,7 +775,7 @@ cursor: pointer;
     justify-content: center;
     gap: 14.5px;
     margin-top: 60px;
-    padding-bottom: 121px;
+    padding-bottom: 40px;
   }
 }
 
@@ -859,4 +864,9 @@ cursor: pointer;
   .weekends {
     width: 152px;
   }
+
+.button-section {
+  padding-bottom: 121px;
+  margin-top: 60px;
+}
 }
