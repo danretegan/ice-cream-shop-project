@@ -102,6 +102,7 @@ hr {
   align-items: center;
   justify-content: center;
   cursor: default;
+  padding-bottom: 5px;
 }
 .copyright-box-text {
   color: var(--general-font-grey);
