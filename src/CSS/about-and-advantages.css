@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 'Border-box';
+}
+
+:root {
+  --brand-color: #d41443;
+  --general-pink: #ffa5ba;
+  --section-background-color: #fff5f6;
+  --general-font-black: #000;
+  --general-font-grey: #907e82;
+  --general-white: #fff;
+  --general-font: 'DM Sans', sans-serif;
+  --heading-font: 'Titan One', cursive;
+}
+
+.about-and-advantages {
+  background-color: var(--section-background-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content {
+  width: 320px;
+  padding-left: 20px;
+  margin-top: 60px;
+  margin-bottom: 66px;
+}
+
+.section-head {
+  width: 100%;
+}
+
+.first-section-head {
+  font-family: var(--heading-font);
+  color: var(--general-pink);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.second-section-head {
+  color: var(--brand-color);
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 1.36px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.how-is-made-section {
+  width: 100%;
+}
+
+.how-is-made-paragraphs {
+  background-image: url(../images/milk-bg-m.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.how-is-made-paragraphs-section .p-1 {
+  letter-spacing: 0.48px;
+  line-height: 162%;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: var(--general-font);
+  color: var(--general-font-black);
+  width: 220px;
+  flex-shrink: 0;
+  margin-bottom: 18px;
+  margin-top: 40px;
+  transition: all 0.25s linear;
+}
+
+.how-is-made-paragraphs-section .p-2 {
+  letter-spacing: 0.48px;
+  line-height: 162%;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: var(--general-font);
+  color: var(--general-font-grey);
+  width: 220px;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  transition: all 0.25s linear;
+}
+
+.about-button {
+  width: 176px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  background: var(--general-white);
+  border: none;
+  display: flex;
+  gap: 13.62px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  transition: all 0.25s linear;
+}
+
+.about-text-button {
+  color: var(--brand-color);
+  text-align: center;
+  font-family: var(--general-font);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.how-is-made-cards {
+  width: 100%;
+}
+
+.cards-list {
+  list-style: none;
+}
+
+.animation-card {
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animation-card::before {
+  animation: rotateWithOrigin 3s linear 1s infinite;
+}
+
+@keyframes rotateWithOrigin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.milk-card::before {
+  content: ' ';
+  position: absolute;
+  height: 50px;
+  width: 33px;
+  top: -66px;
+  left: 0px;
+  background-image: url(../images/milk-icon-m.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.milk-card {
+  margin-top: 106px;
+}
+
+.apple-card::before {
+  content: ' ';
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: -66px;
+  left: 0px;
+  background-image: url(../images/apple-icon-m.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.icecream-card::before {
+  content: ' ';
+  position: absolute;
+  height: 50px;
+  width: 44px;
+  top: -66px;
+  left: 0px;
+  background-image: url(../images/icecream-icon-m.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-paragraph-1 {
+  margin-bottom: 98px;
+}
+
+.card-paragraph-2 {
+  margin-bottom: 98px;
+}
+
+.card-heading {
+  color: var(--brand-color);
+  font-family: var(--heading-font);
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  width: 98px;
+  height: 56px;
+}
+
+.card-paragraph {
+  color: var(--general-font-black);
+  font-family: var(--general-font);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 170%;
+  letter-spacing: 0.24px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .content {
+    width: 768px;
+    padding-left: 0;
+    margin-bottom: 224px;
+  }
+
+  .how-is-made-section {
+    display: flex;
+    gap: 30px;
+  }
+
+  .how-is-made-paragraphs {
+    background-image: none;
+  }
+
+  .how-is-made-paragraphs-section .p-1 {
+    width: 334px;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+  }
+
+  .how-is-made-paragraphs-section .p-2 {
+    width: 334px;
+    font-size: 14px;
+    letter-spacing: 0.56px;
+  }
+
+  .how-is-made-cards {
+    display: flex;
+    width: 100%;
+    gap: 19px;
+    padding: 0 35px;
+  }
+
+  .cards-list {
+    display: flex;
+    padding: 86px 76px 0 36px;
+  }
+
+  .milk-card {
+    margin-top: 0;
+  }
+
+  .card-heading {
+    font-size: 48px;
+    margin-top: 36px;
+    margin-bottom: 13px;
+    letter-spacing: 1.92px;
+  }
+
+  .card-paragraph {
+    font-size: 13.7px;
+    letter-spacing: 0.28px;
+  }
+
+  .card-paragraph-1 {
+    width: 165px;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .card-paragraph-2 {
+    width: 162px;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .card-paragraph-3 {
+    width: 195px;
+  }
+
+  .animation-card {
+    transition: all 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .how-is-made-cards:hover .milk-card {
+    transform: translateX(-40px) rotate(1turn) scale(1.2);
+  }
+
+  .how-is-made-cards:hover .apple-card {
+    transform: rotate(1turn) scale(1.2);
+  }
+
+  .how-is-made-cards:hover .icecream-card {
+    transform: translateX(40px) rotate(1turn) scale(1.2);
+  }
+
+  .how-is-made-cow-anim:hover {
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(40deg);
+    }
+  }
+
+  .p-1:hover {
+    transform: scale(1.2);
+    cursor: default;
+  }
+
+  .p-2:hover {
+    transform: scale(1.2);
+    cursor: default;
+  }
+
+  .about-button:hover {
+    background-color: #ecebeb;
+    transform: scale(1.2);
+  }
+}
+
+/* Dekstop */
+
+@media screen and (min-width: 1280px) {
+  .content {
+    width: 1200px;
+  }
+
+  .first-section-head {
+    letter-spacing: 1.2px;
+    font-size: 30px;
+  }
+
+  .first-section-head:hover {
+    animation: springy-text;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    cursor: default;
+  }
+
+  .second-section-head:hover {
+    animation: springy-text;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    cursor: default;
+  }
+
+  @keyframes springy-text {
+    0% {
+      letter-spacing: 0.7em;
+    }
+
+    100% {
+      letter-spacing: 0.1em;
+    }
+  }
+
+  .second-section-head {
+    letter-spacing: 3.48px;
+    font-size: 58px;
+  }
+
+  .how-is-made-section {
+    background-image: url(../images/milk-bg-d.png);
+    gap: 99px;
+  }
+
+  .how-is-made-paragraphs-section .p-1 {
+    letter-spacing: 0.64px;
+    font-size: 16px;
+    width: 400px;
+    line-height: 176%;
+  }
+
+  .how-is-made-paragraphs-section .p-2 {
+    letter-spacing: 0.56px;
+    line-height: 194%;
+    width: 401px;
+  }
+
+  .how-is-made-cards {
+    gap: 115px;
+    padding-left: 16px;
+  }
+
+  .card-heading {
+    font-size: 58px;
+    letter-spacing: 2.32px;
+  }
+
+  .card-paragraph {
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    line-height: 176%;
+  }
+
+  .card-paragraph-1 {
+    width: 288px;
+  }
+
+  .card-paragraph-2 {
+    width: 318px;
+  }
+
+  .card-paragraph-3 {
+    width: 288px;
+  }
+}
