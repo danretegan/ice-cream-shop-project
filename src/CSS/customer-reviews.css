@@ -1,119 +1,7 @@
-.mySlides {
-  /* display: none; */
-}
-.img-person {
-  /* width: 85px; */
-  height: 85px;
-  position: relative;
-  left: 454px;
-  top: 20px;
-}
-.horizontal-line1 {
-  width: 821px;
-  height: 0px;
-  flex-shrink: 0;
-  position: relative;
-  top: -20px;
-}
-.horizontal-line2 {
-  width: 821px;
-  height: 0px;
-  flex-shrink: 0;
-  position: relative;
-  top: -50px;
-}
-.comment,
-.name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.icon-quote {
-  position: relative;
-  top: -25px;
-  left: 0px;
-}
-.three-red-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: -20px;
-  left: 85px;
-}
-.comment {
-  width: 968px;
-  height: 138px;
-  flex-shrink: 0;
-  background-color: #fafafa;
-}
-.comment-review {
-  width: 750px;
-  height: 52px;
-  flex-shrink: 0;
-  color: #000;
-  text-align: center;
-  font-family: DM Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 186%;
-  /* background: repeating-linear-gradient(
-    #fafafa,
-    #fafafa 20px,
-    #e1e1e1 20px,
-    #e1e1e1 21px
-  ); */
-  letter-spacing: 0.64px;
-}
-.name-location {
-  width: 172px;
-  height: 31px;
-  flex-shrink: 0;
-  color: #000;
-  text-align: center;
-  font-family: DM Sans;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 186%;
-}
-
-.slideshow-container {
-  width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+/* .comment-review::before {
+  content: '&#x275E';
   display: inline-block;
-  transition: background-color 20ms ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
+} */
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -125,10 +13,11 @@
 /* Mobile section */
 @media only screen and (min-width: 100px) {
   /* ramane 100% */
+
   .slideshow-container {
     width: 100%;
     background-color: white;
-    margin-bottom: 224px;
+    margin-bottom: 80px;
     padding-left: 0;
   }
   .horizontal-line1 {
@@ -198,7 +87,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 186%;
-    top: 0;
+    top: 16px;
     position: relative;
   }
   /* .three-dots {
@@ -234,6 +123,10 @@
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
+  }
+  .three-dots {
+    position: relative;
+    top: 36px;
   }
 }
 /* tablet section */
