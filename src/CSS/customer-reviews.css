@@ -10,8 +10,9 @@
 .slideshow-container {
   width: 100%;
   background-color: var(--general-white);
-  margin-bottom: 80px;
-  padding-left: 0;
+  /* margin-bottom: 80px;
+  padding-left: 0; */
+  padding-bottom: 60px;
 }
 .horizontal-line1 {
   display: none;
@@ -132,8 +133,9 @@
     width: 768px;
     background-color: var(--general-white);
     margin-bottom: 224px;
-    padding-left: 0;
-    padding-bottom: 100px;
+    /* padding-left: 0;
+    padding-bottom: 100px; */
+    padding-bottom: 80px;
   }
   .img-person {
     border-radius: 50%;
@@ -255,6 +257,7 @@
     width: 1280px;
     background-color: var(--general-white);
     padding-left: 0;
+    padding-bottom: 120px;
   }
 
   .img-person {
