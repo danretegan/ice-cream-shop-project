@@ -44,6 +44,7 @@
 
 .gallery-image:hover {
   transform: scale(1.25);
+  z-index: 2;
 }
 
 .gallery-column-one {
@@ -107,9 +108,10 @@
     width: 40px;
   }
 
-  .fixedbutton:hover {
+  .fixedbutton:hover,
+  .fixedbutton:focus {
+    box-shadow: 0 0 0 3px var(--brand-color);
     cursor: pointer;
     transform: rotate(-90deg);
-    box-shadow: 0 0 0 3px var(--brand-color);
   }
 }
