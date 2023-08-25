@@ -17,6 +17,11 @@ hr {
 .footer-content {
   background-color: var(--section-background-color);
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer-section {
+  width: 320px;
 }
 .footer-title {
   font-family: var(--heading-font);
@@ -30,7 +35,7 @@ hr {
 .first-title {
   color: var(--general-pink);
   font-family: var(--heading-font);
-  width: 40%;
+  width: 88%;
   height: 42px;
   font-weight: 400;
   font-size: 21px;
@@ -51,8 +56,11 @@ hr {
   display: flex;
   justify-content: flex-end;
   gap: 28px;
-  padding: 37px;
+  padding-top: 37px;
+  padding-bottom: 10px;
+  padding-right: 32px;
 }
+
 .footer-icon-facebook,
 .footer-icon-github,
 .footer-icon-telegram {
@@ -94,6 +102,7 @@ hr {
   align-items: center;
   justify-content: center;
   cursor: default;
+  padding-bottom: 5px;
 }
 .copyright-box-text {
   color: var(--general-font-grey);
@@ -110,6 +119,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     align-items: end;
+    width: 768px;
   }
   .footer-title {
     padding-right: 57px;
@@ -174,9 +184,12 @@ hr {
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
       color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .footer-icons {
+    padding-bottom: 29px;
+  }
 }
 /* Desktop */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .footer-title-made,
   .footer-title-ice-cream {
     display: inline-block;
@@ -191,8 +204,8 @@ hr {
     cursor: default;
   }
   .footer-section {
-    justify-content: center;
     justify-content: space-between;
+    width: 1200px;
   }
   .footer-title {
     gap: 16px;
@@ -211,8 +224,12 @@ hr {
   .footer-contact {
     padding-bottom: 14px;
   }
-
+  .footer-contacts-section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 52px;
+  }
   .copyright {
-    margin-left: 517px;
+    margin-left: 417px;
   }
 }

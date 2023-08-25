@@ -76,6 +76,7 @@
   flex-shrink: 0;
   margin-bottom: 18px;
   margin-top: 40px;
+  transition: all 0.25s linear;
 }
 
 .how-is-made-paragraphs-section .p-2 {
@@ -88,9 +89,10 @@
   width: 220px;
   flex-shrink: 0;
   margin-bottom: 20px;
+  transition: all 0.25s linear;
 }
 
-.how-is-made-paragraphs-section button {
+.about-button {
   width: 176px;
   height: 44px;
   flex-shrink: 0;
@@ -102,9 +104,10 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+  transition: all 0.25s linear;
 }
 
-.how-is-made-paragraphs-section button span {
+.about-text-button {
   color: var(--brand-color);
   text-align: center;
   font-family: var(--general-font);
@@ -242,19 +245,16 @@
     display: flex;
     width: 100%;
     gap: 19px;
-    padding-left: 32px;
+    padding: 0 35px;
   }
 
-  .milk-card::before {
-    content: url(../images/milk-icon-t.png);
+  .cards-list {
+    display: flex;
+    padding: 86px 76px 0 36px;
   }
 
-  .apple-card::before {
-    content: url(../images/apple-icon-t.png);
-  }
-
-  .icecream-card::before {
-    content: url(../images/icecream-icon-t.png);
+  .milk-card {
+    margin-top: 0;
   }
 
   .card-heading {
@@ -265,21 +265,72 @@
   }
 
   .card-paragraph {
-    font-size: 14px;
+    font-size: 13.7px;
     letter-spacing: 0.28px;
   }
 
   .card-paragraph-1 {
     width: 165px;
     margin-bottom: 0;
+    margin-right: 20px;
   }
 
   .card-paragraph-2 {
     width: 162px;
+    margin-bottom: 0;
+    margin-right: 20px;
   }
 
   .card-paragraph-3 {
     width: 195px;
+  }
+
+  .animation-card {
+    transition: all 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .how-is-made-cards:hover .milk-card {
+    transform: translateX(-40px) rotate(1turn) scale(1.2);
+  }
+
+  .how-is-made-cards:hover .apple-card {
+    transform: rotate(1turn) scale(1.2);
+  }
+
+  .how-is-made-cards:hover .icecream-card {
+    transform: translateX(40px) rotate(1turn) scale(1.2);
+  }
+
+  .how-is-made-cow-anim:hover {
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    50% {
+      transform: rotate(40deg);
+    }
+  }
+
+  .p-1:hover {
+    transform: scale(1.2);
+    cursor: default;
+  }
+
+  .p-2:hover {
+    transform: scale(1.2);
+    cursor: default;
+  }
+
+  .about-button:hover {
+    background-color: #ecebeb;
+    transform: scale(1.2);
   }
 }
 
@@ -293,6 +344,38 @@
   .first-section-head {
     letter-spacing: 1.2px;
     font-size: 30px;
+  }
+
+  .first-section-head:hover {
+    animation: springy-text;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    cursor: default;
+  }
+
+  .second-section-head:hover {
+    animation: springy-text;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    cursor: default;
+  }
+
+  @keyframes springy-text {
+    0% {
+      letter-spacing: 0.7em;
+    }
+
+    100% {
+      letter-spacing: 0.1em;
+    }
   }
 
   .second-section-head {

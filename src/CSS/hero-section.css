@@ -106,6 +106,203 @@
   animation-delay: 3s;
 }
 
+/* modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 200ms ease;
+  pointer-events: auto;
+  padding: 20px;
+  z-index: 6;
+}
+
+.modal-content {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  width: 50%;
+  margin: 0 auto;
+  width: 528px;
+  height: 620px;
+  position: relative;
+}
+
+.is-hidden {
+  visibility: hidden;
+  transform: translateY(100%);
+}
+
+.close-btn {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  background: #fff;
+  color: #2196f3;
+  box-shadow: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 20px 40px;
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 10px;
+}
+.form-group span {
+  color: #757575;
+  font-size: 14px;
+}
+.form-group input {
+  padding: 12px 16px 12px 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.form-group textarea {
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  resize: none;
+}
+.form-group textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+}
+
+.input-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 14px;
+  bottom: 14px;
+}
+
+.form-title {
+  color: #212121;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  padding-bottom: 2px;
+}
+
+.form-group input:focus,
+.form-group input:hover {
+  border-radius: 4px;
+  border: 1px solid var(--link-color-hover);
+  outline: none;
+}
+
+.form-group input:focus + .input-icon,
+.form-group input:hover + .input-icon {
+  color: #2196f3;
+}
+
+.form-group textarea:focus,
+.form-group textarea:hover {
+  border-radius: 4px;
+  border: 1px solid var(--link-color-hover);
+  outline: none;
+}
+
+.form-group.terms-conditions-checkbox {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.checkboxes {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.form-group .checkbox {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+}
+
+.form-group:hover {
+  color: #2196f3;
+}
+
+.form-group .checkbox-checked {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+}
+
+.terms-conditions-checkbox input {
+  display: none;
+  cursor: pointer;
+}
+
+.form-group input:checked ~ .checkboxes .checkbox-checked {
+  visibility: visible;
+}
+
+.form-group .terms-info {
+  margin-left: 8px;
+  color: #757575;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+.form-group-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.terms-conditions-checkbox {
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.form-group .terms-and-conditions {
+  color: #2196f3;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
 @keyframes flying {
   0% {
     bottom: -100px;
@@ -319,7 +516,7 @@ header {
   border-top: 1px solid #e18298;
   padding: 13px 0 13px 20px;
   font-size: 1em;
-  font-weight: 700px;
+  font-weight: 700;
   color: var(--general-white);
   font-family: var(--general-font);
 }
@@ -711,7 +908,7 @@ header {
   .menu-pc li {
     padding: 13px 0 13px 20px;
     font-size: 1em;
-    font-weight: 700px;
+    font-weight: 700;
     color: var(--general-white);
     font-family: var(--general-font);
   }

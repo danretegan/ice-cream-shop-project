@@ -1,91 +1,99 @@
-
-.mySlides {
-  display: none;
+:root {
+  --brand-color: #d41443;
+  --general-pink: #ffa5ba;
+  --section-background-color: #fff5f6;
+  --general-font-black: #000;
+  --general-font-grey: #907e82;
+  --general-white: #fff;
+  --general-font: 'DM Sans', sans-serif;
 }
-.img-person {
-  width: 85px;
-  height: 85px;
-  flex-shrink: 0;
+.slideshow-container {
+  width: 100%;
+  background-color: var(--general-white);
+  margin-bottom: 80px;
+  padding-left: 0;
 }
 .horizontal-line1 {
-  width: 821px;
-  height: 0px;
-  flex-shrink: 0;
-  position: relative;
-  top: -20px;
+  display: none;
 }
 .horizontal-line2 {
-  width: 821px;
-  height: 0px;
+  display: none;
+}
+.comment {
+  width: 280px;
+  height: 307px;
   flex-shrink: 0;
-  position: relative;
-  top: -50px;
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: none;
 }
 .comment,
 .name {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.icon-quote {
-  position: relative;
-  top: -25px;
-  left: 0px;
-}
-.three-red-dots {
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  top: -20px;
-  left: 85px;
-}
-.comment {
-  width: 968px;
-  height: 138px;
-  flex-shrink: 0;
-  background-color: rgba(250, 250, 250, 1);
+  top: 30px;
+  margin: 0 auto;
 }
 .comment-review {
-  width: 750px;
-  height: 52px;
+  width: 157px;
+  height: 213px;
   flex-shrink: 0;
-  color: #000;
+  color: var(--general-font-black);
   text-align: center;
-  font-family: DM Sans;
-  font-size: 16px;
+  font-family: var(--general-font);
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 186%;
-  letter-spacing: 0.64px;
+  line-height: 260%;
+  letter-spacing: 0.48px;
+  display: flex;
+  align-items: center;
+  background: repeating-linear-gradient(
+    #fafafa,
+    #fafafa 20px,
+    #e1e1e1 20px,
+    #e1e1e1 21px
+  );
+}
+
+.three-red-dots {
+  position: relative;
+  top: 5px;
+  left: 0px;
 }
 .name-location {
   width: 172px;
   height: 31px;
-  flex-shrink: 0;
-  color: #000;
+  color: var(--general-font-black);
   text-align: center;
-  font-family: DM Sans;
+  font-family: var(--general-font);
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 186%;
-}
-
-.slideshow-container {
-  max-width: 1000px;
+  top: 16px;
   position: relative;
-  margin: auto;
 }
 
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+.icon-quote {
+  position: relative;
+  left: -95px;
+  top: 5px;
+}
+.img-person {
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+}
+.img-person-title {
+  margin-left: 40%;
+  margin-right: 43%;
 }
 
 .dot {
@@ -96,17 +104,20 @@
   border-radius: 50%;
   display: inline-block;
   transition: background-color 20ms ease;
+  margin-top: 32px;
 }
-
 .active {
-  background-color: #717171;
+  background-color: var(--brand-color);
 }
 
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
+.three-dots {
+  position: relative;
+  top: 36px;
+}
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -115,9 +126,248 @@
     opacity: 1;
   }
 }
+/* tablet section */
+@media screen and (min-width: 768px) {
+  .slideshow-container {
+    width: 768px;
+    background-color: var(--general-white);
+    margin-bottom: 224px;
+    padding-left: 0;
+    padding-bottom: 100px;
+  }
+  .img-person {
+    border-radius: 50%;
+    height: 85px;
+    position: relative;
+    left: 55px;
+    top: 20px;
+  }
+  .comment,
+  .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-quote {
+    position: relative;
+    top: 24px;
+    left: -270px;
+  }
+  .three-red-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 4px;
+    left: 0;
+  }
+  .comment {
+    width: 620px;
+    height: 164px;
+    flex-shrink: 0;
+    background-color: #fafafa;
+  }
+  .comment-review {
+    width: 492px;
+    height: 83px;
+    flex-shrink: 0;
+    color: var(--general-font-black);
+    text-align: center;
+    font-family: var(--general-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 214%;
+    letter-spacing: 0.56px;
+    background: repeating-linear-gradient(
+      #fafafa,
+      #fafafa 20px,
+      #e1e1e1 20px,
+      #e1e1e1 21px
+    );
+  }
+  .name-location {
+    width: 172px;
+    height: 38px;
+    flex-shrink: 0;
+    color: var(--general-font-black);
+    text-align: center;
+    font-family: var(--general-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%;
+    margin-top: 16px;
+  }
 
-@media only screen and (max-width: 300px) {
+  .slideshow-container {
+    width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
   .text {
-    font-size: 11px;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 20ms ease;
+    margin-top: 32px;
+  }
+  .name-location {
+    width: 172px;
+    height: 31px;
+    flex-shrink: 0;
+    color: var(--general-font-black);
+    text-align: center;
+    font-family: var(--general-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%;
+    margin-top: 24px;
+  }
+  .active {
+    background-color: var(--brand-color);
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+}
+
+/* desktop section */
+@media screen and (min-width: 1280px) {
+  .slideshow-container {
+    width: 1280px;
+    background-color: var(--general-white);
+    padding-left: 0;
+  }
+
+  .img-person {
+    border-radius: 50%;
+    height: 85px;
+    position: relative;
+    left: 55px;
+    top: 20px;
+  }
+
+  .comment,
+  .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-quote {
+    position: relative;
+    top: 10px;
+    left: -390px;
+  }
+  .three-red-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 4px;
+    left: 0;
+  }
+  .comment {
+    width: 968px;
+    height: 138px;
+    flex-shrink: 0;
+    background-color: #fafafa;
+  }
+  .comment-review {
+    width: 750px;
+    height: 38px;
+    flex-shrink: 0;
+    color: var(--general-font-black);
+    text-align: center;
+    font-family: var(--general-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%;
+    background: repeating-linear-gradient(
+      #fafafa,
+      #fafafa 20px,
+      #e1e1e1 20px,
+      #e1e1e1 21px
+    );
+    letter-spacing: 0.64px;
+  }
+  .name-location {
+    width: 172px;
+    height: 38px;
+    flex-shrink: 0;
+    color: var(--general-font-black);
+    text-align: center;
+    font-family: var(--general-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%;
+    margin-top: 16px;
+  }
+
+  .slideshow-container {
+    width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 20ms ease;
+    margin-top: 32px;
+  }
+  .name-location {
+    width: 172px;
+    height: 31px;
+    flex-shrink: 0;
+    color: var(--general-font-black);
+    text-align: center;
+    font-family: var(--general-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 186%;
+    margin-top: 24px;
+  }
+  .active {
+    background-color: var(--brand-color);
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
   }
 }
