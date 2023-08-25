@@ -15,7 +15,7 @@
     var(--section-background-color) 20%,
     var(--general-white) 20%
   );
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   width: 100%;
 }
 
@@ -80,17 +80,36 @@
 
 @media screen and (min-width: 768px) {
   .gallery {
-    padding-bottom: 118px;
+    padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .gallery {
-    padding-bottom: 137px;
+    padding-bottom: 120px;
   }
   .gallery-container {
     max-width: 1280px;
     padding: 0 93px;
     margin: 0 auto;
+  }
+  .fixedbutton {
+    border-radius: 50%;
+    border: none;
+    bottom: 50px;
+    height: 40px;
+    outline: none;
+    padding: 0;
+    position: fixed;
+    right: 50px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 40px;
+  }
+
+  .fixedbutton:hover {
+    cursor: pointer;
+    transform: rotate(-90deg);
+    box-shadow: 0 0 0 3px var(--brand-color);
   }
 }
