@@ -79,6 +79,7 @@ a {
     justify-content: center;
     padding-top: 8px;
     display: block;
+    position: relative;
 }
 
 .rectangle-product
@@ -102,7 +103,7 @@ a {
     height: 100%;
     background-color: rgba(15, 79, 208, 0.15);
     border-radius: 24px;
-    z-index: 50;
+    z-index: 0;
     opacity: 0;
     transition: .05s cubic-bezier(.4,0,.2,1) 0ms;
     transition-property: opacity,box-shadow;
@@ -120,11 +121,12 @@ a {
 .rectangle-product:hover .strawberry-title-product{
     transition: .05s cubic-bezier(.4,0,.2,1) 0ms;
     font-size: 29px;
-    z-index: 60;
+    z-index: 1;
+    position: absolute;
 }
 .rectangle-product:hover .arrow-right-product{
     cursor: pointer;
-    z-index: 60;
+    z-index: 1;
     width: 50px;
     height: 50px;
     background-color: #fff;
@@ -133,7 +135,7 @@ a {
     left: 110px;}
 
 .rectangle-product:hover .dots-product{
-    z-index: 60;
+    z-index: 1;
 }
 
 
@@ -161,7 +163,7 @@ a {
     left: 50%;
     bottom: 350px;
     transform: translateX(-50%);
-    z-index: 60;
+    z-index: 1;
     width: 280px;
     height: 280px;
     background-image: url(/src/images/strawberry.png);
@@ -258,7 +260,7 @@ color: #FFFFFF;
 }
 .arrow-right-product:hover {
     cursor: pointer;
-    z-index: 60;
+    z-index: 1;
     width: 50px;
     height: 50px;
     background-color: #fff;
@@ -293,11 +295,11 @@ color: #FFFFFF;
 .rectangle-2-product:hover .coffee-title-product{
     transition: .05s cubic-bezier(.4,0,.2,1) 0ms;
     font-size: 28px;
-    z-index: 60;
+    z-index: 1;
 }
 .rectangle-2-product:hover .arrow-right-product{
     cursor: pointer;
-    z-index: 60;
+    z-index: 1;
     width: 50px;
     height: 50px;
     background-color: #fff;
@@ -305,7 +307,7 @@ color: #FFFFFF;
     transform: rotate(-90deg);
     left: 110px;}
     .rectangle-2-product:hover .dots-product{
-        z-index: 60;
+        z-index: 1;
     }
 
 .coffee-product{
@@ -320,7 +322,7 @@ bottom: 350px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 60;
+    z-index: 1;
     width: 280px;
     height: 280px;
     background-image: url(/src/images/coffee.png);
@@ -387,10 +389,10 @@ padding-top: 32px;
     transition: .05s cubic-bezier(.4,0,.2,1) 0ms;
     font-size: 29px;
     left: 41px;
-    z-index: 60;}
+    z-index: 1;}
 .rectangle-3-product:hover .arrow-right-product{
     cursor: pointer;
-    z-index: 60;
+    z-index: 1;
     width: 50px;
     height: 50px;
     background-color: #fff;
@@ -399,7 +401,7 @@ padding-top: 32px;
     left: 110px;}
 
     .rectangle-3-product:hover .dots-product{
-        z-index: 60;
+        z-index: 1;
     }
 
     .rectangle-3-product:nth-child(3):before {
@@ -408,7 +410,7 @@ padding-top: 32px;
         left: 50%;
         bottom: 350px;
         transform: translateX(-50%);
-        z-index: 60;
+        z-index: 1;
         width: 280px;
         height: 280px;
         background-image: url(/src/images/milkshake.png);
@@ -460,7 +462,7 @@ padding-top: 32px;
 
     .rectangle-product:hover .arrow-right-product{
         cursor: pointer;
-        z-index: 60;
+        z-index: 1;
         width: 50px;
         height: 50px;
         background-color: #fff;
@@ -470,7 +472,7 @@ padding-top: 32px;
 
     .rectangle-2-product:hover .arrow-right-product{
         cursor: pointer;
-        z-index: 60;
+        z-index: 1;
         width: 50px;
         height: 50px;
         background-color: #fff;
@@ -478,7 +480,7 @@ padding-top: 32px;
         transform: rotate(-90deg);
         left: 85px;}
         .rectangle-2-product:hover .dots-product{
-            z-index: 60;
+            z-index: 1;
         }
 
     .products-section-products{
@@ -608,7 +610,7 @@ letter-spacing: 0.56px;
         left: 50%;
         bottom: 386px;
         transform: translateX(-50%);
-        z-index: 60;
+        z-index: 1;
         width: 224px;
         height: 224px;
         flex-shrink: 0;
@@ -642,7 +644,7 @@ letter-spacing: 0.56px;
         left: 50%;
         bottom: 386px;
         transform: translateX(-50%);
-        z-index: 60;
+        z-index: 1;
         width: 224px;
         height: 224px;
         background-image: url(/src/images/coffee.png);
@@ -715,7 +717,7 @@ margin-left: 19px;
         }
         .rectangle-3-product:hover .arrow-right-product{
             cursor: pointer;
-    z-index: 60;
+    z-index: 1;
     width: 50px;
     height: 50px;
     background-color: #fff;
@@ -728,7 +730,7 @@ margin-left: 19px;
                 left: 50%;
                 bottom: 386px;
                 transform: translateX(-50%);
-                z-index: 60;
+                z-index: 1;
                 width: 224px;
                 height: 224px;
                 background-image: url(/src/images/milkshake.png);
@@ -787,7 +789,7 @@ margin-left: 19px;
         left: 50%;
         bottom: 386px;
         transform: translateX(-50%);
-        z-index: 60;
+        z-index: 1;
         width: 368px;
         height: 394px;
         flex-shrink: 0;
@@ -801,7 +803,7 @@ margin-left: 19px;
         left: 50%;
         bottom: 386px;
         transform: translateX(-50%);
-        z-index: 60;
+        z-index: 1;
         width: 368px;
         height: 394px;
         background-image: url(/src/images/coffee.png);
@@ -814,7 +816,7 @@ margin-left: 19px;
         left: 50%;
         bottom: 386px;
         transform: translateX(-50%);
-        z-index: 60;
+        z-index: 1;
         width: 368px;
         height: 394px;
         background-image: url(/src/images/milkshake.png);
@@ -1047,7 +1049,7 @@ flex-shrink: 0;
 
     .rectangle-product:hover .arrow-right-product{
         cursor: pointer;
-        z-index: 60;
+        z-index: 1;
         width: 50px;
         height: 50px;
         background-color: #fff;
@@ -1057,7 +1059,7 @@ flex-shrink: 0;
 
     .rectangle-2-product:hover .arrow-right-product{
         cursor: pointer;
-        z-index: 60;
+        z-index: 1;
         width: 50px;
         height: 50px;
         background-color: #fff;
@@ -1067,7 +1069,7 @@ flex-shrink: 0;
     
         .rectangle-3-product:hover .arrow-right-product{
             cursor: pointer;
-            z-index: 60;
+            z-index: 1;
             width: 50px;
             height: 50px;
             background-color: #fff;
