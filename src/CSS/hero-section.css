@@ -191,18 +191,18 @@
 }
 
 .input-modal-buy:hover,
-.input-modal-buy:focus{
+.input-modal-buy:focus {
   border: 1px solid var(--Ice-cream-color);
   outline-style: none;
   box-shadow: none;
 }
 .input-modal-buy::placeholder {
- color: rgba(33, 33, 33, 0.2);
+  color: rgba(33, 33, 33, 0.2);
 }
 .input-modal-buy:hover::placeholder,
 .input-modal-buy:focus::placeholder {
   color: var(--Ice-cream-color);
- }
+}
 .form-group .order-area {
   padding: 12px 16px;
   border-radius: 25px;
@@ -214,14 +214,14 @@
   font-family: var(--general-font);
 }
 .form-group .order-area:hover,
-.form-group .order-area:focus{
+.form-group .order-area:focus {
   border: 1px solid var(--Ice-cream-color);
 }
 .form-group .order-area::placeholder {
   color: rgba(33, 33, 33, 0.2);
   font-size: 16px;
 }
-.form-group .order-area:hover::placeholder, 
+.form-group .order-area:hover::placeholder,
 .form-group .order-area:focus::placeholder {
   color: var(--Ice-cream-color);
 }
@@ -237,13 +237,12 @@
 .form-title {
   color: var(--Brand-color);
   text-align: center;
-  font-family: var(--heading-font)
+  font-family: var(--heading-font);
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.6px;
   padding-bottom: 20px;
 }
-
 
 .form-group.terms-conditions-checkbox {
   flex-direction: row;
