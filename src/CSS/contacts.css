@@ -249,7 +249,6 @@ hr .sprite-section {
   font-weight: 700;
   text-align: center;
   font-size: 16px;
-
   height: 44px;
   flex-shrink: 0;
   padding: 0 max(43px);
@@ -346,9 +345,6 @@ hr .sprite-section {
 /* Modal Section */
 
 /* modal no 1 location */
-
-/* modal-footer
-modal-body */
 
 .modal-section {
   position: fixed;
