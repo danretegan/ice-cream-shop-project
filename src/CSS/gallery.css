@@ -79,10 +79,13 @@
   padding-top: 5px;
 }
 
+/* Fixed button */
+
 .fixedbutton {
   border-radius: 50%;
   border: none;
   bottom: 27px;
+  box-shadow: 0 2px 4px var(--brand-color);
   height: 40px;
   outline: none;
   padding: 0;
@@ -91,16 +94,20 @@
   transition: box-shadow 0.1s linear, transform 0.1s linear;
   width: 40px;
   z-index: 3;
-  box-shadow: 0 2px 4px var(--brand-color);
 }
 
-.fixedbutton:hover,
-.fixedbutton:focus {
-  /* box-shadow: 0 0 0 3px var(--brand-color); */
+.fixedbutton:hover {
+  cursor: pointer;
+  border-radius: 35%;
+}
+
+.fixedbutton:active {
   box-shadow: 0 0 2px var(--brand-color);
   transform: translateY(2px);
-  cursor: pointer;
-  transform: rotate(-90deg);
+}
+
+.fixedbutton:focus {
+  outline: none;
 }
 
 @media screen and (min-width: 768px) {
