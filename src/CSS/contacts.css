@@ -214,7 +214,7 @@ hr .sprite-section {
   color: #fff;
 }
 
-.button-location > svg {
+.button-location>svg {
   stroke: #fff;
   stroke-width: 2px;
   width: 3.61px;
@@ -231,7 +231,7 @@ hr .sprite-section {
   color: #d41342;
 }
 
-.button-franchise > svg {
+.button-franchise>svg {
   stroke-width: 2px;
   stroke: #d41443;
   width: 3.6px;
@@ -336,7 +336,8 @@ modal-body */
   visibility: hidden;
 }
 
-.close-btn-map {
+.close-btn-map,
+.close-button {
   position: absolute;
   border-radius: 5px;
   background-color: #000;
@@ -349,8 +350,9 @@ modal-body */
   margin: auto;
 }
 
-.close-container {
-  z-index: 10;
+.close-container
+ {
+  z-index: 15;
   width: 35px;
   height: 35px;
   top: 15px;
@@ -479,7 +481,7 @@ modal-body */
   transition: var(--transition);
 }
 
-.close-btn > svg {
+.close-btn>svg {
   fill: #000000;
   width: 18px;
   height: 18px;
@@ -487,7 +489,7 @@ modal-body */
   margin: 6px;
 }
 
-.close-btn > svg:hover {
+.close-btn>svg:hover {
   color: #2196f3;
   cursor: pointer;
   transition: var(--transition);
@@ -537,7 +539,7 @@ modal-body */
   padding: 40px 39px 40px 41px;
 }
 
-.container-form > h3 {
+.container-form>h3 {
   color: #212121;
   text-align: center;
   font-family: var(--font-family);
@@ -578,7 +580,7 @@ modal-body */
   margin-top: 20px;
 }
 
-.form-acces > label {
+.form-acces>label {
   display: flex;
   flex-direction: row;
   justify-content: center;
