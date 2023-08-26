@@ -54,7 +54,7 @@ a:-webkit-any-link {
   width: 280px;
   height: 412px;
   padding: 40px 32px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   background-color: var(--general-white);
   border-radius: 24px;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
@@ -86,17 +86,16 @@ hr .sprite-section {
   height: 16px;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .crawler-cafe {
-  margin-bottom: 20px;
   background-color: var(--coffe-color);
   text-align: center;
   font-family: var(--general-font);
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 86%;
   letter-spacing: 0.48px;
   line-height: 186%;
   /* 22.32px */
@@ -183,21 +182,24 @@ hr .sprite-section {
   height: 16px;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .crawler-foodtruck {
-  margin-bottom: 20px;
   color: #fff;
+  border-radius: 4px;
+  line-height: 186%;
+  /* 22.32px */
+  letter-spacing: 0.48px;
+
+
   background-color: var(--food-color);
   text-align: center;
   font-family: var(--general-font);
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 186%;
-  /* 22.32px */
-  letter-spacing: 0.48px;
-  border-radius: 4px;
+    
 }
 
 .button-section {
@@ -824,6 +826,11 @@ a .terms-agree {
     flex-shrink: 0;
   }
 
+.sprite-section {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
   .weekdays {
     width: 134px;
     height: 30px;
@@ -846,11 +853,6 @@ a .terms-agree {
     font-size: 14px;
     line-height: 183%;
     /* 25.62px */
-  }
-
-  .sprite-section {
-    margin-top: 32px;
-    margin-bottom: 32px;
   }
 
   .menu-section {
@@ -915,7 +917,7 @@ a .terms-agree {
     letter-spacing: 0.64px;
   }
 
-  .details {
+.details {
     width: 276px;
     height: 50px;
     flex-shrink: 0;
@@ -923,15 +925,15 @@ a .terms-agree {
     line-height: 183%;
     /* 29.28px */
     letter-spacing: 0.64px;
-  }
+}
 
-  .sprite-section {
+.sprite-section {
     width: 288px;
     height: 0px;
     flex-shrink: 0;
     margin-top: 32px;
     margin-bottom: 32px;
-  }
+}
 
   .weekdays {
     font-size: 16px;
