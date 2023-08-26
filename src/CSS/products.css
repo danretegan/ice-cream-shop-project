@@ -101,7 +101,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(15, 79, 208, 0.15);
+   background-color: rgba(91,92,94,.15);
     border-radius: 24px;
     z-index: 0;
     opacity: 0;
@@ -119,25 +119,36 @@ a {
     visibility: hidden;}
 
 .rectangle-product:hover .strawberry-title-product{
-    transition: .05s cubic-bezier(.4,0,.2,1) 0ms;
+    transition: .35s cubic-bezier(.4,0,.2,1) 0ms;
     font-size: 29px;
     z-index: 1;
     position: absolute;
 }
-.rectangle-product:hover .arrow-right-product{
+.rectangle-product:hover .arrow-right-product {
     cursor: pointer;
     z-index: 1;
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
+    width: 49px;
+    height: 25px;
+    fill: #fff;
     border-radius: 35%;
     transform: rotate(-90deg);
-    left: 110px;}
+   transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
+
+    .rectangle-product:hover .icons {
+        cursor: pointer;
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        background-color: #d41443;
+        border-radius: 35%;
+        transform: rotate(0deg);
+        transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
 
 .rectangle-product:hover .dots-product{
     z-index: 1;
 }
 
+.icons{background-color: white;}
 
 .product__text {
     width: 216px;
@@ -245,29 +256,23 @@ color: #FFFFFF;
     
 }
 
-.arrow-right-product{
-    position: absolute;
-    width: 40px;
+.icons{width: 40px;
     height: 40px;
-    top: 408px;
-    left: 117px;
-    background-color: white;
-    border-radius: 50%;
-    transition-property: background-color, transform;
-    transition-duration: 100ms;
-    transition-timing-function:linear;
-    transition-delay: 0s;
-}
-.arrow-right-product:hover {
-    cursor: pointer;
-    z-index: 1;
-    width: 50px;
-    height: 50px;
     background-color: #fff;
-    border-radius: 35%;
-    transform: rotate(-90deg);
-    left: 110px;
-  }
+    position: relative;
+    margin-top: 32px;
+    margin-left: 120px;
+    border-radius: 50%;}
+
+.arrow-right-product{
+    fill: #d41443;
+    width: 38px;
+    height: 17px;
+    transition: background-color .1s linear, transform .1s linear;
+    position: absolute;
+    top: 10px;
+}
+
 
 
 
@@ -293,22 +298,32 @@ color: #FFFFFF;
     visibility: hidden;}
 
 .rectangle-2-product:hover .coffee-title-product{
-    transition: .05s cubic-bezier(.4,0,.2,1) 0ms;
+    transition: .35s cubic-bezier(.4,0,.2,1) 0ms;
     font-size: 28px;
     z-index: 1;
 }
 .rectangle-2-product:hover .arrow-right-product{
     cursor: pointer;
     z-index: 1;
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
+    width: 49px;
+    height: 25px;
+    fill: #fff;
     border-radius: 35%;
     transform: rotate(-90deg);
-    left: 110px;}
+   transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
     .rectangle-2-product:hover .dots-product{
         z-index: 1;
     }
+
+    .rectangle-2-product:hover .icons {
+        cursor: pointer;
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        background-color: #d41443;
+        border-radius: 35%;
+        transform: rotate(0deg);
+        transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
 
 .coffee-product{
     width: 280px;
@@ -386,19 +401,19 @@ padding-top: 32px;
     visibility: hidden;}
 
 .rectangle-3-product:hover .milkshake-title-product{
-    transition: .05s cubic-bezier(.4,0,.2,1) 0ms;
+    transition: .35s cubic-bezier(.4,0,.2,1) 0ms;
     font-size: 29px;
     left: 41px;
     z-index: 1;}
 .rectangle-3-product:hover .arrow-right-product{
     cursor: pointer;
     z-index: 1;
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
+    width: 49px;
+    height: 25px;
+    fill: #fff;
     border-radius: 35%;
     transform: rotate(-90deg);
-    left: 110px;}
+   transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
 
     .rectangle-3-product:hover .dots-product{
         z-index: 1;
@@ -416,6 +431,16 @@ padding-top: 32px;
         background-image: url(/src/images/milkshake.png);
         background-size: 280px 280px;
     }
+
+    .rectangle-3-product:hover .icons {
+        cursor: pointer;
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        background-color: #d41443;
+        border-radius: 35%;
+        transform: rotate(0deg);
+        transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
 
 .milkshake-product{
     width: 280px;
@@ -459,26 +484,49 @@ padding-top: 32px;
 
  /*Tablet*/
  @media screen and (min-width: 768px) {
-
     .rectangle-product:hover .arrow-right-product{
         cursor: pointer;
         z-index: 1;
-        width: 50px;
-        height: 50px;
-        background-color: #fff;
+        width: 49px;
+        height: 25px;
+        fill: #fff;
         border-radius: 35%;
         transform: rotate(-90deg);
-        left: 85px;}
+       transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
 
-    .rectangle-2-product:hover .arrow-right-product{
+       .rectangle-product:hover .icons {
         cursor: pointer;
         z-index: 1;
         width: 50px;
         height: 50px;
-        background-color: #fff;
+        background-color: #d41443;
         border-radius: 35%;
-        transform: rotate(-90deg);
-        left: 85px;}
+        transform: rotate(0deg);
+        transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
+
+        .rectangle-2-product:hover .arrow-right-product{
+            cursor: pointer;
+            z-index: 1;
+            width: 49px;
+            height: 25px;
+            fill: #fff;
+            border-radius: 35%;
+            transform: rotate(-90deg);
+           transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
+            .rectangle-2-product:hover .dots-product{
+                z-index: 1;
+            }
+        
+            .rectangle-2-product:hover .icons {
+                cursor: pointer;
+                z-index: 1;
+                width: 50px;
+                height: 50px;
+                background-color: #d41443;
+                border-radius: 35%;
+                transform: rotate(0deg);
+                transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
+
         .rectangle-2-product:hover .dots-product{
             z-index: 1;
         }
@@ -618,13 +666,19 @@ letter-spacing: 0.56px;
         background-size: 224px 224px;
     }
     
+    .icons {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: relative;
+        margin-left: 92px;
+        margin-bottom: 40px;
+        margin-top: 32px;
+    }
+
     .arrow-right-product{
-            width: 40px;
-            height: 40px;
-            position: absolute;
-            top: auto;
-            left: 90px;
-            margin-top: 32px;    }
+            position: absolute;}
     
     .rectangle-2-product{
         position: relative;
@@ -637,6 +691,8 @@ letter-spacing: 0.56px;
         margin-top: 158px;
         margin-bottom: 60px;
     }
+
+
 
     .rectangle-2-product:nth-child(2):before {
         content: "";
@@ -711,19 +767,30 @@ margin-left: 19px;
             visibility: hidden;}
         
         .rectangle-3-product:hover .milkshake-title-product{
-            transition: .05s cubic-bezier(.4,0,.2,1) 0ms;
+            transition: .35s cubic-bezier(.4,0,.2,1) 0ms;
             font-size: 29px;
             left: 10px;
         }
         .rectangle-3-product:hover .arrow-right-product{
             cursor: pointer;
-    z-index: 1;
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    border-radius: 35%;
-    transform: rotate(-90deg);
-    left: 85px}
+            z-index: 1;
+            width: 49px;
+            height: 25px;
+            fill: #fff;
+            border-radius: 35%;
+            transform: rotate(-90deg);
+           transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
+
+           .rectangle-3-product:hover .icons {
+            cursor: pointer;
+            z-index: 1;
+            width: 50px;
+            height: 50px;
+            background-color: #d41443;
+            border-radius: 35%;
+            transform: rotate(0deg);
+            transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
+
             .rectangle-3-product:nth-child(3):before {
                 content: "";
                 position: absolute;
@@ -783,6 +850,17 @@ margin-left: 19px;
         background: #FFF;
     }
 
+    .icons {
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: relative;
+        margin-left: 164px;
+        margin-bottom: 60px;
+        margin-top: 32px;
+    }
+
     .rectangle-product:first-child:before {
         content: "";
         position: absolute;
@@ -796,6 +874,26 @@ margin-left: 19px;
         background-image: url(/src/images/strawberry.png);
         background-size: 368px 394px;
     }
+
+    .rectangle-product:hover .arrow-right-product{
+        cursor: pointer;
+        z-index: 1;
+        width: 49px;
+        height: 25px;
+        fill: #fff;
+        border-radius: 35%;
+        transform: rotate(-90deg);
+       transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
+
+       .rectangle-product:hover .icons {
+        cursor: pointer;
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+        background-color: #d41443;
+        border-radius: 35%;
+        transform: rotate(0deg);
+        transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
 
     .rectangle-2-product:nth-child(2):before {
         content: "";
@@ -939,12 +1037,7 @@ margin-left: 19px;
     }
     
     .arrow-right-product{
-        position: absolute;
-    width: 40px;
-    height: 40px;
-    margin-top: 32px;
-    left: 166px;
-    }
+        position: absolute; }
     
     .rectangle-2-product{
         position: relative;
@@ -961,6 +1054,26 @@ margin-left: 19px;
             font-size: 33px;
         }
     
+        .rectangle-2-product:hover .arrow-right-product{
+            cursor: pointer;
+            z-index: 1;
+            width: 49px;
+            height: 25px;
+            fill: #fff;
+            border-radius: 35%;
+            transform: rotate(-90deg);
+           transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
+    
+           .rectangle-2-product:hover .icons {
+            cursor: pointer;
+            z-index: 1;
+            width: 50px;
+            height: 50px;
+            background-color: #d41443;
+            border-radius: 35%;
+            transform: rotate(0deg);
+            transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
+
     .coffee-product{
         width: 368px;
     height: 394px;
@@ -1045,37 +1158,26 @@ letter-spacing: 0.64px;
 width: 324px;
 height: 134px;
 flex-shrink: 0; 
-    }
-
-    .rectangle-product:hover .arrow-right-product{
-        cursor: pointer;
-        z-index: 1;
-        width: 50px;
-        height: 50px;
-        background-color: #fff;
-        border-radius: 35%;
-        transform: rotate(-90deg);
-        left: 161px;}
-
-    .rectangle-2-product:hover .arrow-right-product{
-        cursor: pointer;
-        z-index: 1;
-        width: 50px;
-        height: 50px;
-        background-color: #fff;
-        border-radius: 35%;
-        transform: rotate(-90deg);
-        left: 161px;}
-    
+    }    
         .rectangle-3-product:hover .arrow-right-product{
+            cursor: pointer;
+            z-index: 1;
+            width: 49px;
+            height: 25px;
+            fill: #fff;
+            border-radius: 35%;
+            transform: rotate(-90deg);
+           transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}
+    
+           .rectangle-3-product:hover .icons {
             cursor: pointer;
             z-index: 1;
             width: 50px;
             height: 50px;
-            background-color: #fff;
+            background-color: #d41443;
             border-radius: 35%;
-            transform: rotate(-90deg);
-            left: 161px;}}
+            transform: rotate(0deg);
+            transition: .35s cubic-bezier(.4,0,.2,1) 0ms;}}
 
 
     
