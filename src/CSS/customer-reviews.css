@@ -42,7 +42,8 @@
   font-style: normal;
   font-weight: 500;
   position: relative;
-  bottom: 5px;
+  bottom: 0px;
+  top: 0px;
   line-height: 260%;
   height: 21px;
   background: repeating-linear-gradient(
