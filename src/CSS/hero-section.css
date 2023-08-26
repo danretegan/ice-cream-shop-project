@@ -633,6 +633,7 @@ header {
   height: 410px;
   z-index: -1;
   animation: 0.7s ease 0s 1 slideInFromLeft;
+  cursor: url('../images/tongue.png'), auto;
 }
 
 @keyframes slideInFromLeft {
