@@ -321,15 +321,17 @@ modal-body */
 }
 
 .modal-content-map {
-  padding: 16px;
+  padding: 15px;
   background-color: var(--section-background-color);
-  width: 50%;
-  margin: 0 auto;
-  height: 450px;
+  width: 40%;
+  height: 260px;
   position: relative;
-  border: 1px solid #f25c66;
+  border: 1px solid #F25C66;
   border-radius: 12px;
-  height: 581px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .is-hidden-franchise {
@@ -389,15 +391,14 @@ modal-body */
 }
 
 .color-map-title {
-  color: #ffa5ba;
+  color: #FFA5BA;
   font-family: var(--heading-font);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.40px;
   text-transform: uppercase;
-  margin-top: 40px;
 }
 
 .content-section-map {
