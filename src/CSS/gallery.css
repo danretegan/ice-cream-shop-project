@@ -79,6 +79,37 @@
   padding-top: 5px;
 }
 
+/* Fixed button */
+
+.fixedbutton {
+  border-radius: 50%;
+  border: none;
+  bottom: 27px;
+  box-shadow: 0 2px 4px var(--brand-color);
+  height: 40px;
+  outline: none;
+  padding: 0;
+  position: fixed;
+  right: 20px;
+  transition: box-shadow 0.1s linear, transform 0.1s linear;
+  width: 40px;
+  z-index: 3;
+}
+
+.fixedbutton:hover {
+  cursor: pointer;
+  border-radius: 35%;
+}
+
+.fixedbutton:active {
+  box-shadow: 0 0 2px var(--brand-color);
+  transform: translateY(2px);
+}
+
+.fixedbutton:focus {
+  outline: none;
+}
+
 @media screen and (min-width: 768px) {
   .gallery {
     padding-bottom: 60px;
@@ -93,25 +124,5 @@
     max-width: 1280px;
     padding: 0 93px;
     margin: 0 auto;
-  }
-  .fixedbutton {
-    border-radius: 50%;
-    border: none;
-    bottom: 50px;
-    height: 40px;
-    outline: none;
-    padding: 0;
-    position: fixed;
-    right: 50px;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 40px;
-  }
-
-  .fixedbutton:hover,
-  .fixedbutton:focus {
-    box-shadow: 0 0 0 3px var(--brand-color);
-    cursor: pointer;
-    transform: rotate(-90deg);
   }
 }
