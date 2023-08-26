@@ -233,10 +233,10 @@
   align-items: center;
   padding: 10px 10px;
 }
-.btn-products{
+.btn-products {
   color: var(--general-white);
 }
-.btn-about{
+.btn-about {
   color: var(--Brand-color);
 }
 .input-icon {
@@ -633,6 +633,7 @@ header {
   height: 410px;
   z-index: -1;
   animation: 0.7s ease 0s 1 slideInFromLeft;
+  cursor: url('../images/tongue.png'), auto;
 }
 
 @keyframes slideInFromLeft {
@@ -800,6 +801,19 @@ header {
     font-weight: 400;
     letter-spacing: 1.84px;
     padding-right: 10px;
+  }
+
+  .number-animation::after {
+    content: counter(count);
+    animation: counter 2s linear;
+  }
+  @keyframes counter {
+    0% {
+      counter-increment: count 0;
+    }
+    100% {
+      counter-increment: count 10;
+    }
   }
   .small-text {
     color: var(--general-white);
