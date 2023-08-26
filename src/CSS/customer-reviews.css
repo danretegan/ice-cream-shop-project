@@ -425,7 +425,7 @@
   }
 
   .slideshow-container {
-    width: 1000px;
+    width: 100vw;
     position: relative;
     margin: auto;
   }
@@ -621,7 +621,7 @@
   }
 
   .slideshow-container {
-    width: 1000px;
+    width: 100vw;
     position: relative;
     margin: auto;
   }
