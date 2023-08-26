@@ -86,6 +86,7 @@
   border: none;
   bottom: 27px;
   box-shadow: 0 2px 4px var(--brand-color);
+  display: none;
   height: 40px;
   outline: none;
   padding: 0;
