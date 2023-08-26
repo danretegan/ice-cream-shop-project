@@ -105,7 +105,12 @@
 <!-- modal no 1 location-->
 <div class="modal-section is-hidden-location" data-modal-location>
   <div class="modal-content-location">
-    <div class="close-btn-map close-container" data-modal-close-location>
+    <div class="close-btn-location" data-modal-close-location>
+      <svg class="close-x" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+        <path
+          d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z"
+          fill="currentcolor" />
+      </svg>
     </div>
     <div class="content-section-map">
       <h2>
@@ -120,11 +125,14 @@
       <span class="locations-shop">Strada Lector, Sibiu 557260, Romania </span>
       <button type="submit" class="submit-btn">
         <span class="submit-btn-content">
-          Open in Google Maps
-          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="10" viewBox="0 0 7 10" fill="none">
-            <path d="M1.03772 1L5.71697 5L1.03772 9" stroke="#D41443" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
+          <a
+            href="https://www.google.com/maps/place/Promenada+Mall/@45.796968,24.163121,12z/data=!4m6!3m5!1s0x474c67d299363fcf:0x96c694787e244a37!8m2!3d45.7969677!4d24.1631211!16s%2Fg%2F11fnvd5027?hl=ro&entry=ttu">
+            Open in Google Maps
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="10" viewBox="0 0 7 10" fill="none">
+              <path d="M1.03772 1L5.71697 5L1.03772 9" stroke="#D41443" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
         </span>
       </button>
     </div>
@@ -134,11 +142,16 @@
 <!-- modal no 2 franchise -->
 <div class="modal is-hidden-franchise" data-modal-franchise>
   <div class="modal-content-map">
-    <div class="close-container close-btn-map" data-modal-close-franchise>
+    <div class="close-btn-franchise" data-modal-close-franchise><svg class="close-x" xmlns="http://www.w3.org/2000/svg"
+        width="25" height="25" viewBox="0 0 16 16" fill="none">
+        <path
+          d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z"
+          fill="currentcolor" />
+      </svg>
     </div>
-    <form action="form-input" autocomplete="on" novalidate>
-      <div class="color-map-title">
-        <h3>Leave your information and we'll call you back</h3>
+    <div class="color-map-title">
+      <h3>Leave your information and we'll call you back</h3>
+      <form action="form-input" autocomplete="on" novalidate>
         <label class="form-group">
           <span class="label-text">Name </span>
           <input type="text" name="name" class="icon-input" required />
@@ -162,14 +175,16 @@
             <input type="checkbox" name="agree" value="" class="checkbox-size" required />
             <span class="checkbox-paragraph">
               I agree with the letter and accept the
-              <a href="https://www.iubenda.com/en/help/2859-terms-and-conditions-when-are-they-needed"><span
-                  class="terms-agree">Terms and Conditions</span></a>
+              <a href="https://www.iubenda.com/en/help/2859-terms-and-conditions-when-are-they-needed">
+                <span class="terms-agree">Terms and Conditions</span>
+              </a>
             </span>
           </label>
           <button type="submit" class="button-blue">Send</button>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
+
   </div>
 </div>
 

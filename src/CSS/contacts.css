@@ -12,6 +12,7 @@
   --general-white: #fff;
   --food-color: #c2e297;
   --heading-font: 'Titan One', cursive;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /* 
   Adaugativa doar variabilele de care aveti nevoie pentru sectiunea voastra. Asa vom evita conflictele.
@@ -276,7 +277,7 @@ hr .sprite-section {
   padding: 0 max(43px);
 }
 
-.submit-btn-content {
+.submit-btn-content>a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -324,7 +325,7 @@ modal-body */
   padding: 15px;
   background-color: var(--section-background-color);
   min-width: 25%;
-  height: 450px;
+  height: 410px;
   position: relative;
   border: 1px solid #F25C66;
   border-radius: 12px;
@@ -346,6 +347,31 @@ modal-body */
   padding-top: 30px;
 }
 
+.close-btn-location {
+  background: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  transition: var(--transition);
+}
+
+.close-x {
+  color: var(--Brand-color);
+  transition: var(--transition);
+}
+
+.close-btn-location:hover {
+  rotate: 180deg;
+}
+
 .close-btn-map,
 .close-button {
   position: absolute;
@@ -362,17 +388,17 @@ modal-body */
 
 .close-container {
   z-index: 15;
-  width: 35px;
-  height: 35px;
-  top: 15px;
-  right: 15px;
-  opacity: 0.7;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  opacity: 0.6;
 }
 
 .close-btn-map:hover,
 .close-btn-map:focus {
   color: var(--general-white);
-  background-color: #f25c66;
+  background-color: #333;
 }
 
 .close-btn-map:hover {
@@ -382,12 +408,13 @@ modal-body */
 .close-btn-map:before,
 .close-btn-map:after {
   position: absolute;
-  left: 15px;
+  left: 12px;
   top: 2px;
   content: '';
-  height: 30px;
+  height: 25px;
   width: 3px;
-  background-color: #333;
+
+  background-color: #f25c66;
 }
 
 .close-btn-map::before {
@@ -407,6 +434,7 @@ modal-body */
   line-height: normal;
   letter-spacing: 0.40px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .locations-shop {
@@ -441,14 +469,13 @@ modal-body */
 }
 
 .modal-content-map {
-  padding: 15px;
+  padding: 40px;
   background-color: var(--section-background-color);
-  width: 40%;
-  height: 260px;
-  position: relative;
-  border: 1px solid #F25C66;
-  border-radius: 12px;
+  max-width: 528px;
   height: auto;
+  position: relative;
+  border: 3px solid #F25C66;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -497,33 +524,29 @@ modal-body */
 
 
 
-.close-btn {
-  position: absolute;
-  background-color: #fff;
-  border-radius: 22px;
-  border: 1px solid #757575;
-  color: #212121;
+.close-btn-franchise {
+  background: none;
+  border: none;
   width: 30px;
   height: 30px;
+  display: flex;
+  align-items: center;
+  color: #000;
   cursor: pointer;
   outline: none;
+  position: absolute;
   right: 8px;
-  top: 8px;
+  top: 10px;
   transition: var(--transition);
 }
 
-.close-btn>svg {
-  fill: #000000;
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
-  margin: 6px;
+.close-x {
+  color: var(--Brand-color);
+  transition: var(--transition);
 }
 
-.close-btn>svg:hover {
-  color: #2196f3;
-  cursor: pointer;
-  transition: var(--transition);
+.close-btn-franchise:hover {
+  rotate: 180deg;
 }
 
 .input {
@@ -543,17 +566,17 @@ modal-body */
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
   width: 100%;
+  text-align: start;
+  border-radius: 22px;
 }
 
 .form-group .icon-input:focus,
-.form-group .input:focus {
-  border: 1px solid #2196f3;
+.form-group .icon-input:hover {
+  border: 1px solid #D41443;
   outline: none;
   cursor: pointer;
-  color: #2196f3;
-  fill: #2196f3;
+  /* color: #2196f3; */
 }
 
 .form:focus-within {
@@ -661,7 +684,7 @@ modal-body */
 }
 
 .terms-agree {
-  color: #2196f3;
+  color: #d41342;
   font-family: var(--font-family);
   font-size: 14px;
   font-style: normal;
@@ -678,7 +701,7 @@ modal-body */
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 22px;
+  border-radius: 30px;
   background: #d41443;
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
   color: #fff;
@@ -693,6 +716,9 @@ modal-body */
 .button-blue:hover,
 .button-blue:focus {
   cursor: pointer;
+  background-color: transparent;
+  color: #d41443;
+  border: 2px solid #D41443;
 }
 
 /* Tablet Section */
