@@ -20,7 +20,7 @@
 }
 
 * {
-  box-sizing: 'Border-box';
+  box-sizing: Border-box;
 }
 
 a {
@@ -409,7 +409,7 @@ hr .sprite-section {
 }
 
 .close-btn-location:hover {
-  rotate: 180deg;
+  transform: rotate(180deg);
 }
 
 .close-btn-map,
@@ -584,7 +584,7 @@ hr .sprite-section {
 }
 
 .close-btn-franchise:hover {
-  rotate: 180deg;
+  transform: rotate(180deg);
 }
 
 .input {
