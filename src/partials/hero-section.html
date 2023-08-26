@@ -13,7 +13,7 @@
       </svg>
     </button>
     <div class="menu-drawer-navigation">
-      <button data-modal-open-mobile type="button" class="submit-btn">
+      <button data-modal-open-mobile-buy type="button" class="submit-btn">
         <span class="submit-btn-content"
           >Buy now
           <svg
@@ -78,11 +78,9 @@
       </div>
       <div class="header-buttons">
         <!-- burger menu -->
-        <button
-          class="menu-button js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+        <button class="menu-button js-open-menu">
+          <!--           aria-expanded="false"
+          aria-controls="mobile-menu" -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -95,7 +93,12 @@
             <path d="M0 13H20" stroke="#D41443" />
           </svg>
         </button>
-        <button data-modal-open type="button" class="submit-btn">
+        <button
+          data-modal-open-buy
+          data-modal-open-mobile-buy
+          type="button"
+          class="submit-btn"
+        >
           <span class="submit-btn-content"
             >Buy now
             <svg
@@ -153,8 +156,12 @@
           made with <br /><span class="passion">passion</span>
         </h1>
         <div class="hero-buttons">
-          <button type="submit" class="hero-btn-red">Products</button>
-          <button type="submit" class="hero-btn">How it’s made?</button>
+          <a class="link-hero-button hero-btn-red" href="#products"
+            ><span class="btn-products">Products</span></a
+          >
+          <a class="link-hero-button hero-btn" href="#about"
+            ><span class="btn-about">How it’s made?</span></a
+          >
         </div>
         <div class="milk-header">
           <img
@@ -167,11 +174,12 @@
               Indulge in a scoop of ice cream made with passion and treat your
               taste buds to an unforgettable experiencex
             </p>
-            <img
-              src="/src/images/arrow-right.png"
-              class="link-how-its-made"
-              alt="arrow"
-            />
+            <a href="#about"
+              ><img
+                src="/src/images/arrow-right.png"
+                class="link-how-its-made"
+                alt="arrow"
+            /></a>
           </div>
         </div>
       </div>
@@ -195,14 +203,20 @@
     </div>
   </div>
   <!-- modal  -->
-  <div class="modal is-hidden" data-modal>
-    <div class="modal-content">
-      <button class="close-btn" data-modal-close>
+  <div
+    class="modal-buy is-hidden-buy"
+    style="display: block"
+    data-modal-buy
+    data-modal-mobile-buy
+  >
+    <div class="modal-content-buy">
+      <button class="close-btn-buy" data-modal-close-buy>
         <svg
+          class="close-x"
           xmlns="http://www.w3.org/2000/svg"
-          width="18"
-          height="18"
-          viewBox="0 0 18 18"
+          width="25"
+          height="25"
+          viewBox="0 0 16 16"
           fill="none"
         >
           <path
@@ -211,50 +225,95 @@
           />
         </svg>
       </button>
-      <form class="form">
+      <form class="form-buy">
         <span class="form-title"
-          >Leave your information and we'll call you back</span
+          >Leave your order here and maybe we will deliver it</span
         >
-        <label class="form-group">
-          <span>Name</span>
-          <input type="text" id="Name" />
-          <svg class="input-icon">
-            <use href="./images/icons.svg#icon-person"></use>
-          </svg>
+        <div class="modal-buy-items">
+          <div class="modal-buy-item1">
+            <span class="modal-buy-item-name">Ice Cream</span
+            ><input
+              class="modal-buy-item-amount"
+              type="number"
+              name="quantity"
+              min="0"
+              max="9"
+              placeholder="0"
+            />
+          </div>
+          <div class="modal-buy-item2">
+            <span class="modal-buy-item-name">Coffee</span
+            ><input
+              class="modal-buy-item-amount"
+              type="number"
+              name="quantity"
+              min="0"
+              max="9"
+              placeholder="0"
+            />
+          </div>
+          <div class="modal-buy-item3">
+            <span class="modal-buy-item-name">Milkshake</span
+            ><input
+              class="modal-buy-item-amount"
+              type="number"
+              name="quantity"
+              min="0"
+              max="9"
+              placeholder="0"
+            />
+          </div>
+        </div>
+        <label class="form-group-buy">
+          <input
+            class="input-modal-buy"
+            type="text"
+            id="Name"
+            placeholder="Name"
+          />
         </label>
-        <label class="form-group">
-          <span>Telephone</span>
-          <input type="tel" id="Telephone" />
-          <svg class="input-icon">
-            <use href="./images/icons.svg#icon-phone"></use>
-          </svg>
+        <label class="form-group-buy">
+          <input
+            class="input-modal-buy"
+            type="number"
+            id="Telephone"
+            placeholder="Telephone"
+          />
         </label>
-        <label class="form-group">
-          <span>E-mail</span>
-          <input type="email" id="email" />
+        <label class="form-group-buy">
+          <input
+            class="input-modal-buy"
+            type="email"
+            id="email"
+            placeholder="E-mail"
+          />
           <svg class="input-icon">
             <use href="./images/icons.svg#icon-email"></use>
           </svg>
         </label>
-        <label class="form-group">
-          <span>Comments</span>
+        <label class="form-group-buy">
           <textarea
             id="comments"
             cols="30"
-            rows="5"
-            placeholder="Enter the text"
+            rows="2"
+            placeholder="Address"
+            class="order-area"
           ></textarea>
         </label>
-        <label class="form-group terms-conditions-checkbox">
+        <label class="form-group-buy terms-conditions-checkbox">
           <input type="checkbox" name="checkbox" />
-          <div class="checkboxes">
-            <svg class="checkbox">
-              <use href="./images/icons.svg#icon-checkbox"></use>
-            </svg>
-            <svg class="checkbox-checked">
-              <use href="./images/icons.svg#icon-checkbox-checked"></use>
-            </svg>
-          </div>
+          <span class="checkboxes">
+            <img
+              class="checkbox"
+              src="./images/checkbox-unchecked.png"
+              alt=""
+            />
+            <img
+              class="checkbox-checked"
+              src="./images/checkbox-checked.png"
+              alt=""
+            />
+          </span>
           <span class="terms-info"
             >I agree with the letter and accept the
             <a href="" class="terms-and-conditions"
@@ -263,12 +322,13 @@
           >
         </label>
         <div class="form-group-btn">
-          <button type="submit" class="submit-btn">Send</button>
+          <button type="submit" class="submit-btn-red">Send</button>
         </div>
       </form>
     </div>
   </div>
 
   <script src="./js/mobile-menu.js"></script>
-  <script src="/src/js/modal-buy-now.js"></script>
+  <script type="module" src="/src/js/modal-buy-now.js"></script>
+  <script type="module" src="/src/js/modal-buy-now-mobile.js"></script>
 </header>
