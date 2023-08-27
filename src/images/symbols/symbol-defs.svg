@@ -14,5 +14,9 @@
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.321 3.2l14.974 12.8-14.974 12.8"></path>
 </symbol>
 
+<symbol id="icon-arrow-small" viewBox="0 0 32 32">
+<path d="M23.219 14.115l-5.724-5.724-1.885 1.885 4.391 4.391h-13.333v2.667h13.333l-4.391 4.391 1.885 1.885 5.724-5.724c0.482-0.483 0.781-1.149 0.781-1.885s-0.298-1.403-0.781-1.885v0z"></path>
+</symbol>
+
 </defs>
 </svg>
