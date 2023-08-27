@@ -7,7 +7,16 @@
   --general-white: #fff;
   --general-font: 'DM Sans', sans-serif;
 }
-
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 .new-icon {
   color: rgba(225, 225, 225, 1);
   font-size: 92px;
@@ -219,8 +228,10 @@
   height: 85px;
 }
 .img-person-title {
-  margin-left: 40%;
-  margin-right: 43%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .dot {
@@ -242,6 +253,10 @@
   animation-duration: 1.5s;
 }
 .three-dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   position: relative;
   top: 36px;
 }
@@ -377,7 +392,7 @@
     border-radius: 50%;
     height: 85px;
     position: relative;
-    left: 55px;
+
     top: 20px;
   }
   .comment,
@@ -416,7 +431,7 @@
   }
 
   .slideshow-container {
-    width: 1000px;
+    width: 100vw;
     position: relative;
     margin: auto;
   }
@@ -568,7 +583,7 @@
     border-radius: 50%;
     height: 85px;
     position: relative;
-    left: 55px;
+
     top: 20px;
   }
 
@@ -612,7 +627,7 @@
   }
 
   .slideshow-container {
-    width: 1000px;
+    width: 100vw;
     position: relative;
     margin: auto;
   }
