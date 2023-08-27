@@ -76,6 +76,14 @@
   background-position: center;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .how-is-made-paragraphs {
+    background-image: url(../images/milk-bg-x2-m.png);
+  }
+}
+
 .how-is-made-paragraphs-section .p-1 {
   letter-spacing: 0.48px;
   line-height: 162%;
@@ -356,6 +364,14 @@
     background-image: url(../images/milk-bg-d.png);
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .how-is-made-paragraphs {
+      background-image: url(../images/milk-bg-x2-d.png);
+    }
   }
 
   .first-section-head {
