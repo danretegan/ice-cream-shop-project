@@ -19,6 +19,10 @@
   width: 100%;
 }
 
+.gallery-container {
+  padding: 0 20px;
+}
+
 .gallery-row {
   align-items: center;
   display: flex;
