@@ -383,16 +383,16 @@
   }
 
   .slideshow-container {
-    width: 768px;
+    width: 100%;
     background-color: var(--general-white);
-    margin-bottom: 224px;
     padding-bottom: 80px;
+    position: relative;
+    margin: auto;
   }
   .img-person {
     border-radius: 50%;
     height: 85px;
     position: relative;
-
     top: 20px;
   }
   .comment,
@@ -428,12 +428,6 @@
     font-weight: 500;
     line-height: 186%;
     margin-top: 16px;
-  }
-
-  .slideshow-container {
-    width: 100vw;
-    position: relative;
-    margin: auto;
   }
 
   .text {
@@ -573,7 +567,7 @@
     visibility: hidden;
   }
   .slideshow-container {
-    width: 1280px;
+    width: 100%;
     background-color: var(--general-white);
     padding-left: 0;
     padding-bottom: 120px;
@@ -627,7 +621,7 @@
   }
 
   .slideshow-container {
-    width: 100vw;
+    width: 100%;
     position: relative;
     margin: auto;
   }
