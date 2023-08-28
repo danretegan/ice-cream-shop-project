@@ -383,16 +383,16 @@
   }
 
   .slideshow-container {
-    width: 768px;
+    width: 100vw;
     background-color: var(--general-white);
-    margin-bottom: 224px;
     padding-bottom: 80px;
+    position: relative;
+    margin: auto;
   }
   .img-person {
     border-radius: 50%;
     height: 85px;
     position: relative;
-
     top: 20px;
   }
   .comment,
@@ -428,12 +428,6 @@
     font-weight: 500;
     line-height: 186%;
     margin-top: 16px;
-  }
-
-  .slideshow-container {
-    width: 100vw;
-    position: relative;
-    margin: auto;
   }
 
   .text {
