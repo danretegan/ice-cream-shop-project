@@ -383,7 +383,7 @@
   }
 
   .slideshow-container {
-    width: 100vw;
+    width: 100%;
     background-color: var(--general-white);
     padding-bottom: 80px;
     position: relative;
@@ -567,7 +567,7 @@
     visibility: hidden;
   }
   .slideshow-container {
-    width: 1280px;
+    width: 100%;
     background-color: var(--general-white);
     padding-left: 0;
     padding-bottom: 120px;
@@ -621,7 +621,7 @@
   }
 
   .slideshow-container {
-    width: 100vw;
+    width: 100%;
     position: relative;
     margin: auto;
   }
