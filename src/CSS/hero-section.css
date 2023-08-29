@@ -657,6 +657,7 @@ header {
   margin-left: -80px;
   transition: 1s;
   animation: 0.7s ease 0s 1 elipseScale;
+  overflow: hidden;
 }
 
 @keyframes elipseScale {
@@ -670,6 +671,7 @@ header {
 
 .elipse:hover {
   transform: scale(130%);
+  overflow: hidden;
 }
 
 .header-title {
@@ -725,6 +727,7 @@ header {
     display: flex;
     justify-content: center;
     height: 416px;
+    overflow: hidden;
   }
   .header-container {
     display: flex;
