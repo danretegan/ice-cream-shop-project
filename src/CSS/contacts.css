@@ -334,6 +334,7 @@ hr .sprite-section {
 
 .modal-section {
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100vw;
@@ -430,6 +431,7 @@ hr .sprite-section {
 
 .modal-franchise {
   position: fixed;
+  z-index: 11;
   top: 0;
   left: 0;
   width: 100vw;
