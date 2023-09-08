@@ -576,6 +576,7 @@ hr .sprite-section {
 .checkbox-size {
   width: 20px;
   height: 20px;
+  color: #d41443;
 }
 
 .checkbox-paragraph a:hover {
