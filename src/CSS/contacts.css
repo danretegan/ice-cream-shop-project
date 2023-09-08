@@ -573,10 +573,10 @@ hr .sprite-section {
   align-items: center;
 }
 
-.checkbox-size {
+.form-acces .checkbox-size {
   width: 20px;
   height: 20px;
-  color: #d41443;
+  visibility: hidden;
 }
 
 .checkbox-paragraph a:hover {
