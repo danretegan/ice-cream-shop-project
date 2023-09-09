@@ -573,9 +573,35 @@ hr .sprite-section {
   align-items: center;
 }
 
-.checkbox-size {
+.form-acces .checkbox-size {
   width: 20px;
   height: 20px;
+  visibility: hidden;
+}
+
+.check-section {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.form-group .checkbox-unchecked-contacts {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+}
+
+.form-group .checkbox-checked-contacts {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-group input:checked~.check-section .checkbox-checked-contacts {
+  visibility: visible;
 }
 
 .checkbox-paragraph a:hover {
