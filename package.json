@@ -1,21 +1,21 @@
 {
-  "name": "parcel-project-template",
+  "name": "ice-cream-shop-project",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://adad22ro.github.io/css-proiect-1",
+  "homepage": "https://danretegan.github.io/ice-cream-shop-project",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /css-proiect-1/"
+    "build": "parcel build src/index.html --public-url /ice-cream-shop-project/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adad22ro/css-proiect-1.git"
+    "url": "git+https://github.com/danretegan/ice-cream-shop-project.git"
   },
   "keywords": [],
-  "author": "Rusu Andrei <gabirusu2000@gmail.com>",
+  "author": "Dan Retegan <danretegan@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/adad22ro/css-proiect-1/issues"
+    "url": "https://github.com/danretegan/ice-cream-shop-project/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
