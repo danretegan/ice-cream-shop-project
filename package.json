@@ -18,6 +18,7 @@
     "url": "https://github.com/danretegan/ice-cream-shop-project/issues"
   },
   "dependencies": {
+    "body-scroll-lock": "^4.0.0-beta.0",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
