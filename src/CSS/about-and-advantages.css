@@ -411,7 +411,6 @@
 
   .how-is-made-paragraphs-section .p-1 {
     letter-spacing: 0.64px;
-    font-size: 16px;
     width: 400px;
     line-height: 176%;
   }
@@ -433,7 +432,6 @@
   }
 
   .card-paragraph {
-    font-size: 16px;
     letter-spacing: 0.32px;
     line-height: 176%;
   }

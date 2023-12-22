@@ -212,7 +212,6 @@
 }
 .form-group-buy .order-area::placeholder {
   color: rgba(33, 33, 33, 0.2);
-  font-size: 16px;
 }
 .form-group-buy .order-area:hover::placeholder,
 .form-group-buy .order-area:focus::placeholder {
@@ -435,7 +434,6 @@ header {
   color: var(--general-white);
   font-weight: 700;
   text-align: center;
-  font-size: 16px;
   height: 44px;
   padding: 0 max(43px);
 }
