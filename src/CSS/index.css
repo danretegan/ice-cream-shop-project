@@ -1,3 +1,4 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
 @import './_common.css';
 @import './hero-section.css';
 @import './products.css';
@@ -5,8 +6,4 @@
 @import './gallery.css';
 @import './customer-reviews.css';
 @import './contacts.css';
-
 @import './footer.css';
-html {
-    scroll-behavior: smooth;
-}

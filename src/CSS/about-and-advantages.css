@@ -1,18 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 'Border-box';
-}
-
-:root {
-  --brand-color: #d41443;
-  --general-pink: #ffa5ba;
-  --section-background-color: #fff5f6;
-  --general-font-black: #000;
-  --general-font-grey: #907e82;
-  --general-white: #fff;
-  --general-font: 'DM Sans', sans-serif;
-  --heading-font: 'Titan One', cursive;
+  box-sizing: border-box;
 }
 
 .hiden {

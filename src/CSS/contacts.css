@@ -1,25 +1,5 @@
-:root {
-  --section-background-color: #fff5f6;
-  --general-font: 'DM Sans', sans-serif;
-  --general-font-grey: #907e82;
-  --general-pink: #ffa5ba;
-  --general-font-black: #000;
-  --coffe-color: #f0d1a5;
-  --heading-font: 'Titan One', cursive;
-  --Ice-cream-color: #ffb8ca;
-  --Brand-color: #d41443;
-  --general-white: #fff;
-  --food-color: #c2e297;
-  --heading-font: 'Titan One', cursive;
-  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  /* 
-  Adaugativa doar variabilele de care aveti nevoie pentru sectiunea voastra. Asa vom evita conflictele.
-   */
-}
-
 * {
-  box-sizing: Border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -169,7 +149,7 @@ hr .sprite-section {
 
 .color-fonts:hover,
 .color-fonts:focus {
-  color: var(--Brand-color);
+  color: var(--brand-color);
   cursor: pointer;
   transition: var(--transition);
 }
@@ -189,14 +169,12 @@ hr .sprite-section {
   /* 22.32px */
   letter-spacing: 0.48px;
 
-
   background-color: var(--food-color);
   text-align: center;
   font-family: var(--general-font);
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-
 }
 
 .button-section {
@@ -214,7 +192,7 @@ hr .sprite-section {
   color: #fff;
 }
 
-.button-location>svg {
+.button-location > svg {
   stroke: #fff;
   stroke-width: 2px;
   width: 3.61px;
@@ -231,7 +209,7 @@ hr .sprite-section {
   color: #d41342;
 }
 
-.button-franchise>svg {
+.button-franchise > svg {
   stroke-width: 2px;
   stroke: #d41443;
   width: 3.6px;
@@ -266,7 +244,7 @@ hr .sprite-section {
   border: none;
   cursor: pointer;
   font: var(--general-font);
-  color: var(--Brand-color);
+  color: var(--brand-color);
   font-weight: 700;
   text-align: center;
   font-size: 16px;
@@ -277,7 +255,7 @@ hr .sprite-section {
 
 .submit-btn:hover,
 .submit-btn:focus {
-  background: #ECEBEB;
+  background: #ecebeb;
   transform: translateY(-3px);
   transition: var(--transition);
 }
@@ -290,14 +268,15 @@ hr .sprite-section {
   color: #d41443;
 }
 
-.submit-btn-google>a {
+.submit-btn-google > a {
   width: 200px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 30px;
-  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+    0px 1px 3px 0px #0000001f;
   transition: var(--transition);
   font: var(--general-font);
   font-weight: 700;
@@ -307,11 +286,11 @@ hr .sprite-section {
   color: #fff;
 }
 
-.submit-btn-google>a:hover {
+.submit-btn-google > a:hover {
   cursor: pointer;
   background-color: #fff;
   color: #d41443;
-  border: 2px solid #D41443;
+  border: 2px solid #d41443;
 }
 
 .submit-btn-content-top {
@@ -322,9 +301,9 @@ hr .sprite-section {
   color: #fff;
 }
 
-.submit-btn-content>a:hover,
-.submit-btn-content>a:focus {
-  color: #D41443;
+.submit-btn-content > a:hover,
+.submit-btn-content > a:focus {
+  color: #d41443;
   background-color: #fff;
 }
 
@@ -354,7 +333,7 @@ hr .sprite-section {
   min-width: 25%;
   height: 450px;
   position: relative;
-  border: 3px solid #F25C66;
+  border: 3px solid #f25c66;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -392,7 +371,7 @@ hr .sprite-section {
 }
 
 .close-btn-x {
-  color: var(--Brand-color);
+  color: var(--brand-color);
   transition: var(--transition);
 }
 
@@ -401,20 +380,20 @@ hr .sprite-section {
 }
 
 .color-map-title {
-  color: #FFA5BA;
+  color: #ffa5ba;
   font-family: var(--heading-font);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.40px;
+  letter-spacing: 0.4px;
   text-transform: uppercase;
   text-align: center;
   gap: 10px;
 }
 
 .locations-shop {
-  color: #D41443;
+  color: #d41443;
   font-family: var(--general-font);
   font-size: 14px;
   font-style: normal;
@@ -451,7 +430,7 @@ hr .sprite-section {
   max-width: 528px;
   height: auto;
   position: relative;
-  border: 3px solid #F25C66;
+  border: 3px solid #f25c66;
   border-radius: 12px;
   /* display: flex;
   align-items: center;
@@ -474,18 +453,18 @@ hr .sprite-section {
 }
 
 .color-map-franchise {
-  color: #FFA5BA;
+  color: #ffa5ba;
   font-family: var(--heading-font);
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.40px;
+  letter-spacing: 0.4px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.color-map-franchise>h2 {
+.color-map-franchise > h2 {
   padding: 15px;
 }
 
@@ -506,7 +485,7 @@ hr .sprite-section {
 }
 
 .close-franchise {
-  color: var(--Brand-color);
+  color: var(--brand-color);
   transition: var(--transition);
 }
 
@@ -535,19 +514,19 @@ hr .sprite-section {
 
 .form-group .icon-input:focus,
 .form-group .icon-input:hover {
-  border: 2px solid #D41443;
+  border: 2px solid #d41443;
   outline: none;
   cursor: pointer;
-  color: #D41443;
+  color: #d41443;
   border-radius: 22px;
 }
 
 .form:focus-within {
-  border-color: #D41443;
+  border-color: #d41443;
 }
 
 .form-group:focus-within {
-  color: #D41443;
+  color: #d41443;
 }
 
 .input-text {
@@ -566,7 +545,7 @@ hr .sprite-section {
   margin-top: 20px;
 }
 
-.form-acces>label {
+.form-acces > label {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -600,7 +579,7 @@ hr .sprite-section {
   visibility: hidden;
 }
 
-.form-group input:checked~.check-section .checkbox-checked-contacts {
+.form-group input:checked ~ .check-section .checkbox-checked-contacts {
   visibility: visible;
 }
 
@@ -643,7 +622,8 @@ a .terms-agree {
   justify-content: center;
   border-radius: 30px;
   background: #d41443;
-  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+    0px 1px 3px 0px #0000001f;
   color: #fff;
   transition: var(--transition);
   border: none;
@@ -658,7 +638,7 @@ a .terms-agree {
   cursor: pointer;
   background-color: transparent;
   color: #d41443;
-  border: 2px solid #D41443;
+  border: 2px solid #d41443;
 }
 
 /* Tablet Section */
