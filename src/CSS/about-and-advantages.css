@@ -55,24 +55,6 @@
   margin-bottom: 32px;
 }
 
-.how-is-made-section {
-  width: 100%;
-}
-
-.how-is-made-paragraphs {
-  background-image: url(../images/milk-bg-m.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .how-is-made-paragraphs {
-    background-image: url(../images/milk-bg-x2-m.png);
-  }
-}
-
 .how-is-made-paragraphs-section .p-1 {
   letter-spacing: 0.48px;
   line-height: 162%;
@@ -81,7 +63,6 @@
   font-family: var(--general-font);
   color: var(--general-font-black);
   width: 220px;
-  flex-shrink: 0;
   margin-bottom: 18px;
   margin-top: 40px;
   transition: all 0.25s linear;
@@ -95,7 +76,6 @@
   font-family: var(--general-font);
   color: var(--general-font-grey);
   width: 220px;
-  flex-shrink: 0;
   margin-bottom: 20px;
   transition: all 0.25s linear;
 }
@@ -103,7 +83,6 @@
 .about-button {
   width: 176px;
   height: 44px;
-  flex-shrink: 0;
   border-radius: 22px;
   background: var(--general-white);
   border: none;
