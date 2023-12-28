@@ -345,14 +345,11 @@
 /* Dekstop */
 
 @media screen and (min-width: 1280px) {
-  .content {
-    width: 1200px;
-  }
-
   .about-and-advantages {
     background-image: url(../images/milk-bg-d.png);
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -361,6 +358,10 @@
     .how-is-made-paragraphs {
       background-image: url(../images/milk-bg-x2-d.png);
     }
+  }
+
+  .content {
+    width: 1200px;
   }
 
   .first-section-head {
