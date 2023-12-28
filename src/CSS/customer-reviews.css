@@ -25,7 +25,6 @@
 .comment-line6,
 .comment-line7 {
   width: 168px;
-  flex-shrink: 0;
   background-color: rgb(250, 250, 250);
   display: flex;
   flex-direction: column;
@@ -170,7 +169,6 @@
 .comment {
   width: 280px;
   height: 307px;
-  flex-shrink: 0;
   background-color: rgb(250, 250, 250);
   display: flex;
 }
@@ -393,14 +391,12 @@
   .comment {
     width: 620px;
     height: 164px;
-    flex-shrink: 0;
     background-color: #fafafa;
   }
 
   .name-location {
     width: 172px;
     height: 38px;
-    flex-shrink: 0;
     color: var(--general-font-black);
     text-align: center;
     font-family: var(--general-font);
@@ -433,7 +429,6 @@
   .name-location {
     width: 172px;
     height: 31px;
-    flex-shrink: 0;
     color: var(--general-font-black);
     text-align: center;
     font-family: var(--general-font);
@@ -579,13 +574,11 @@
   .comment {
     width: 968px;
     height: 138px;
-    flex-shrink: 0;
     background-color: #fafafa;
   }
   .name-location {
     width: 172px;
     height: 38px;
-    flex-shrink: 0;
     color: var(--general-font-black);
     text-align: center;
     font-family: var(--general-font);
@@ -624,7 +617,6 @@
   .name-location {
     width: 172px;
     height: 31px;
-    flex-shrink: 0;
     color: var(--general-font-black);
     text-align: center;
     font-family: var(--general-font);

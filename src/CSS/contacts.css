@@ -47,7 +47,6 @@ hr .sprite-section {
   border: 1px solid #e1e1e1;
   stroke-width: 1px;
   width: 216px;
-  flex-shrink: 0;
 }
 
 .sprite-section {
@@ -190,7 +189,6 @@ hr .sprite-section {
   stroke-width: 2px;
   width: 3.61px;
   height: 8px;
-  flex-shrink: 0;
 }
 
 .button-franchise {
@@ -219,7 +217,6 @@ hr .sprite-section {
   font-weight: 700;
   text-align: center;
   height: 44px;
-  flex-shrink: 0;
   padding: 0 max(43px);
 }
 
@@ -239,7 +236,6 @@ hr .sprite-section {
   color: var(--brand-color);
   font-weight: 700;
   text-align: center;
-  flex-shrink: 0;
   height: 44px;
   padding: 0 max(43px);
 }
@@ -580,7 +576,6 @@ hr .sprite-section {
   letter-spacing: 0.42px;
   width: 85%;
   height: 24px;
-  flex-shrink: 0;
   margin-left: 8px;
   cursor: pointer;
 }
@@ -678,7 +673,6 @@ a .terms-agree {
     stroke-width: 1px;
     width: 216px;
     height: 0px;
-    flex-shrink: 0;
   }
 
   .sprite-section {
@@ -739,12 +733,10 @@ a .terms-agree {
     display: block;
     width: 368px;
     /* height: 538px; */
-    flex-shrink: 0;
   }
 
   .image-block {
     width: 73px;
-    flex-shrink: 0;
   }
 
   .crawler-cafe {
@@ -770,7 +762,6 @@ a .terms-agree {
   .details {
     width: 276px;
     /* height: 50px; */
-    flex-shrink: 0;
     line-height: 183%;
     /* 29.28px */
     letter-spacing: 0.64px;
@@ -779,7 +770,6 @@ a .terms-agree {
   .sprite-section {
     width: 288px;
     height: 0px;
-    flex-shrink: 0;
     margin-top: 32px;
     margin-bottom: 32px;
   }

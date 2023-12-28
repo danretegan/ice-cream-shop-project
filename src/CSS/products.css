@@ -49,7 +49,6 @@ a {
   text-align: center;
   letter-spacing: 1.36px;
   text-transform: uppercase;
-  flex-shrink: 0;
   margin-top: 15px;
   font-family: Titan One;
   font-size: 34px;
@@ -152,7 +151,6 @@ a {
   color: #fff;
   text-align: center;
   letter-spacing: 0.56px;
-  flex-shrink: 0;
   margin-left: auto;
   margin-right: auto;
   font-family: DM Sans;
@@ -246,7 +244,6 @@ a {
   color: #fff;
   text-align: center;
   letter-spacing: 0.56px;
-  flex-shrink: 0;
   margin-left: 32px;
   font-family: DM Sans;
   font-size: 14px;
@@ -378,7 +375,6 @@ a {
   color: #fff;
   text-align: center;
   letter-spacing: 0.56px;
-  flex-shrink: 0;
   margin-left: 32px;
   font-family: DM Sans;
   font-size: 14px;
@@ -492,7 +488,6 @@ a {
   color: #fff;
   text-align: center;
   letter-spacing: 0.56px;
-  flex-shrink: 0;
   margin-left: 32px;
   font-family: DM Sans;
   font-size: 14px;
@@ -613,7 +608,6 @@ a {
     height: 124px;
     text-align: center;
     letter-spacing: 0.56px;
-    flex-shrink: 0;
     margin-left: auto;
     margin-right: auto;
     color: #fff;
@@ -682,7 +676,6 @@ a {
     z-index: 1;
     width: 224px;
     height: 224px;
-    flex-shrink: 0;
     background-image: url(/src/images/products-photo/strawberry-t.png);
     background-size: 224px 224px;
   }
@@ -916,7 +909,6 @@ a {
     z-index: 1;
     width: 368px;
     height: 394px;
-    flex-shrink: 0;
     background-image: url(/src/images/products-photo/strawberry-d.png);
     background-size: 368px 394px;
   }
@@ -1026,7 +1018,6 @@ a {
     position: relative;
     width: 368px;
     height: 535px;
-    flex-shrink: 0;
     border-radius: 24px;
     background: #ffb8ca;
     margin-left: 16px;
@@ -1043,7 +1034,6 @@ a {
     height: 134px;
     text-align: center;
     letter-spacing: 0.56px;
-    flex-shrink: 0;
     margin-left: auto;
     margin-right: auto;
     color: #fff;
@@ -1058,7 +1048,6 @@ a {
   .strawberry-product {
     width: 368px;
     height: 394px;
-    flex-shrink: 0;
     position: absolute;
     bottom: 388px;
   }
@@ -1090,7 +1079,6 @@ a {
     color: #fff;
     text-align: center;
     letter-spacing: 0.64px;
-    flex-shrink: 0;
     font-family: DM Sans;
     font-weight: 700;
     line-height: 176%;
@@ -1105,8 +1093,6 @@ a {
     position: relative;
     width: 368px;
     height: 535px;
-    flex-shrink: 0;
-    flex-shrink: 0;
     border-radius: 24px;
     background: #f0d1a5;
     margin-top: 281px;
@@ -1167,7 +1153,6 @@ a {
     color: #fff;
     text-align: center;
     letter-spacing: 0.64px;
-    flex-shrink: 0;
     font-family: DM Sans;
     font-weight: 700;
     line-height: 176%;
@@ -1178,7 +1163,6 @@ a {
     position: relative;
     width: 368px;
     height: 535px;
-    flex-shrink: 0;
     border-radius: 24px;
     background: #c2e297;
     margin-right: 16px;
@@ -1221,7 +1205,6 @@ a {
     letter-spacing: 0.64px;
     width: 324px;
     height: 134px;
-    flex-shrink: 0;
   }
   .rectangle-3-product:hover .arrow-right-product {
     cursor: pointer;
