@@ -81,8 +81,8 @@
   box-shadow: 0 2px 4px var(--brand-color);
   display: none;
   height: 40px;
-  outline: none;
-  padding: 0;
+  /* outline: none; */
+  /* padding: 0; */
   position: fixed;
   right: 20px;
   transition: box-shadow 0.1s linear, transform 0.1s linear;

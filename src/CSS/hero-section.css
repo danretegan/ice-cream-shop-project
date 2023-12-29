@@ -676,22 +676,24 @@ header {
   display: none;
 }
 
+/* How it's made button */
+/* sibbling with fixed button */
+
 .link-how-its-made {
-  background-color: white;
+  background-color: var(--general-white);
   border-radius: 50%;
-  border: none;
   box-shadow: 0 2px 4px var(--brand-color);
-  height: 40px;
-  outline: none;
-  padding: 0;
   transition: box-shadow 0.1s linear, transform 0.1s linear;
-  width: 40px;
 }
 
-.link-how-its-made:hover,
-.link-how-its-made:focus {
+.link-how-its-made:hover {
   border-radius: 35%;
   cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.link-how-its-made:focus {
+  border-radius: 35%;
   transform: rotate(90deg);
 }
 
