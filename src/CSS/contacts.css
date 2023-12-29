@@ -69,8 +69,7 @@ hr .sprite-section {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.48px;
-  line-height: 186%;
-  /* 22.32px */
+  line-height: 186%; /* 22.32px */
   border-radius: 4px;
   color: #fff;
 }
@@ -86,8 +85,7 @@ hr .sprite-section {
   font-family: var(--general-font);
   font-size: 12px;
   font-weight: 500;
-  line-height: 186%;
-  /* 22.32px */
+  line-height: 186%; /* 22.32px */
   letter-spacing: 0.48px;
 }
 
@@ -96,8 +94,7 @@ hr .sprite-section {
   font-family: var(--general-font);
   font-size: 12px;
   font-weight: 500;
-  line-height: 18px;
-  /* 150% */
+  line-height: 150%; /* 18px */
   letter-spacing: 0.48px;
   width: 208px;
   height: 36px;
@@ -108,8 +105,7 @@ hr .sprite-section {
   font-family: var(--general-font);
   font-size: 12px;
   font-weight: 500;
-  line-height: 186%;
-  /* 22.32px */
+  line-height: 186%; /* 22.32px */
 }
 
 .weekends {
@@ -121,8 +117,7 @@ hr .sprite-section {
   font-family: var(--general-font);
   font-size: 12px;
   font-weight: 500;
-  line-height: 186%;
-  /* 22.32px */
+  line-height: 186%; /* 22.32px */
 }
 
 .contact-info {
@@ -136,8 +131,7 @@ hr .sprite-section {
   font-family: var(--general-font);
   font-size: 12px;
   font-weight: 500;
-  line-height: 18px;
-  /* 150% */
+  line-height: 150%; /* 18px */
 }
 
 .color-fonts:hover,
@@ -158,8 +152,7 @@ hr .sprite-section {
 .crawler-foodtruck {
   color: #fff;
   border-radius: 4px;
-  line-height: 186%;
-  /* 22.32px */
+  line-height: 186%; /* 22.32px */
   letter-spacing: 0.48px;
 
   background-color: var(--food-color);
@@ -414,10 +407,6 @@ hr .sprite-section {
   position: relative;
   border: 3px solid #f25c66;
   border-radius: 12px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; */
 }
 
 .is-hidden-franchise {
@@ -513,7 +502,6 @@ hr .sprite-section {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
-  /* border: 2px solid #757575; */
 }
 
 .form-acces {
@@ -627,19 +615,16 @@ a .terms-agree {
     padding: 0px 16px;
     margin: 0;
     font-size: 14px;
-    line-height: 183%;
-    /* 25.62px */
+    line-height: 183%; /* 25.62px */
   }
 
   .crawler-cafe {
-    line-height: 186%;
-    /* 29.76px */
+    line-height: 186%; /* 29.76px */
     letter-spacing: 0.64px;
   }
 
   .crawler-foodtruck {
-    line-height: 186%;
-    /* 29.76px */
+    line-height: 186%; /* 29.76px */
     letter-spacing: 0.64px;
   }
 
@@ -653,8 +638,7 @@ a .terms-agree {
 
   .city-locations {
     font-size: 14px;
-    line-height: 186%;
-    /* 26.04px */
+    line-height: 186%; /* 26.04px */
     letter-spacing: 0.56px;
   }
 
@@ -663,8 +647,7 @@ a .terms-agree {
     height: 65px;
     color: #907e82;
     font-size: 14px;
-    line-height: 166%;
-    /* 23.24px */
+    line-height: 166%; /* 23.24px */
     letter-spacing: 0.56px;
   }
 
@@ -684,8 +667,7 @@ a .terms-agree {
     width: 134px;
     height: 30px;
     font-size: 14px;
-    line-height: 186%;
-    /* 26.04px */
+    line-height: 186%; /* 26.04px */
   }
 
   .weekends {
@@ -694,14 +676,12 @@ a .terms-agree {
 
   .work-program {
     font-size: 14px;
-    line-height: 186%;
-    /* 26.04px */
+    line-height: 186%; /* 26.04px */
   }
 
   .color-fonts {
     font-size: 14px;
-    line-height: 183%;
-    /* 25.62px */
+    line-height: 183%; /* 25.62px */
   }
 
   .menu-section {
@@ -725,8 +705,7 @@ a .terms-agree {
 
 @media screen and (min-width: 1280px) {
   .color-fonts {
-    line-height: 183%;
-    /* 29.28px */
+    line-height: 183%; /* 29.28px */
   }
 
   .menu-section {
@@ -740,30 +719,26 @@ a .terms-agree {
   }
 
   .crawler-cafe {
-    line-height: 186%;
-    /* 29.76px */
+    line-height: 186%; /* 29.76px */
     letter-spacing: 0.64px;
   }
 
   .crawler-foodtruck {
-    line-height: 186%;
-    /* 29.76px */
+    line-height: 186%; /* 29.76px */
     letter-spacing: 0.64px;
   }
 
   .city-locations {
     width: 74px;
     height: 30px;
-    line-height: 186%;
-    /* 29.76px */
+    line-height: 186%; /* 29.76px */
     letter-spacing: 0.64px;
   }
 
   .details {
     width: 276px;
     /* height: 50px; */
-    line-height: 183%;
-    /* 29.28px */
+    line-height: 183%; /* 29.28px */
     letter-spacing: 0.64px;
   }
 
@@ -775,8 +750,7 @@ a .terms-agree {
   }
 
   .weekdays {
-    line-height: 186%;
-    /* 29.76px */
+    line-height: 186%; /* 29.76px */
     letter-spacing: 0.64px;
     width: 156.379px;
   }
@@ -784,8 +758,7 @@ a .terms-agree {
   .work-program {
     width: 163px;
     height: 30px;
-    line-height: 186%;
-    /* 29.76px */
+    line-height: 186%; /* 29.76px */
   }
 
   .weekends {

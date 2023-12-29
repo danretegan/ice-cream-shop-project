@@ -81,8 +81,6 @@
   box-shadow: 0 2px 4px var(--brand-color);
   display: none;
   height: 40px;
-  /* outline: none; */
-  /* padding: 0; */
   position: fixed;
   right: 20px;
   transition: box-shadow 0.1s linear, transform 0.1s linear;
@@ -102,10 +100,6 @@
   box-shadow: 0 0 2px var(--brand-color);
   transform: translateY(2px) rotate(-90deg);
 }
-
-/* .fixedbutton:focus {
-  outline: none;
-} */
 
 @media screen and (min-width: 768px) {
   .gallery {

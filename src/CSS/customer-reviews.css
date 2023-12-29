@@ -156,8 +156,7 @@
 .slideshow-container {
   width: 100%;
   background-color: var(--general-white);
-  /* margin-bottom: 80px;
-  padding-left: 0; */
+ 
   padding-bottom: 60px;
 }
 .horizontal-line1 {
@@ -261,14 +260,7 @@
   to {
     opacity: 1;
   }
-  /* .comment::before {
-  content: '\275E';
-  color: rgba(225, 225, 225, 1);
-  font-size: 92px;
-  position: relative;
-  top: 34px;
-  left: -45px;
-} */
+ 
 }
 /* tablet section */
 @media screen and (min-width: 768px) {
@@ -282,14 +274,7 @@
   .tablet-icon {
     visibility: visible;
   }
-  /* .comment::before {
-    content: '\275E';
-    color: rgba(225, 225, 225, 1);
-    font-size: 92px;
-    position: relative;
-    top: 130px;
-    left: -250px;
-  } */
+  
   .tablet-version {
     display: flex;
     flex-direction: column;

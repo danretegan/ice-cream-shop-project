@@ -676,7 +676,7 @@ header {
   display: none;
 }
 
-/* How it's made button */
+/* How it's made link /button */
 /* sibbling with fixed button */
 
 .link-how-its-made {
@@ -938,9 +938,7 @@ header {
     font-weight: 400;
     line-height: 20px;
   }
-  .link-how-its-made {
-    /* width: 30px; */
-  }
+
   .elipse-small {
     width: 30px;
     height: 30px;
