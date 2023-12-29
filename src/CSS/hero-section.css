@@ -677,20 +677,28 @@ header {
 }
 
 .link-how-its-made {
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 2px 4px var(--brand-color);
+  height: 40px;
+  outline: none;
+  padding: 0;
+  transition: box-shadow 0.1s linear, transform 0.1s linear;
   width: 40px;
-  transition: var(--transition);
 }
 
 .link-how-its-made:hover,
 .link-how-its-made:focus {
-  /* border-radius: 35%; */
-  scale: 120%;
-  rotate: 90deg;
+  border-radius: 35%;
   cursor: pointer;
+  transform: rotate(90deg);
 }
 
 .link-how-its-made:active {
-  scale: 120%;
+  border-radius: 35%;
+  box-shadow: 0 0 2px var(--brand-color);
+  transform: translateY(2px) rotate(90deg);
 }
 
 .left-header-container h1 {
@@ -929,7 +937,7 @@ header {
     line-height: 20px;
   }
   .link-how-its-made {
-    width: 30px;
+    /* width: 30px; */
   }
   .elipse-small {
     width: 30px;

@@ -90,19 +90,22 @@
   z-index: 3;
 }
 
-.fixedbutton:hover {
-  cursor: pointer;
+.fixedbutton:hover,
+.fixedbutton:focus {
   border-radius: 35%;
+  cursor: pointer;
+  transform: rotate(-90deg);
 }
 
 .fixedbutton:active {
+  border-radius: 35%;
   box-shadow: 0 0 2px var(--brand-color);
   transform: translateY(2px);
 }
 
-.fixedbutton:focus {
+/* .fixedbutton:focus {
   outline: none;
-}
+} */
 
 @media screen and (min-width: 768px) {
   .gallery {
