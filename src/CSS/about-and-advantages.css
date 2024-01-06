@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .hiden {
@@ -17,9 +18,16 @@
 
 .about-and-advantages {
   background-color: var(--section-background-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
 
@@ -65,6 +73,8 @@
   width: 220px;
   margin-bottom: 18px;
   margin-top: 40px;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
 
@@ -77,6 +87,8 @@
   color: var(--general-font-grey);
   width: 220px;
   margin-bottom: 20px;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
 
@@ -86,11 +98,19 @@
   border-radius: 22px;
   background: var(--general-white);
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 13.62px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 40px;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
 
@@ -112,20 +132,37 @@
 
 .animation-card {
   position: relative;
+  -webkit-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .animation-card::before {
-  animation: rotateWithOrigin 3s linear 1s infinite;
+  -webkit-animation: rotateWithOrigin 3s linear 1s infinite;
+          animation: rotateWithOrigin 3s linear 1s infinite;
+}
+
+@-webkit-keyframes rotateWithOrigin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
 }
 
 @keyframes rotateWithOrigin {
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 
   to {
-    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
   }
 }
 
@@ -208,6 +245,8 @@
   }
 
   .how-is-made-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 30px;
   }
@@ -229,6 +268,8 @@
   }
 
   .how-is-made-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     gap: 19px;
@@ -236,6 +277,8 @@
   }
 
   .cards-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 86px 76px 0 36px;
   }
@@ -273,51 +316,83 @@
   }
 
   .animation-card {
+    -webkit-transition: all 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 2.5s cubic-bezier(0.4, 0, 0.2, 1);
     transition: all 2.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .how-is-made-cards:hover .milk-card {
-    transform: translateX(-40px) rotate(1turn) scale(1.2);
+    -webkit-transform: translateX(-40px) rotate(1turn) scale(1.2);
+        -ms-transform: translateX(-40px) rotate(1turn) scale(1.2);
+            transform: translateX(-40px) rotate(1turn) scale(1.2);
   }
 
   .how-is-made-cards:hover .apple-card {
-    transform: rotate(1turn) scale(1.2);
+    -webkit-transform: rotate(1turn) scale(1.2);
+        -ms-transform: rotate(1turn) scale(1.2);
+            transform: rotate(1turn) scale(1.2);
   }
 
   .how-is-made-cards:hover .icecream-card {
-    transform: translateX(40px) rotate(1turn) scale(1.2);
+    -webkit-transform: translateX(40px) rotate(1turn) scale(1.2);
+        -ms-transform: translateX(40px) rotate(1turn) scale(1.2);
+            transform: translateX(40px) rotate(1turn) scale(1.2);
   }
 
   .how-is-made-cow-anim:hover {
-    animation-name: spin;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
+    -webkit-animation-name: spin;
+            animation-name: spin;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+
+    50% {
+      -webkit-transform: rotate(40deg);
+              transform: rotate(40deg);
+    }
   }
 
   @keyframes spin {
     0% {
-      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
     }
 
     50% {
-      transform: rotate(40deg);
+      -webkit-transform: rotate(40deg);
+              transform: rotate(40deg);
     }
   }
 
   .p-1:hover {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
     cursor: default;
   }
 
   .p-2:hover {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
     cursor: default;
   }
 
   .about-button:hover {
     background-color: #ecebeb;
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
@@ -335,6 +410,8 @@
   }
 
   @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .about-and-advantages {
@@ -358,25 +435,49 @@
   }
 
   .first-section-head:hover {
-    animation: springy-text;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
+    -webkit-animation: springy-text;
+            animation: springy-text;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     cursor: default;
   }
 
   .second-section-head:hover {
-    animation: springy-text;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
+    -webkit-animation: springy-text;
+            animation: springy-text;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
     cursor: default;
+  }
+
+  @-webkit-keyframes springy-text {
+    0% {
+      letter-spacing: 0.7em;
+    }
+
+    100% {
+      letter-spacing: 0.1em;
+    }
   }
 
   @keyframes springy-text {
