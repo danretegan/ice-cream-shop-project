@@ -1,17 +1,3 @@
-/* * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-} */
-
-a {
-  cursor: pointer;
-}
-
-a:-webkit-any-link {
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .contacts-section {
   background-color: var(--section-background-color);
   -webkit-box-align: center;

@@ -1,6 +1,3 @@
-a {
-  text-decoration: none;
-}
 hr {
   border-top: var(--general-font-grey);
   width: 97%;
@@ -12,8 +9,8 @@ hr {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .footer-section {
   width: 320px;
@@ -27,8 +24,8 @@ hr {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 22px;
   padding-top: 20px;
 }
@@ -57,8 +54,8 @@ hr {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   gap: 28px;
   padding-top: 37px;
   padding-bottom: 10px;
@@ -75,11 +72,11 @@ hr {
   -o-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 350ms;
-       -o-transition-duration: 350ms;
-          transition-duration: 350ms;
+  -o-transition-duration: 350ms;
+  transition-duration: 350ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-       -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-facebook:hover,
 .footer-icon-github:hover,
@@ -92,8 +89,8 @@ hr {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   padding: 32px;
 }
 .text-phone {
@@ -116,11 +113,11 @@ hr {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   cursor: default;
   padding-bottom: 5px;
 }
@@ -140,10 +137,10 @@ hr {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
+    -ms-flex-align: end;
+    align-items: end;
     width: 768px;
   }
   .footer-title {
@@ -181,15 +178,15 @@ hr {
 
   .second-title .footer-title-letter:hover {
     -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
     cursor: default;
   }
 
   .footer-phone-number:hover .contact-footer-phone {
     -webkit-transform: scale(1.2) translateX(12px);
-        -ms-transform: scale(1.2) translateX(12px);
-            transform: scale(1.2) translateX(12px);
+    -ms-transform: scale(1.2) translateX(12px);
+    transform: scale(1.2) translateX(12px);
   }
   .contact-footer-phone {
     display: inline-block;
@@ -210,8 +207,8 @@ hr {
   }
   .copyright-box-text:hover {
     -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-            transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
     cursor: default;
   }
 
@@ -240,21 +237,21 @@ hr {
   }
   .footer-title:hover .footer-title-made {
     -webkit-transform: translate(-170px, 27px);
-        -ms-transform: translate(-170px, 27px);
-            transform: translate(-170px, 27px);
+    -ms-transform: translate(-170px, 27px);
+    transform: translate(-170px, 27px);
     color: var(--brand-color);
     cursor: default;
   }
   .footer-title:hover .footer-title-ice-cream {
     -webkit-transform: translateX(55px);
-        -ms-transform: translateX(55px);
-            transform: translateX(55px);
+    -ms-transform: translateX(55px);
+    transform: translateX(55px);
     cursor: default;
   }
   .footer-section {
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     width: 1200px;
   }
   .footer-title {
@@ -282,8 +279,8 @@ hr {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding-bottom: 52px;
   }
   .copyright {
