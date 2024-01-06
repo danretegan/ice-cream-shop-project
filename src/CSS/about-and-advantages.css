@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.hiden {
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -22,12 +22,12 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -103,11 +103,11 @@
   display: flex;
   gap: 13.62px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 40px;
   -webkit-transition: all 0.25s linear;
   -o-transition: all 0.25s linear;
@@ -139,30 +139,30 @@
 
 .animation-card::before {
   -webkit-animation: rotateWithOrigin 3s linear 1s infinite;
-          animation: rotateWithOrigin 3s linear 1s infinite;
+  animation: rotateWithOrigin 3s linear 1s infinite;
 }
 
 @-webkit-keyframes rotateWithOrigin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   to {
     -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
+    transform: rotate(1turn);
   }
 }
 
 @keyframes rotateWithOrigin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   to {
     -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
+    transform: rotate(1turn);
   }
 }
 
@@ -323,80 +323,80 @@
 
   .how-is-made-cards:hover .milk-card {
     -webkit-transform: translateX(-40px) rotate(1turn) scale(1.2);
-        -ms-transform: translateX(-40px) rotate(1turn) scale(1.2);
-            transform: translateX(-40px) rotate(1turn) scale(1.2);
+    -ms-transform: translateX(-40px) rotate(1turn) scale(1.2);
+    transform: translateX(-40px) rotate(1turn) scale(1.2);
   }
 
   .how-is-made-cards:hover .apple-card {
     -webkit-transform: rotate(1turn) scale(1.2);
-        -ms-transform: rotate(1turn) scale(1.2);
-            transform: rotate(1turn) scale(1.2);
+    -ms-transform: rotate(1turn) scale(1.2);
+    transform: rotate(1turn) scale(1.2);
   }
 
   .how-is-made-cards:hover .icecream-card {
     -webkit-transform: translateX(40px) rotate(1turn) scale(1.2);
-        -ms-transform: translateX(40px) rotate(1turn) scale(1.2);
-            transform: translateX(40px) rotate(1turn) scale(1.2);
+    -ms-transform: translateX(40px) rotate(1turn) scale(1.2);
+    transform: translateX(40px) rotate(1turn) scale(1.2);
   }
 
   .how-is-made-cow-anim:hover {
     -webkit-animation-name: spin;
-            animation-name: spin;
+    animation-name: spin;
     -webkit-animation-duration: 5s;
-            animation-duration: 5s;
+    animation-duration: 5s;
     -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
+    animation-iteration-count: 1;
   }
 
   @-webkit-keyframes spin {
     0% {
       -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
+      transform: rotate(0deg);
     }
 
     50% {
       -webkit-transform: rotate(40deg);
-              transform: rotate(40deg);
+      transform: rotate(40deg);
     }
   }
 
   @keyframes spin {
     0% {
       -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
+      transform: rotate(0deg);
     }
 
     50% {
       -webkit-transform: rotate(40deg);
-              transform: rotate(40deg);
+      transform: rotate(40deg);
     }
   }
 
   .p-1:hover {
     -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
     cursor: default;
   }
 
   .p-2:hover {
     -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
     cursor: default;
   }
 
   .about-button:hover {
     background-color: #ecebeb;
     -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 
-/* Dekstop */
+/* Desktop */
 
 @media screen and (min-width: 1280px) {
   .about-and-advantages {
@@ -436,37 +436,37 @@
 
   .first-section-head:hover {
     -webkit-animation: springy-text;
-            animation: springy-text;
+    animation: springy-text;
     -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    animation-duration: 2s;
     -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
     -webkit-animation-delay: 0s;
-            animation-delay: 0s;
+    animation-delay: 0s;
     -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
+    animation-iteration-count: 1;
     -webkit-animation-direction: normal;
-            animation-direction: normal;
+    animation-direction: normal;
     -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
     cursor: default;
   }
 
   .second-section-head:hover {
     -webkit-animation: springy-text;
-            animation: springy-text;
+    animation: springy-text;
     -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    animation-duration: 2s;
     -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
     -webkit-animation-delay: 0s;
-            animation-delay: 0s;
+    animation-delay: 0s;
     -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
+    animation-iteration-count: 1;
     -webkit-animation-direction: normal;
-            animation-direction: normal;
+    animation-direction: normal;
     -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
     cursor: default;
   }
 
